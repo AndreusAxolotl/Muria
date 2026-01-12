@@ -1,0 +1,18 @@
+{
+    "entity": 
+    [
+        ["neutralization-tower", "fungicultural-tower"]
+    ],
+    "item": 
+    [
+        ["neutralization-tower", "fungicultural-tower"]
+    ],
+    "recipe": 
+    [
+        ["neutralization-tower", "fungicultural-tower"]
+    ],
+    "technology": 
+    [
+        ["neutralization-tower", "lichen-cultivation"]
+    ]
+    }
