@@ -87,7 +87,7 @@ data:extend({
       mining_time = 2,
       results =
       {
-        {type = "item", name = "stone", amount_min = 1, amount_max = 5},
+        {type = "item", name = "stone", amount_min = 6, amount_max = 15},
         {type = "item", name = "chlorine-salts", amount_min = 2, amount_max = 4},
       }
     },

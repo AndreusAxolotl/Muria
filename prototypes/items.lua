@@ -554,4 +554,21 @@ data:extend{
     default_import_location = "fulgora",
     weight = 10000000,
 },
+{
+    type = "item",
+    name = "leaded-fuel",
+    icon = "__Muria-Graphics__/graphics/icons/leaded-fuel.png",
+    fuel_category = "chemical",
+    fuel_value = "500MJ",
+    fuel_acceleration_multiplier = 3,
+    fuel_top_speed_multiplier = 1.5,
+    fuel_emissions_multiplier = 5,
+    subgroup = "muria-leadworking",
+    order = "z",
+    inventory_move_sound = item_sounds.fuel_cell_inventory_move,
+    pick_sound = item_sounds.fuel_cell_inventory_pickup,
+    drop_sound = item_sounds.fuel_cell_inventory_move,
+    stack_size = 20,
+    weight = 20*kg
+  },
 }

@@ -1,3 +1,5 @@
+--Pollution damage mechanic (Thx trashpandacoot)
+
 local DAMAGE_INTERVAL = 240         -- ticks
 local DAMAGE_AMOUNT = 25            -- how much damage per cycle
 local MINED_DAMAGE_AMOUNT = 25      -- how much damage is done to player or robot when mining lichen
@@ -204,3 +206,46 @@ script.on_event(defines.events.on_robot_mined_entity, on_entity_destroyed)
 script.on_event(defines.events.on_entity_died, on_entity_destroyed)
 script.on_event(defines.events.script_raised_destroy, on_entity_destroyed)
 script.on_event(defines.events.script_raised_destroy, on_entity_destroyed)
+
+--Starting salts patch (Thx talandar and syen)
+
+script.on_event(defines.events.on_player_created, function(event)
+	storage.init = storage.init or {}
+	if storage.init[event.player_index] then
+		return
+	end
+	storage.init[event.player_index] = true
+end)
+
+local generated_salts_patch = false
+
+script.on_event(defines.events.on_surface_created, function(event)
+	local surface = game.surfaces[event.surface_index]
+	if surface.name == "muria" and not generated_salts_patch then
+		generated_salts_patch = true
+
+		local center = { x = 10, y = 10 }
+		local radius = 12
+		local max_amount = 3000
+
+		for x = -radius, radius do
+			for y = -radius, radius do
+				local distance = math.sqrt(x * x + y * y)
+				if distance <= radius then
+					local noise = math.random()
+
+					local density = 1 - (distance / radius) + (noise - 0.5) * 0.3
+
+					if density > 0.2 then
+						local amount = math.floor(max_amount * density)
+						surface.create_entity({
+							name = "chlorine-salt-deposit",
+							amount = amount,
+							position = { center.x + x, center.y + y },
+						})
+					end
+				end
+			end
+		end
+	end
+end)

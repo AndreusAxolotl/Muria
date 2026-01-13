@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2026-01-13
+  I needed to cook slightly more:
+
+  Additions:
+    - Added leaded fuel, a sidegrade/alternative to rocket fuel and nuclear fuel. Higher stats than nuclear, slightly higher energy than rocket but 500% pollution!
+
+  Changes:
+    - Increased stone from chloric rocks.
+    - Nerfed lead pellets recipes.
+    - Slightly changed ore generation to make starting patch bigger (Thanks Syen and Talandar!)
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2026-01-12
   You're damn right:

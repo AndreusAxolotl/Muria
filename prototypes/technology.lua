@@ -412,6 +412,34 @@ data:extend {
   },
   {
     type = "technology",
+    name = "leaded-fuel",
+    icon = "__Muria-Graphics__/graphics/technology/leaded-fuel.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "leaded-fuel"
+      },
+    },
+    prerequisites = { "muriatic-science-pack"},
+    unit =
+    {
+      count = 250,
+      ingredients =
+      {
+        { "automation-science-pack",      1 },
+        { "logistic-science-pack",        1 },
+        { "chemical-science-pack",        1 },
+        { "production-science-pack",      1 },
+        { "space-science-pack",           1 },
+        { "muriatic-science-pack",     1 },
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
     name = "acid-weaponization",
     icon = "__Muria-Graphics__/graphics/technology/acid-weaponization.png",
     icon_size = 256,

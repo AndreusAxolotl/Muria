@@ -146,7 +146,7 @@ data:extend{
         {type = "fluid", name = "hydrogen",   amount = 10},
     },
     results = {
-        {type = "item", name = "lead-pellets", amount = 10},
+        {type = "item", name = "lead-pellets", amount = 5},
     },
     allow_productivity = true,
     category = "leadworking",
@@ -805,7 +805,8 @@ data:extend{
         secondary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
         tertiary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
         quaternary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
-    }},
+    }
+},
 {
     type = "recipe",
     name = "casting-lead-pellets",
@@ -819,11 +820,37 @@ data:extend{
         {type = "fluid", name = "hydrogen",   amount = 20},
     },
     results = {
-        {type = "item", name = "lead-pellets", amount = 10},
+        {type = "item", name = "lead-pellets", amount = 5},
     },
     allow_productivity = true,
     category = "leadworking",
     auto_recycle = false,
     show_amount_in_title = false,
+},
+ {
+    type = "recipe",
+    name = "leaded-fuel",
+    enabled = false,
+    icon_size = 64,
+    energy_required = 15,
+    ingredients =
+    {
+      {type = "item", name = "solid-fuel", amount = 10},
+      {type = "item", name = "lead-pellets", amount = 5},
+      {type = "fluid", name = "heavy-oil", amount = 20}
+    },
+    results = {{type="item", name="leaded-fuel", amount=1}},
+    allow_productivity = true,
+    category = "chemistry",
+    auto_recycle = true,
+    show_amount_in_title = false,
+    emissions_multiplier = 5,
+    crafting_machine_tint =
+    {
+      primary = {r = 0.889, g = 0.628, b = 0.566, a = 1.000},
+      secondary = {r = 0.803, g = 0.668, b = 0.644, a = 1.000}, 
+      tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000},
+      quaternary = {r = 1.000, g = 0.395, b = 0.127, a = 1.000},
+    }
 },
 }
