@@ -27,7 +27,7 @@ Muria includes the following resources:
 
 Muria comes with two new buildings for further automation: the Acidworking Plant and the Smelting Plant
 
-These machines are specialized in some chemical processes and metallurgy and smelting togheter respectfully.
+These machines are specialized in some chemical processes and metallurgy-smelting togheter respectfully.
 
 # PLEASE REPORT ANY BUGS YOU FIND
 
@@ -63,7 +63,7 @@ This mod wouldn't be possible without the help of these amazing people!
 - **License**: Public domain.
 
 #### Pollution damage and seed exclusion scripts
-- trashpandacoot
+- xkyouchoux
 
 #### Starting salts patch control script
 - Talandar and Syen
