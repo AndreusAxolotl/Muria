@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2026-01-17
+  Lichen not yumako!:
+
+  Fixes:
+    - Fixed artificial lichen colony's mining result from yumako soil to actual lichen soil.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 2026-01-13
   I needed to cook slightly more:

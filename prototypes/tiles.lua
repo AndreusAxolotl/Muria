@@ -227,7 +227,7 @@ table.insert(water_tile_type_names, "muriatic-solution")
 
 local artificial_lichen_colony = table.deepcopy(data.raw.tile["artificial-yumako-soil"])
 artificial_lichen_colony.name = "artificial-lichen-colony"
-artificial_lichen_colony.order = "e[lichen]-b"
+artificial_lichen_colony.order = "c[landfill]-ez[artificial-lichen-colony]"
 artificial_lichen_colony.subgroup = "gleba-tiles"
 artificial_lichen_colony.absorptions_per_second = tile_pollution.muria
 artificial_lichen_colony.variants = tile_variations_template_with_transitions_and_effect_map(
@@ -238,7 +238,6 @@ artificial_lichen_colony.variants = tile_variations_template_with_transitions_an
             [1] = { weights = {0.085, 0.085, 0.085, 0.085, 0.087, 0.085, 0.065, 0.085, 0.045, 0.045, 0.045, 0.045, 0.005, 0.025, 0.045, 0.045 } },
             [2] = { probability = 1, weights = {0.018, 0.020, 0.015, 0.025, 0.015, 0.020, 0.025, 0.015, 0.025, 0.025, 0.010, 0.025, 0.020, 0.025, 0.025, 0.010 }, },
             [4] = { probability = 0.1, weights = {0.018, 0.020, 0.015, 0.025, 0.015, 0.020, 0.025, 0.015, 0.025, 0.025, 0.010, 0.025, 0.020, 0.025, 0.025, 0.010 }, },
-            --[8] = { probability = 1.00, weights = {0.090, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.025, 0.125, 0.005, 0.010, 0.100, 0.100, 0.010, 0.020, 0.020} },
           }
         )
 --rtificial_lichen_colony.transitions = lava_stone_transitions
@@ -248,6 +247,7 @@ artificial_lichen_colony.landing_steps_sound = tile_sounds.landing.bark
 artificial_lichen_colony.map_color={81, 77, 44}
 artificial_lichen_colony.walking_speed_modifier = 1
 artificial_lichen_colony.vehicle_friction_modifier = 1
+artificial_lichen_colony.minable = {mining_time = 0.5, result = "artificial-lichen-colony"}
 
 local acidophile_lichen = table.deepcopy(data.raw.tile["midland-cracked-lichen-dull"])
 acidophile_lichen.name = "acidophile-lichen"
