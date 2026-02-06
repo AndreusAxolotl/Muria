@@ -236,6 +236,7 @@ data:extend {
     name = "muriatic-science-pack",
     icon = "__Muria-Graphics__/graphics/technology/muriatic-science-pack.png",
     icon_size = 256,
+    essential = true,    
     effects =
     {
       {
