@@ -1148,98 +1148,100 @@ data:extend{
     },
     circuit_connector = circuit_connector_definitions["agricultural-tower"],
     circuit_wire_max_distance = 30,
-    graphics_set =
-    {
-      animation =
-      {
-        layers =
-        {
-          util.sprite_load("__space-age__/graphics/entity/agricultural-tower/agricultural-tower-base",
-          {
-            priority = "high",
-            animation_speed = 0.25,
-            frame_count = 64,
-            tint = { r = 0.7, g = 0.38, b = 0.19, a = 1 },
-            scale = 0.5
-          }),
-          util.sprite_load("__space-age__/graphics/entity/agricultural-tower/agricultural-tower-base-shadow",
-          {
-            priority = "high",
-            frame_count = 1,
-            repeat_count = 64,
-            draw_as_shadow = true,
-            scale = 0.5
-          })
-        }
-      },
-      recipe_not_set_tint = { primary = {r = 0.6, g = 0.6, b =  0.5, a = 1}, secondary = {r = 0.6, g =  0.6, b = 0.5, a = 1} },
-      working_visualisations =
-      {
-        {
-          always_draw = true,
-          fog_mask = { rect = {{-30, -30}, {30, -2.75}}, falloff = 1 },
-          animation = util.sprite_load("__space-age__/graphics/entity/agricultural-tower/agricultural-tower-base",
-          {
-            frame_count = 1,
-            tint = { r = 0.7, g = 0.38, b = 0.19, a = 1 },
-            scale = 0.5
-          }),
-        },
+    graphics_set = {
+			animation = {
+				layers = {
+					util.sprite_load("__Muria-Graphics__/graphics/entity/fungicultural-tower/fungicultural-tower-base", {
+						priority = "high",
+						animation_speed = 0.25,
+						frame_count = 64,
+						scale = 0.5,
+					}),
+					util.sprite_load(
+						"__space-age__/graphics/entity/agricultural-tower/agricultural-tower-base-shadow",
+						{
+							priority = "high",
+							frame_count = 1,
+							repeat_count = 64,
+							draw_as_shadow = true,
+							scale = 0.5,
+						}
+					),
+				},
+			},
+			recipe_not_set_tint = {
+				primary = { r = 0.6, g = 0.6, b = 0.5, a = 1 },
+				secondary = { r = 0.6, g = 0.6, b = 0.5, a = 1 },
+			},
+			working_visualisations = {
+				{
+					always_draw = true,
+					fog_mask = { rect = { { -30, -30 }, { 30, -2.75 } }, falloff = 1 },
+					animation = util.sprite_load(
+						"__Muria-Graphics__/graphics/entity/fungicultural-tower/fungicultural-tower-base",
+						{
+							frame_count = 1,
+							scale = 0.5,
+						}
+					),
+				},
 
-        {
-          --constant_speed = true,
-          always_draw = true,
-          apply_recipe_tint = "primary",
-          animation = util.sprite_load("__space-age__/graphics/entity/agricultural-tower/agricultural-tower-base-plant-mask",
-          {
-            priority = "high",
-            frame_count = 64,
-            animation_speed = 0.25,
-            tint_as_overlay = true,
-            scale = 0.5
-          }),
-        },
-        {
-          --constant_speed = true,
-          apply_recipe_tint = "secondary",
-          effect = "flicker",
-          fadeout = true,
-          animation = util.sprite_load("__space-age__/graphics/entity/agricultural-tower/agricultural-tower-base-light",
-          {
-            priority = "high",
-            frame_count = 64,
-            animation_speed = 0.25,
-            blend_mode = "additive",
-            scale = 0.5
-          }),
-        },
-        {
-          effect = "flicker",
-          fadeout = true,
-          light = {intensity = 1.0, size = 6, shift = {-0.45, -0.25}, color = {r = 1, g = 1, b = 1}}
-        },
-        {
-          apply_recipe_tint = "secondary",
-          effect = "flicker",
-          fadeout = true,
-          light = {intensity = 1.0, size = 16, shift = {-1.2, -0.5}, color = {r = 1, g = 1, b = 1}}
-        }
-      },
-      water_reflection =
-      {
-        pictures =
-        {
-          filename = "__space-age__/graphics/entity/agricultural-tower/agricultural-tower-base-reflection.png",
-          priority = "extra-high",
-          width = 24,
-          height = 36,
-          shift = util.by_pixel(0, 20),
-          variation_count = 1,
-          scale = 5
-        },
-        rotate = false,
-        orientation_to_variation = false,
-      }
+				{
+					--constant_speed = true,
+					always_draw = true,
+					apply_recipe_tint = "primary",
+					animation = util.sprite_load(
+						"__space-age__/graphics/entity/agricultural-tower/agricultural-tower-base-plant-mask",
+						{
+							priority = "high",
+							frame_count = 64,
+							animation_speed = 0.25,
+							tint_as_overlay = true,
+							scale = 0.5,
+						}
+					),
+				},
+				{
+					--constant_speed = true,
+					apply_recipe_tint = "secondary",
+					effect = "flicker",
+					fadeout = true,
+					animation = util.sprite_load(
+						"__space-age__/graphics/entity/agricultural-tower/agricultural-tower-base-light",
+						{
+							priority = "high",
+							frame_count = 64,
+							animation_speed = 0.25,
+							blend_mode = "additive",
+							scale = 0.5,
+						}
+					),
+				},
+				{
+					effect = "flicker",
+					fadeout = true,
+					light = { intensity = 1.0, size = 6, shift = { -0.45, -0.25 }, color = { r = 1, g = 1, b = 1 } },
+				},
+				{
+					apply_recipe_tint = "secondary",
+					effect = "flicker",
+					fadeout = true,
+					light = { intensity = 1.0, size = 16, shift = { -1.2, -0.5 }, color = { r = 1, g = 1, b = 1 } },
+				},
+			},
+			water_reflection = {
+				pictures = {
+					filename = "__space-age__/graphics/entity/agricultural-tower/agricultural-tower-base-reflection.png",
+					priority = "extra-high",
+					width = 24,
+					height = 36,
+					shift = util.by_pixel(0, 20),
+					variation_count = 1,
+					scale = 5,
+				},
+				rotate = false,
+				orientation_to_variation = false,
+			},
     }
   },
   {
