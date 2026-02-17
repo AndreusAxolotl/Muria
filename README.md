@@ -68,6 +68,9 @@ This mod wouldn't be possible without the help of these amazing people!
 #### Starting salts patch control script
 - Talandar and Syen
 
+#### Muria's icon and Fungicultural tower texture
+- Talandar
+
 #### Various other help and inspiration
 - The foundry discord server members!
 - If I forgot you just tell me! With proof u helped in any way ofc!
