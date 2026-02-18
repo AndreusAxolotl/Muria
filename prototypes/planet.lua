@@ -122,7 +122,7 @@ data:extend{
     name = "muria",
     icon = "__Muria-Graphics__/graphics/icons/muria.png",
     starmap_icon = "__Muria-Graphics__/graphics/icons/starmap-planet-muria.png",
-    starmap_icon_size = 512,
+    starmap_icon_size = 2048,
     gravity_pull = 10,
     distance = 32,
     orientation = 0.14,
