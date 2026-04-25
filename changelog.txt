@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 2026-04-25
+  B(egone)zlead:
+
+  Changes:
+    - Made bzlead incompatible with Muria. This will not change until a satisfying way to implement both at once is found. Bz's lead does a lot of stuff Muria's also does at different points and them interacting breaks progression.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Date: 2026-02-19
+  Straight up cultivating em:
+
+  Fixes:
+    - Fixed freshness on acidophile lichen not resetting in their cultivation recipe.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.5
 Date: 2026-02-18
   Clean new look:

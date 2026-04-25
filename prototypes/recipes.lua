@@ -231,6 +231,7 @@ data:extend{
         {type = "item", name = "acidophile-lichen", amount = 4},
     },
     allow_productivity = true,
+    reset_freshness_on_craft = true,
     category = "organic",
     additional_categories = {"biovat-processes"},
     auto_recycle = false,

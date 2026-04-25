@@ -1,6 +1,6 @@
 {
   "name": "Muria",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "title": "Muria",
   "author": "AndreusAxolotl",
   "homepage": "https://github.com/AndreusAxolotl/Muria",
@@ -10,7 +10,8 @@
     "base",
     "space-age",
     "Muria-Graphics = 1.0.5",
-    "PlanetsLib"
+    "PlanetsLib",
+    "! bzlead"
 ],
 "space_travel_required": true
 }
