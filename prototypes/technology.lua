@@ -156,7 +156,7 @@ data:extend {
     {
       {
         type = "unlock-recipe",
-        recipe = "lead-plate"
+        recipe = "muria-lead-plate"
       },
     },
     prerequisites = { "eschatotaxite-farming", "lichen-cultivation"},

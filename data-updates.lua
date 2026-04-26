@@ -13,3 +13,5 @@ if data.raw["agricultural-tower"]["agricultural-tower"] and not data.raw["agricu
 end
 
 data.raw.planet["muria"].surface_properties["temperature"] = 320
+
+require "compat.bzlead"

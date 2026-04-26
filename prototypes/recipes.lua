@@ -120,7 +120,8 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "lead-plate",
+    name = "muria-lead-plate",
+    localised_name = {"item-name.lead-plate"},
     icon = "__Muria-Graphics__/graphics/icons/lead-plate.png",
     enabled = false,
     energy_required = 6.4,

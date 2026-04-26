@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.8
+Date: 2026-04-26
+  Bzlead...:
+
+  Changes:
+    - Bzlead is now compatible. The progression for bzlead is majorly modified, all lead on Gleba and Vulcanus must be imported until Muria is reached. Yes i know its stupid, your fault for adding two mods that add lead in completely different ways.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.7
 Date: 2026-04-25
   B(egone)zlead:
