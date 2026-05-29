@@ -38,6 +38,12 @@ data:extend{
     group = "intermediate-products",
     order = "q-e"
   },
+    {
+    type = "item-subgroup",
+    name = "scrubbing",
+    group = "intermediate-products",
+    order = "q-f"
+  },
   {
     type = "item-subgroup",
     name = "fungiculture",
@@ -354,7 +360,7 @@ data:extend{
     icon = "__Muria-Graphics__/graphics/icons/muriatic-science-pack.png",
     subgroup = "science-pack",
     color_hint = { text = "M" },
-    order = "l",
+    order = "l-2",
     inventory_move_sound = item_sounds.science_inventory_move,
     pick_sound = item_sounds.science_inventory_pickup,
     drop_sound = item_sounds.science_inventory_move,
@@ -366,26 +372,34 @@ data:extend{
     factoriopedia_durability_description_key = "description.factoriopedia-science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value",
     random_tint_color = item_tints.bluish_science,
-    spoil_ticks = 1.5 * hour,
-    spoil_to_trigger_result =
-    {
-      items_per_trigger = 10,
-      trigger =
-      {
-        type = "direct",
-        action_delivery =
-        {
-          type = "instant",
-          source_effects =
-          {
-            {
-              type = "create-trivial-smoke",
-              smoke_name = "smoke",
-            }
-          }
-        }
-      }
-    }
+    spoil_ticks = 2 * minute,
+    spoil_result = "corroded-flask",
+},
+  {type = "item",
+    name = "inert-muriatic-science-pack",
+    icon = "__Muria-Graphics__/graphics/icons/inert-muriatic-science-pack.png",
+    subgroup = "muria-acidworking",
+    color_hint = { text = "M" },
+    order = "z-1",
+    inventory_move_sound = item_sounds.science_inventory_move,
+    pick_sound = item_sounds.science_inventory_pickup,
+    drop_sound = item_sounds.science_inventory_move,
+    stack_size = 200,
+    default_import_location = "muria",
+    weight = 1*kg,
+    random_tint_color = item_tints.bluish_science,
+},
+  {type = "item",
+    name = "corroded-flask",
+    icon = "__Muria-Graphics__/graphics/icons/corroded-flask.png",
+    subgroup = "muria-acidworking",
+    order = "z-2",
+    inventory_move_sound = item_sounds.science_inventory_move,
+    pick_sound = item_sounds.science_inventory_pickup,
+    drop_sound = item_sounds.science_inventory_move,
+    stack_size = 200,
+    default_import_location = "muria",
+    weight = 1*kg,
 },
 {
     type = "item",

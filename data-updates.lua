@@ -15,3 +15,4 @@ end
 data.raw.planet["muria"].surface_properties["temperature"] = 320
 
 require "compat.bzlead"
+require "compat.scrubbing"

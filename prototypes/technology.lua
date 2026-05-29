@@ -241,7 +241,11 @@ data:extend {
     {
       {
         type = "unlock-recipe",
-        recipe = "muriatic-science-pack"
+        recipe = "inert-muriatic-science-pack"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "muriatic-science-pack-activation"
       },
     },
     prerequisites = { "advanced-lead-processing", "acidworking"},
@@ -274,6 +278,10 @@ data:extend {
       {
         type = "unlock-recipe",
         recipe = "water-electrolysis"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "corroded-flask-recovery"
       },
     },
     prerequisites = { "muriatic-science-pack", "biter-egg-handling"},
@@ -859,6 +867,63 @@ data:extend {
     },
     max_level = "infinite",
     upgrade = true
+  },
+  {
+    type = "technology",
+    name = "air-scrubbing",
+    icon = "__Muria-Graphics__/graphics/technology/air-scrubbing.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "scrubber"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "murian-air-scrubbing",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "nauvitian-air-scrubbing"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "gleban-air-scrubbing",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "vulcanusian-air-scrubbing"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "fulgoran-air-scrubbing",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "aquiloan-air-scrubbing",
+      },
+    },
+    prerequisites = {"offworld-chlorane-production", "cryogenic-science-pack"},
+    unit =
+    {
+      count = 2000,
+      ingredients =
+      {
+        { "automation-science-pack",      1 },
+        { "logistic-science-pack",        1 },
+        { "chemical-science-pack",        1 },
+        { "production-science-pack",        1 },
+        { "utility-science-pack",         1 },
+        { "space-science-pack",           1 },
+        { "electromagnetic-science-pack",     1 },
+        { "metallurgic-science-pack",     1 },
+        { "agricultural-science-pack",     1 },
+        { "cryogenic-science-pack",     1 },
+        { "muriatic-science-pack",     1 },
+      },
+      time = 60
+    }
   },
 }
 

@@ -1,8 +1,8 @@
 --Pollution damage mechanic (Thx trashpandacoot)
 
 local DAMAGE_INTERVAL = 240         -- ticks
-local DAMAGE_AMOUNT = 25            -- how much damage per cycle
-local MINED_DAMAGE_AMOUNT = 25      -- how much damage is done to player or robot when mining lichen
+local DAMAGE_AMOUNT = 20            -- how much damage per cycle
+local MINED_DAMAGE_AMOUNT = 20      -- how much damage is done to player or robot when mining lichen
 local DESTROYED_ALERT_AMOUNT = 5    -- how many times the warning is sent to players about a building getting destroyed by planet
 local POLLUTION_ABSORB_AMOUNT = 25  -- how much pollution is absorbed by the trees on harvest
 
@@ -13,17 +13,11 @@ local TARGET_SURFACE = "muria"      -- change to your planet/surface name
 local immunity = {
     ["acidworking-plant"] = true,
     ["smelting-plant"] = true,
-    ["burner-inserter"] = true,
-    ["inserter"] = true,
-    ["long-handed-inserter"] = true,
-    ["transport-belt"] = true,
-    ["underground-belt"] = true,
     ["rocket-silo"] = true,
     ["cargo-bay"] = true,
-    ["fast-transport-belt"] = true,
-    ["fast-underground-belt"] = true,
     ["cargo-landing-pad"] = true,
     ["biovat"] = true,
+    ["scrubber"] = true,
 }
 
 local production_types = {
@@ -33,10 +27,10 @@ local production_types = {
     ["pipe-to-ground"] = false,
     ["pump"] = false,
     ["storage-tank"] = false,
-    ["inserter"] = true,
-    ["transport-belt"] = true,
-    ["underground-belt"] = true,
-    ["splitter"] = true,
+    ["inserter"] = false,
+    ["transport-belt"] = false,
+    ["underground-belt"] = false,
+    ["splitter"] = false,
     ["logistic-robot"] = true,
     ["construction-robot"] = true,
     ["lab"] = true,

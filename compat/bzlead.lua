@@ -43,8 +43,8 @@ local function add_tech_effect(tech_name, effect)
     table.insert(tech.effects, effect)
   end
 
-add_tech_effect("advanced-lead-processing", {type = "unlock-recipe", recipe = "casting-lead-expansion-bolt"})
-add_tech_effect("advanced-lead-processing", {type = "unlock-recipe", recipe = "molten-lead-from-lava"})
+add_tech_effect("foundry", {type = "unlock-recipe", recipe = "casting-lead-expansion-bolt"})
+add_tech_effect("foundry", {type = "unlock-recipe", recipe = "molten-lead-from-lava"})
 add_tech_effect("advanced-lead-processing", {type = "unlock-recipe", recipe = "chelated-lead"})
 add_tech_effect("advanced-lead-processing", {type = "unlock-recipe", recipe = "lead-dechelation"})
 data:extend {

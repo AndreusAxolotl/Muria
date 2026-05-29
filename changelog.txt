@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2026-05-29
+  Scrub it up:
+
+  Additions:
+    - Added the Scrubber. Some may find it familiar cuz it is. Literally moved it from AoP to Muria yeah I'm THAT lazy.
+
+  Changes:
+    - All logistic entities except bots are now immune to acids.
+    - Muriatic Science Pack now crafts into a Inert form, has to be activated by using chlorane. 
+    - Muriatic Science Pack spoils very fast in response to the above change. And it spoils into a Corroded flask, which can be turned into chlorane in a chem plant.
+    - Updated BzLead compat. (Thanks Sir Ludicrous!)
+    - Slightly reduced corrosion damage.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.9
 Date: 2026-04-28
   I believe i made myself clear:
