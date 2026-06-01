@@ -16,3 +16,5 @@ data.raw.planet["muria"].surface_properties["temperature"] = 320
 
 require "compat.bzlead"
 require "compat.scrubbing"
+
+PlanetsLib.assign_rocket_part_recipe("muria", "muria-rocket-part", true)

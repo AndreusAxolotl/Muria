@@ -1,4 +1,48 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.3
+Date: 2026-06-01
+  Happy pride month:
+
+  Changes:
+    - Rebalanced outworld lead production recipes and muriatic science activation to have less insane numbers.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 2026-05-31
+  scrubber transmutation:
+
+  Additions:
+    - Added a migration for AoP 1.8.2 Scrubber to Muria 1.1.0 Scrubbers. Idk if it works but I hope it does!
+---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2026-05-30
+  lead the skies:
+
+  Changes:
+    - Leaded fuel is now required in the rocket recipe and lds isnt anymore.
+    - Leaded fuel recipe has been changed and its unlock has been moved from its own tech to the advanced lead processing technology
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2026-05-30
+  Pierce the acidic skies:
+
+  Additions:
+    - Added an unique rocket part recipe for Muria, using the new Anti-corrosion cladding.
+
+  Changes:
+    - Edited the Inert muriatic science pack sprite to look less like the Agricultural Science Pack.
+    - Halved the time needed for Muriatic science to spoil. I'm challenging y'all.
+    - Modified the tech tree to accomodate the new rocket launch restriction.
+    - Changed the resource yields of the eschatotaxites and the amount of eschatotaxite paste in some recipes.
+    - Paste has been replaced by the Anti-corrosion cladding in some recipes.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2026-05-30
+  Adjusting:
+
+  Fixes:
+    - Fixed some locale errors.
+    - Adjusted scrubber order in the crafting menu.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 2026-05-29
   Scrub it up:

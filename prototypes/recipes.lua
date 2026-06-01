@@ -200,9 +200,9 @@ data:extend{
     energy_required = 10,
     ingredients = {
         {type = "item", name = "heavy-shotgun-shell",   amount = 2},
-        {type = "item", name = "eschatotaxite-paste",   amount = 10},
+        {type = "item", name = "eschatotaxite-paste",   amount = 5},
         {type = "item", name = "chloric-fuel",   amount = 5},
-        {type = "fluid", name = "water",   amount = 20},
+        {type = "fluid", name = "water",   amount = 10},
         {type = "fluid", name = "chlorane",   amount = 10},
     },
     results = {
@@ -225,7 +225,7 @@ data:extend{
     energy_required = 1,
     ingredients = {
         {type = "item", name = "inert-muriatic-science-pack",   amount = 1},
-        {type = "fluid", name = "chlorane",   amount = 10},
+        {type = "fluid", name = "chlorane",   amount = 2},
     },
     results = {
         {type = "item", name = "muriatic-science-pack", amount = 1},
@@ -387,11 +387,11 @@ data:extend{
     subgroup = "offworld-chlorane-production",
     order = "c",
     ingredients = {
-        {type = "item", name = "biter-egg",   amount = 5},
+        {type = "item", name = "biter-egg",   amount = 2},
         {type = "fluid", name = "water",   amount = 20},
     },
     results = {
-        {type = "fluid", name = "chlorane", amount = 20},
+        {type = "fluid", name = "chlorane", amount = 100},
     },
     allow_productivity = true,
     category = "organic",
@@ -408,11 +408,11 @@ data:extend{
     order = "b", 
     energy_required = 2,
     ingredients = {
-        {type = "item", name = "spoilage",   amount = 25},
+        {type = "item", name = "spoilage",   amount = 10},
         {type = "fluid", name = "water",   amount = 30},
     },
     results = {
-        {type = "fluid", name = "chlorane", amount = 10},
+        {type = "fluid", name = "chlorane", amount = 50},
     },
     allow_productivity = true,
     category = "organic",
@@ -569,7 +569,7 @@ data:extend{
     energy_required = 20,
     ingredients = {
         {type = "item", name = "lead-plate",   amount = 5},
-        {type = "item", name = "eschatotaxite-paste",   amount = 10},
+        {type = "item", name = "anti-corrosion-cladding",   amount = 5},
         {type = "item", name = "iron-gear-wheel",   amount = 15},
         {type = "item", name = "biter-egg",   amount = 1},
         {type = "item", name = "carbon-fiber",   amount = 5},
@@ -875,10 +875,10 @@ data:extend{
     name = "leaded-fuel",
     enabled = false,
     icon_size = 64,
-    energy_required = 15,
+    energy_required = 10,
     ingredients =
     {
-      {type = "item", name = "solid-fuel", amount = 10},
+      {type = "item", name = "rocket-fuel", amount = 1},
       {type = "item", name = "lead-pellets", amount = 5},
       {type = "fluid", name = "heavy-oil", amount = 20}
     },
@@ -895,6 +895,25 @@ data:extend{
       tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000},
       quaternary = {r = 1.000, g = 0.395, b = 0.127, a = 1.000},
     }
+},
+ {
+    type = "recipe",
+    name = "anti-corrosion-cladding",
+    enabled = false,
+    icon_size = 64,
+    energy_required = 10,
+    ingredients =
+    {
+      {type = "item", name = "lead-plate", amount = 5},
+      {type = "item", name = "eschatotaxite-paste", amount = 2},
+      {type = "fluid", name = "hydrogen", amount = 20}
+    },
+    results = {{type="item", name="anti-corrosion-cladding", amount=1}},
+    allow_productivity = true,
+    category = "acidworking",
+    auto_recycle = true,
+    show_amount_in_title = false,
+    emissions_multiplier = 5,
 },
 {
     type = "recipe",
@@ -1046,6 +1065,27 @@ data:extend{
     category = "scrubbing",
     auto_recycle = false,
     show_amount_in_title = false,
-        surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
+    surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
 },
+{
+        type = "recipe",
+        name = "muria-rocket-part",
+        icons = {
+            { icon = "__base__/graphics/icons/rocket-part.png", icon_size = 64 },
+            { icon = "__Muria-Graphics__/graphics/icons/muria.png", icon_size = 64, scale = 0.25, shift = { 8, 8 } },
+        },
+        energy_required = 2,
+        enabled = false,
+        hide_from_player_crafting = true,
+        auto_recycle = false,
+        category = "rocket-building",
+        ingredients = {
+            { type = "item", name = "processing-unit", amount = 1 },
+            { type = "item", name = "leaded-fuel", amount = 1 },
+            { type = "item", name = "anti-corrosion-cladding", amount = 1 },
+        },
+        surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
+        results = { { type = "item", name = "rocket-part", amount = 1 } },
+        allow_productivity = true,
+    },
 }

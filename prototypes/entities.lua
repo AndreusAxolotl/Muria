@@ -600,7 +600,7 @@ data:extend{
     type = "item",
     name = "scrubber",
     subgroup = "production-machine",
-    order = "g[scrubber]",
+    order = "z-b",
     pick_sound = item_sounds.fluid_inventory_pickup,
     drop_sound = item_sounds.fluid_inventory_move,
     icon = "__Muria-Graphics__/graphics/icons/scrubber.png",
@@ -676,10 +676,10 @@ data:extend{
     enabled = false,
     energy_required = 40,
     ingredients = {
-      {type = "item", name = "lead-plate", amount = 30},
+      {type = "item", name = "lead-plate", amount = 20},
       {type = "item", name = "iron-gear-wheel", amount = 15},
       {type = "item", name = "pipe", amount = 10},
-      {type = "item", name = "acidthrower", amount = 1},
+      {type = "item", name = "anti-corrosion-cladding", amount = 10},
       {type = "item", name = "electric-engine-unit", amount = 5}
     },
     results = {
@@ -701,7 +701,7 @@ data:extend{
       {type = "item", name = "iron-gear-wheel", amount = 15},
       {type = "item", name = "carbon-fiber", amount = 10},
       {type = "item", name = "lead-pellets", amount = 10},
-      {type = "item", name = "processing-unit", amount = 5},
+      {type = "item", name = "anti-corrosion-cladding", amount = 5},
     },
     results = {
         {type = "item", name = "shotgun-turret", amount = 1}
@@ -743,7 +743,7 @@ data:extend{
         {type = "item", name = "lead-plate",   amount = 10},
         {type = "item", name = "iron-gear-wheel",       amount = 15},
         {type = "item", name = "pipe", amount = 5},
-        {type = "item", name = "copper-cable", amount = 15},
+        {type = "item", name = "anti-corrosion-cladding", amount = 10},
         {type = "item", name = "carbon-fiber", amount = 10},
     },
     results = {

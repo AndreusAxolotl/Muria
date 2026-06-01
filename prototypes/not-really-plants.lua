@@ -721,10 +721,10 @@ data:extend({
         {
             mining_time = 0.5,
             results = {
-                {type = "item", name = "eschatotaxite-sprout", amount_min = 1, amount_max = 2},
+                {type = "item", name = "eschatotaxite-sprout", amount_min = 1, amount_max = 3},
                 {type = "item", name = "carbon", amount_min = 0, amount_max = 3},
-                {type = "item", name = "spoilage", amount_min = 1, amount_max = 5},
-                {type = "item", name = "sulfur", amount_min = 0, amount_max = 2},
+                {type = "item", name = "spoilage", amount_min = 1, amount_max = 3},
+                {type = "item", name = "sulfur", amount_min = 0, amount_max = 1},
             }
         },
         growth_ticks = 0.75 * minute, -- growth time in ticks, 60 ticks = 1 second

@@ -372,7 +372,7 @@ data:extend{
     factoriopedia_durability_description_key = "description.factoriopedia-science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value",
     random_tint_color = item_tints.bluish_science,
-    spoil_ticks = 2 * minute,
+    spoil_ticks = 1 * minute,
     spoil_result = "corroded-flask",
 },
   {type = "item",
@@ -578,11 +578,25 @@ data:extend{
     fuel_top_speed_multiplier = 1.5,
     fuel_emissions_multiplier = 5,
     subgroup = "muria-leadworking",
-    order = "z",
+    order = "w",
     inventory_move_sound = item_sounds.fuel_cell_inventory_move,
     pick_sound = item_sounds.fuel_cell_inventory_pickup,
     drop_sound = item_sounds.fuel_cell_inventory_move,
     stack_size = 20,
-    weight = 20*kg
+    weight = 25*kg
   },
+  {
+    type = "item",
+    name = "anti-corrosion-cladding",
+    subgroup = "muria-leadworking",
+    order = "z",
+    icon = "__Muria-Graphics__/graphics/icons/anti-corrosion-cladding.png",
+    inventory_move_sound = item_sounds.metal_small_inventory_move,
+    pick_sound = item_sounds.metal_small_inventory_pickup,
+    drop_sound = item_sounds.metal_small_inventory_move,
+    icon_size = 64,
+    stack_size = 20,
+    default_import_location = "muria",
+    weight = 10*kg
+},
 }
