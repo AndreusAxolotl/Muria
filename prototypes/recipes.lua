@@ -228,7 +228,7 @@ data:extend{
         {type = "fluid", name = "chlorane",   amount = 2},
     },
     results = {
-        {type = "item", name = "muriatic-science-pack", amount = 1},
+        {type = "item", name = "muriatic-science-pack", amount = 1, ignored_by_stats = 1, ignored_by_productivity = 1},
     },
     allow_productivity = false,
     allow_quality=false,

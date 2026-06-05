@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.4
+Date: 2026-06-04
+  no free packs for you:
+
+  Fixes:
+    - Fixed Muriatic science activation's productivity restriction from being avoided with base productivity machines.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.3
 Date: 2026-06-01
   Happy pride month:
