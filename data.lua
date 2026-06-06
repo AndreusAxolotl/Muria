@@ -14,6 +14,17 @@ require "prototypes.tiles"
 require "prototypes.tips-and-tricks"
 require "prototypes.planet"
 
+local replace_base_game_simulations = false
+local muria_menu_simulations = require("__Muria__/prototypes/menu-simulations.lua")
+if not data.raw["utility-constants"]["default"].main_menu_simulations or replace_base_game_simulations then
+  data.raw["utility-constants"]["default"].main_menu_simulations = {}
+end
+local main_menu_simulations = data.raw["utility-constants"]["default"].main_menu_simulations
+main_menu_simulations.muria_separation = muria_menu_simulations.muria_separation
+main_menu_simulations.muria_fungal = muria_menu_simulations.muria_fungal
+main_menu_simulations.muria_corrosion = muria_menu_simulations.muria_corrosion
+main_menu_simulations.muria_leaded = muria_menu_simulations.muria_leaded
+
 data.raw.surface["space-platform"].surface_properties["atmospheric-acidity"] = 0
 data.raw.planet["nauvis"].surface_properties["atmospheric-acidity"] = 10
 data.raw.planet["vulcanus"].surface_properties["atmospheric-acidity"] = 80
