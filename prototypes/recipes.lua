@@ -814,6 +814,7 @@ data:extend{
     },
     results = {{type="item", name="rocket-fuel", amount=1}},
     allow_productivity = true,
+    auto_recycle = false,
     crafting_machine_tint =
     {
       primary = {r = 0.996, g = 0.742, b = 0.408, a = 1.000}, -- #febd68ff
