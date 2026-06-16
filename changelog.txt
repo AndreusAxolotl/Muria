@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.7
+Date: 2026-06-16
+  productivityful:
+
+  Fixes:
+    - Fixed polyvinyl chloride and kerolox fuel not being affected by prod techs.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.6
 Date: 2026-06-16
   recycled fuel:

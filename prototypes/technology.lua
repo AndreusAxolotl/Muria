@@ -947,3 +947,7 @@ if settings.startup["muria-muriatic-implementation"].value then
 add_tech_prerequisites("foundation", "muriatic-science-pack")
 add_science_pack("foundation", { "muriatic-science-pack", 1 })
 end
+add_tech_effect("plastic-bar-productivity",
+  { type = "change-recipe-productivity", recipe = "polyvinyl-chloride", change = 0.1 })
+add_tech_effect("rocket-fuel-productivity",
+  { type = "change-recipe-productivity", recipe = "kerolox-rocket-fuel", change = 0.1 })
