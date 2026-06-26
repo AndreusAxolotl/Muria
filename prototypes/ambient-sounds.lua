@@ -4,6 +4,7 @@ data:extend(
     type = "ambient-sound",
     name = "muria-1",
     track_type = "main-track",
+    title = "Muria 1 - Sulphuric (Muriatic) Breath",
     planet = "muria",
     sound = {filename = "__space-age__/sound/ambient/vulcanus/vulcanus-7.ogg", volume = 0.7,},
     weight = 10
@@ -12,6 +13,7 @@ data:extend(
     type = "ambient-sound",
     name = "muria-hero",
     track_type = "hero-track",
+     title = "Muria 1 - Scorched (Scarred) Colossus - Hero",
     planet = "muria",
     sound = {filename = "__space-age__/sound/ambient/vulcanus/vulcanus-2.ogg", volume = 0.7,}
   },
@@ -19,6 +21,7 @@ data:extend(
     type = "ambient-sound",
     name = "muria-2",
     track_type = "main-track",
+     title = "Muria 2 - Puny Progress",
     planet = "muria",
     sound = {filename = "__space-age__/sound/ambient/vulcanus/vulcanus-6.ogg", volume = 0.7,},
     weight = 8
@@ -27,6 +30,7 @@ data:extend(
     type = "ambient-sound",
     name = "muria-3",
     track_type = "main-track",
+     title = "Muria 3 - Mycelium (Lichenic) Dawn",
     planet = "muria",
     sound = {filename = "__space-age__/sound/ambient/gleba/gleba-6.ogg", volume = 0.7,},
     weight = 8
@@ -35,6 +39,7 @@ data:extend(
     type = "ambient-sound",
     name = "muria-4",
     track_type = "main-track",
+     title = "Muria 4 - Biochamber (Biovat)",
     planet = "muria",
     sound = {filename = "__space-age__/sound/ambient/gleba/gleba-3.ogg", volume = 0.7,},
     weight = 10

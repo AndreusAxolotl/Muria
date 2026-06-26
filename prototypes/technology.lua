@@ -77,7 +77,7 @@ data:extend {
     research_trigger =
     {
       type = "mine-entity",
-      entity = "chlorine-salt-deposit"
+      entities = {"chlorine-salt-deposit"}
     }
   },
   {
@@ -108,7 +108,7 @@ data:extend {
     research_trigger =
     {
       type = "mine-entity",
-      entity = "eschatotaxite"
+      entities = {"eschatotaxite"}
     }
   },
    {

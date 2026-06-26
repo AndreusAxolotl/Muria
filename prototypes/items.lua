@@ -282,7 +282,7 @@ data:extend{
         },
         {
           type = "direct",
-          repeat_count = 16,
+          repeat_count = 20,
           action_delivery =
           {
             type = "projectile",
@@ -354,7 +354,7 @@ data:extend{
     weight = 40*kg,
     default_import_location = "muria",
   },
-  {type = "tool",
+  {type = "item",
     name = "muriatic-science-pack",
     localised_description = {"item-description.science-pack"},
     icon = "__Muria-Graphics__/graphics/icons/muriatic-science-pack.png",
@@ -367,10 +367,6 @@ data:extend{
     stack_size = 200,
     default_import_location = "muria",
     weight = 1*kg,
-    durability = 1,
-    durability_description_key = "description.science-pack-remaining-amount-key",
-    factoriopedia_durability_description_key = "description.factoriopedia-science-pack-remaining-amount-key",
-    durability_description_value = "description.science-pack-remaining-amount-value",
     random_tint_color = item_tints.bluish_science,
     spoil_ticks = 1 * minute,
     spoil_result = "corroded-flask",

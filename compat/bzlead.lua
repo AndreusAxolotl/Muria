@@ -61,7 +61,7 @@ data:extend {
         {type = "item", name = "lead", amount = 2},
     },
     allow_productivity = true,
-    category = "leadworking",
+    categories = {"leadworking"},
     auto_recycle = false,
     show_amount_in_title = false,
 },}

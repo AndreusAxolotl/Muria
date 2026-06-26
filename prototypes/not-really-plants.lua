@@ -11,7 +11,7 @@ local plant_anti_emissions = { acids = -0.0075 } -- pollution while plant is out
 local plant_harvest_anti_emissions = { acids = 0 } -- pollution when plant is harvested
 local plant_flags = {"placeable-neutral", "placeable-off-grid"}
 
-local novotaxite_pictures = {
+local eschatotaxite_pictures = {
   {
     layers =
     {
@@ -129,7 +129,14 @@ data:extend({
     {
         type = "plant",
         name = "metallic-lichen-colony",
+        icons =
+    {
+      {
         icon = "__space-age__/graphics/icons/iron-stromatolite.png",
+        icon_size = 64,
+        tint = {255, 216, 132},
+      },
+    },
         flags = plant_flags,
         minable =
         {
@@ -157,7 +164,7 @@ data:extend({
         pictures =
     {
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-01.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-01.png",
         width = 209,
         height = 138,
         shift = {0.304688, -0.4},
@@ -165,7 +172,7 @@ data:extend({
         scale = 0.4,
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-02.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-02.png",
         width = 165,
         height = 129,
         shift = {0.0, 0.0390625},
@@ -173,7 +180,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-03.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-03.png",
         width = 151,
         height = 139,
         shift = {0.151562, 0.0},
@@ -181,7 +188,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-04.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-04.png",
         width = 216,
         height = 110,
         shift = {0.30625, 0.0},
@@ -189,7 +196,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-05.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-05.png",
         width = 154,
         height = 147,
         shift = {0.328125, 0.0703125},
@@ -197,7 +204,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-06.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-06.png",
         width = 154,
         height = 132,
         shift = {0.16875, -0.1},
@@ -205,7 +212,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-07.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-07.png",
         width = 193,
         height = 130,
         shift = {0.3, -0.2},
@@ -213,7 +220,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-08.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-08.png",
         width = 136,
         height = 117,
         shift = {0.0, 0.0},
@@ -221,7 +228,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-09.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-09.png",
         width = 157,
         height = 115,
         shift = {0.1, 0.0},
@@ -229,7 +236,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-10.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-10.png",
         width = 198,
         height = 153,
         shift = {0.325, -0.1},
@@ -237,7 +244,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-11.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-11.png",
         width = 190,
         height = 115,
         shift = {0.453125, 0.0},
@@ -245,7 +252,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-12.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-12.png",
         width = 229,
         height = 126,
         shift = {0.539062, -0.015625},
@@ -253,7 +260,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-13.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-13.png",
         width = 151,
         height = 125,
         shift = {0.0703125, 0.179688},
@@ -261,7 +268,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-14.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-14.png",
         width = 137,
         height = 117,
         shift = {0.160938, 0.0},
@@ -269,7 +276,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-15.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-15.png",
         width = 201,
         height = 141,
         shift = {0.242188, -0.195312},
@@ -277,7 +284,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-16.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-16.png",
         width = 209,
         height = 154,
         shift = {0.351562, -0.1},
@@ -290,112 +297,112 @@ data:extend({
       pictures =
         {
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-01-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-01-effect-map.png",
             width = 96,
             height = 92,
             shift = {0.304688, -0.3},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-02-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-02-effect-map.png",
             width = 78,
             height = 92,
             shift = {0.0, 0.3},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-03-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-03-effect-map.png",
             width = 70,
             height = 91,
             shift = {0.151562, 0.1},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-04-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-04-effect-map.png",
             width = 88,
             height = 94,
             shift = {0.390625, 0.3},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-05-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-05-effect-map.png",
             width = 77,
             height = 92,
             shift = {0.328125, 0.0703125},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-06-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-06-effect-map.png",
             width = 77,
             height = 92,
             shift = {0.16875, 0.1},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-07-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-07-effect-map.png",
             width = 94,
             height = 93,
             shift = {0.3, 0.0},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-08-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-08-effect-map.png",
             width = 63,
             height = 93,
             shift = {0.0, 0.2},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-09-effect-map.png",
+            filename ="__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-09-effect-map.png",
             width = 79,
             height = 93,
             shift = {0.1, 0.2},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-10-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-10-effect-map.png",
             width = 93,
             height = 93,
             shift = {0.325, -0.1},
             scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-11-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-11-effect-map.png",
             width = 95,
             height = 93,
             shift = {0.453125, 0.2},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-12-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-12-effect-map.png",
             width = 92,
             height = 92,
             shift = {0.3, 0.1},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-13-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-13-effect-map.png",
             width = 76,
             height = 93,
             shift = {0.0703125, 0.3},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-14-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-14-effect-map.png",
             width = 63,
             height = 93,
             shift = {0.160938, 0.2},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-15-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-15-effect-map.png",
             width = 101,
             height = 92,
             shift = {0.242188, -0.1},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-16-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-16-effect-map.png",
             width = 88,
             height = 92,
             shift = {0.1, -0.1},
@@ -425,7 +432,14 @@ data:extend({
     {
         type = "plant",
         name = "cotunnite-lichen-colony",
+        icons =
+    {
+      {
         icon = "__space-age__/graphics/icons/copper-stromatolite.png",
+        icon_size = 64,
+        tint = {196, 137, 255},
+      },
+    },
         flags = plant_flags,
         minable =
         {
@@ -452,7 +466,7 @@ data:extend({
         pictures =
     {
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-01.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-01.png",
         width = 209,
         height = 138,
         shift = {0.304688, -0.4},
@@ -460,7 +474,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-02.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-02.png",
         width = 165,
         height = 129,
         shift = {0.0, 0.0390625},
@@ -468,7 +482,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-03.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-03.png",
         width = 151,
         height = 139,
         shift = {0.151562, 0.0},
@@ -476,7 +490,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-04.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-04.png",
         width = 216,
         height = 110,
         shift = {0.390625, 0.0},
@@ -484,7 +498,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-05.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-05.png",
         width = 154,
         height = 147,
         shift = {0.328125, 0.0703125},
@@ -492,7 +506,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-06.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-06.png",
         width = 154,
         height = 132,
         shift = {0.16875, -0.1},
@@ -500,7 +514,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-07.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-07.png",
         width = 193,
         height = 130,
         shift = {0.3, -0.2},
@@ -508,7 +522,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-08.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-08.png",
         width = 136,
         height = 117,
         shift = {0.0, 0.0},
@@ -516,7 +530,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-09.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-09.png",
         width = 157,
         height = 115,
         shift = {0.1, 0.0},
@@ -524,7 +538,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-10.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-10.png",
         width = 198,
         height = 153,
         shift = {0.325, -0.1},
@@ -532,7 +546,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-11.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-11.png",
         width = 190,
         height = 115,
         shift = {0.453125, 0.0},
@@ -540,7 +554,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-12.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-12.png",
         width = 229,
         height = 126,
         shift = {0.539062, -0.015625},
@@ -548,7 +562,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-13.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-13.png",
         width = 151,
         height = 125,
         shift = {0.0703125, 0.179688},
@@ -556,7 +570,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-14.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-14.png",
         width = 137,
         height = 117,
         shift = {0.160938, 0.0},
@@ -564,7 +578,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-15.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-15.png",
         width = 201,
         height = 141,
         shift = {0.242188, -0.195312},
@@ -572,7 +586,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-16.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/beta/colony-16.png",
         width = 209,
         height = 154,
         shift = {0.351562, -0.1},
@@ -585,112 +599,112 @@ data:extend({
         pictures =
           {
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-01-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-01-effect-map.png",
               width = 96,
               height = 92,
               shift = {0.304688, -0.3},
             scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-02-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-02-effect-map.png",
               width = 78,
               height = 92,
               shift = {0.0, 0.3},
             scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-03-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-03-effect-map.png",
               width = 70,
               height = 91,
               shift = {0.151562, 0.1},
             scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-04-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-04-effect-map.png",
               width = 88,
               height = 94,
               shift = {0.30625, 0.3},
             scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-05-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-05-effect-map.png",
               width = 77,
               height = 92,
               shift = {0.328125, 0.0703125},
             scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-06-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-06-effect-map.png",
               width = 77,
               height = 92,
               shift = {0.16875, 0.1},
             scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-07-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-07-effect-map.png",
               width = 94,
               height = 93,
               shift = {0.3, 0.0},
             scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-08-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-08-effect-map.png",
               width = 63,
               height = 93,
               shift = {0.0, 0.2},
             scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-09-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-09-effect-map.png",
               width = 79,
               height = 93,
               shift = {0.1, 0.2},
             scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-10-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-10-effect-map.png",
               width = 93,
               height = 93,
               shift = {0.325, -0.1},
               scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-11-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-11-effect-map.png",
               width = 95,
               height = 93,
               shift = {0.453125, 0.2},
             scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-12-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-12-effect-map.png",
               width = 92,
               height = 92,
               shift = {0.3, 0.1},
             scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-13-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-13-effect-map.png",
               width = 76,
               height = 93,
               shift = {0.0703125, 0.3},
             scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-14-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-14-effect-map.png",
               width = 63,
               height = 93,
               shift = {0.160938, 0.2},
             scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-15-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-15-effect-map.png",
               width = 101,
               height = 92,
               shift = {0.242188, -0.1},
             scale = 0.8
             },
             {
-              filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-16-effect-map.png",
+              filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-16-effect-map.png",
               width = 88,
               height = 92,
               shift = {0.1, -0.1},
@@ -715,7 +729,14 @@ data:extend({
     {
         type = "plant",
         name = "eschatotaxite",
+        icons =
+    {
+      {
         icon = "__space-age__/graphics/icons/ashland-lichen-tree.png",
+        icon_size = 64,
+        tint = {158, 117, 33},
+      },
+    },
         flags = plant_flags,
         minable =
         {
@@ -740,7 +761,7 @@ data:extend({
         subgroup = "trees", -- can be what ever
         order = "salts", -- can be what ever
         impact_category = "tree", -- can be what ever
-        pictures = novotaxite_pictures,
+        pictures = eschatotaxite_pictures,
         agricultural_tower_tint =
         {
             primary = {158, 117, 33},
@@ -763,7 +784,14 @@ data:extend({
     {
         type = "plant",
         name = "holmium-lichen-colony",
+        icons =
+    {
+      {
         icon = "__space-age__/graphics/icons/iron-stromatolite.png",
+        icon_size = 64,
+        tint = {255, 140, 144},
+      },
+    },
         flags = plant_flags,
         minable =
         {
@@ -790,7 +818,7 @@ data:extend({
         pictures =
     {
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-01.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-01.png",
         width = 209,
         height = 138,
         shift = {0.304688, -0.4},
@@ -798,7 +826,7 @@ data:extend({
         scale = 0.4,
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-02.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-02.png",
         width = 165,
         height = 129,
         shift = {0.0, 0.0390625},
@@ -806,7 +834,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-03.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-03.png",
         width = 151,
         height = 139,
         shift = {0.151562, 0.0},
@@ -814,7 +842,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-04.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-04.png",
         width = 216,
         height = 110,
         shift = {0.30625, 0.0},
@@ -822,7 +850,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-05.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-05.png",
         width = 154,
         height = 147,
         shift = {0.328125, 0.0703125},
@@ -830,7 +858,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-06.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-06.png",
         width = 154,
         height = 132,
         shift = {0.16875, -0.1},
@@ -838,7 +866,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-07.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-07.png",
         width = 193,
         height = 130,
         shift = {0.3, -0.2},
@@ -846,7 +874,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-08.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-08.png",
         width = 136,
         height = 117,
         shift = {0.0, 0.0},
@@ -854,7 +882,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-09.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-09.png",
         width = 157,
         height = 115,
         shift = {0.1, 0.0},
@@ -862,7 +890,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-10.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-10.png",
         width = 198,
         height = 153,
         shift = {0.325, -0.1},
@@ -870,7 +898,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-11.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-11.png",
         width = 190,
         height = 115,
         shift = {0.453125, 0.0},
@@ -878,7 +906,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-12.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-12.png",
         width = 229,
         height = 126,
         shift = {0.539062, -0.015625},
@@ -886,7 +914,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-13.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-13.png",
         width = 151,
         height = 125,
         shift = {0.0703125, 0.179688},
@@ -894,7 +922,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-14.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-14.png",
         width = 137,
         height = 117,
         shift = {0.160938, 0.0},
@@ -902,7 +930,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-15.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-15.png",
         width = 201,
         height = 141,
         shift = {0.242188, -0.195312},
@@ -910,7 +938,7 @@ data:extend({
         scale = 0.4
       },
       {
-        filename = "__space-age__/graphics/entity/stromatolite/iron/stromatolite-16.png",
+        filename = "__Muria-Graphics__/graphics/entity/lichen-colony/alpha/colony-16.png",
         width = 209,
         height = 154,
         shift = {0.351562, -0.1},
@@ -923,112 +951,112 @@ data:extend({
       pictures =
         {
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-01-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-01-effect-map.png",
             width = 96,
             height = 92,
             shift = {0.304688, -0.3},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-02-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-02-effect-map.png",
             width = 78,
             height = 92,
             shift = {0.0, 0.3},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-03-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-03-effect-map.png",
             width = 70,
             height = 91,
             shift = {0.151562, 0.1},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-04-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-04-effect-map.png",
             width = 88,
             height = 94,
             shift = {0.390625, 0.3},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-05-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-05-effect-map.png",
             width = 77,
             height = 92,
             shift = {0.328125, 0.0703125},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-06-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-06-effect-map.png",
             width = 77,
             height = 92,
             shift = {0.16875, 0.1},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-07-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-07-effect-map.png",
             width = 94,
             height = 93,
             shift = {0.3, 0.0},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-08-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-08-effect-map.png",
             width = 63,
             height = 93,
             shift = {0.0, 0.2},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-09-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-09-effect-map.png",
             width = 79,
             height = 93,
             shift = {0.1, 0.2},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-10-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-10-effect-map.png",
             width = 93,
             height = 93,
             shift = {0.325, -0.1},
             scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-11-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-11-effect-map.png",
             width = 95,
             height = 93,
             shift = {0.453125, 0.2},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-12-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-12-effect-map.png",
             width = 92,
             height = 92,
             shift = {0.3, 0.1},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-13-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-13-effect-map.png",
             width = 76,
             height = 93,
             shift = {0.0703125, 0.3},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-14-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-14-effect-map.png",
             width = 63,
             height = 93,
             shift = {0.160938, 0.2},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-15-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-15-effect-map.png",
             width = 101,
             height = 92,
             shift = {0.242188, -0.1},
           scale = 0.8
           },
           {
-            filename = "__space-age__/graphics/entity/stromatolite/copper/stromatolite-16-effect-map.png",
+            filename = "__Muria-Graphics__/graphics/entity/lichen-colony/effects/colony-16-effect-map.png",
             width = 88,
             height = 92,
             shift = {0.1, -0.1},

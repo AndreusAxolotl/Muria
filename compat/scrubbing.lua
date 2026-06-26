@@ -29,14 +29,23 @@
     end
   end
 
-local function add_additional_categories(recipe_name, categories)
-    local recipe = data.raw.recipe[recipe_name]
-    if recipe and categories then
-        recipe.additional_categories = recipe.additional_categories or {}
-        for _, cat in pairs(categories) do
-            table.insert(recipe.additional_categories, cat)
-        end
+local function is_in_table(table_, value)
+  for _, item in pairs(table_) do
+    if item == value then
+      return true
     end
+  end
+  return false
+end
+
+local function add_crafting_categories(recipe_name, categories)
+  local recipe = data.raw.recipe[recipe_name]
+  recipe.categories = recipe.categories or {"crafting"}
+  for _, category_to_insert in pairs(categories) do
+    if not is_in_table(recipe.categories, category_to_insert) then
+      table.insert(recipe.categories, category_to_insert)
+    end
+  end
 end
  if mods["Paracelsin"] then 
     data:extend {
@@ -53,13 +62,13 @@ end
     },
     results = {
         {type = "fluid", name = "water", amount = 10},
-        {type = "fluid", name = "nitrogen", amount = 10, probability = 0.50}, 
-        {type = "fluid", name = "steam", amount = 5, probability = 0.10}, 
-        {type = "item", name = "ice", amount = 2, probability = 0.10},
+        {type = "fluid", name = "nitrogen", amount = 10, independent_probability = 0.50}, 
+        {type = "fluid", name = "steam", amount = 5, independent_probability = 0.10}, 
+        {type = "item", name = "ice", amount = 2, independent_probability = 0.10},
     },
     allow_productivity = false,
     allow_quality = false,
-    category = "scrubbing",
+    categories = {"scrubbing"},
     auto_recycle = false,
     show_amount_in_title = false,
     surface_conditions = {{property = "pressure", min = 5300, max = 5300}}
@@ -70,5 +79,5 @@ end
     end    
 
 if mods["maraxsis"] then 
-add_additional_categories("maraxsis-atmosphere", {"scrubbing"})
+add_crafting_categories("maraxsis-atmosphere", {"scrubbing"})
 end

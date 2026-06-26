@@ -5,7 +5,6 @@ local simulations = require("__space-age__.prototypes.factoriopedia-simulations"
 require ("util")
 require("__base__/prototypes/entity/pipecovers")
 require ("circuit-connector-sprites")
-require("__base__/prototypes/entity/assemblerpipes")
 local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
 local movement_triggers = require("__base__/prototypes/entity/movement-triggers")
@@ -71,7 +70,14 @@ data:extend({
     name = "big-chloric-rock",
     type = "simple-entity",
     flags = {"placeable-neutral", "placeable-off-grid"},
-    icon = "__space-age__/graphics/icons/big-volcanic-rock.png",
+    icons =
+    {
+      {
+        icon = "__Muria-Graphics__/graphics/icons/big-chloric-rock.png",
+        icon_size = 64,
+        tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
+      },
+    },
     subgroup = "grass",
     order = "z",
     collision_box = {{-0.75, -0.75}, {0.75, 0.75}},
@@ -105,7 +111,7 @@ data:extend({
     pictures =
     {
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-01.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-01.png",
         width =  188 ,
         height =  127 ,
         shift = {0.304688, -0.4},
@@ -113,7 +119,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-02.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-02.png",
         width =  195 ,
         height =  135 ,
         shift = {0.0, 0.0390625},
@@ -121,7 +127,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-03.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-03.png",
         width =  205 ,
         height =  132 ,
         shift = {0.151562, 0.0},
@@ -129,7 +135,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-04.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-04.png",
         width =  144 ,
         height =  142 ,
         shift = {0.151562, 0.0},
@@ -137,7 +143,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-05.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-05.png",
         width =  130 ,
         height =  107 ,
         shift = {0.390625, 0.0},
@@ -145,7 +151,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-06.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-06.png",
         width =  165 ,
         height =  109 ,
         shift = {0.328125, 0.0703125},
@@ -153,7 +159,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-07.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-07.png",
         width =  150 ,
         height =  133 ,
         shift = {0.16875, -0.1},
@@ -161,7 +167,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-08.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-08.png",
         width =  156 ,
         height =  111 ,
         shift = {0.3, -0.2},
@@ -169,7 +175,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-09.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-09.png",
         width =  187 ,
         height =  120 ,
         shift = {0.0, 0.0},
@@ -177,7 +183,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-10.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-10.png",
         width =  225 ,
         height =  128 ,
         shift = {0.1, 0.0},
@@ -185,7 +191,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-11.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-11.png",
         width =  183 ,
         height =  144 ,
         shift = {0.325, -0.1},
@@ -193,7 +199,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-12.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-12.png",
         width =  158 ,
         height =  138 ,
         shift = {0.453125, 0.0},
@@ -201,7 +207,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-13.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-13.png",
         width =  188 ,
         height =  150 ,
         shift = {0.539062, -0.015625},
@@ -209,7 +215,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-14.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-14.png",
         width =  186 ,
         height =  160 ,
         shift = {0.0703125, 0.179688},
@@ -217,7 +223,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-15.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-15.png",
         width =  181 ,
         height =  174 ,
         shift = {0.160938, 0.0},
@@ -225,7 +231,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-16.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-16.png",
         width =  212 ,
         height =  150 ,
         shift = {0.242188, -0.195312},
@@ -233,7 +239,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-17.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-17.png",
         width =  155 ,
         height =  117 ,
         shift = {0.351562, -0.1},
@@ -241,7 +247,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-18.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-18.png",
         width =  141 ,
         height =  128 ,
         shift = {0.351562, -0.1},
@@ -249,7 +255,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-19.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-19.png",
         width =  176 ,
         height =  114 ,
         shift = {0.351562, -0.1},
@@ -257,7 +263,7 @@ data:extend({
         tint = {r = 177/256, g = 168/256, b = 86/256, a = 1.000},
       },
       {
-        filename = "__space-age__/graphics/decorative/big-volcanic-rock/big-volcanic-rock-20.png",
+        filename = "__Muria-Graphics__/graphics/entity/big-chloric-rock/big-chloric-rock-20.png",
         width =  120 ,
         height =  125 ,
         shift = {0.351562, -0.1},

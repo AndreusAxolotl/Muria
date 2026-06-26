@@ -1,15 +1,15 @@
 {
   "name": "Muria",
-  "version": "1.2.7",
+  "version": "1.3.0",
   "title": "Muria",
   "author": "AndreusAxolotl",
   "homepage": "https://github.com/AndreusAxolotl/Muria",
   "description": "Visit the acidic world of Muria, where the air itself hates you.",
-  "factorio_version": "2.0",
+  "factorio_version": "2.1",
   "dependencies": [
     "base",
     "space-age",
-    "Muria-Graphics = 1.2.5",
+    "Muria-Graphics = 1.3.0",
     "PlanetsLib",
     "(?) bzlead"
 ],

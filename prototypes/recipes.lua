@@ -16,10 +16,9 @@ data:extend{
         {type = "item", name = "cotunnite", amount = 1}
     },
     allow_productivity = true,
-    category = "chemistry",
+    categories = {"chemistry","acidworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
-    additional_categories = {"acidworking"},
+    
     surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
     crafting_machine_tint =
     {
@@ -45,10 +44,9 @@ data:extend{
         {type = "fluid", name = "hydrogen", amount = 120}
     },
     allow_productivity = true,
-    category = "chemistry",
-    additional_categories = {"acidworking"},
+    categories = {"chemistry", "acidworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     crafting_machine_tint =
     {
         primary = {r = 0.98, g = 0.93, b = 0.93, a = 1.000},
@@ -74,9 +72,9 @@ data:extend{
         {type = "fluid", name = "chlorane", amount = 20},
     },
     allow_productivity = true,
-    category = "acidworking",
+    categories = {"acidworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -94,9 +92,9 @@ data:extend{
         {type = "fluid", name = "molten-lead", amount = 100},
     },
     allow_productivity = true,
-    category = "leadworking",
+    categories = {"leadworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -114,9 +112,9 @@ data:extend{
         {type = "item", name = "lead-plate", amount = 1},
     },
     allow_productivity = true,
-    category = "leadworking",
+    categories = {"leadworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -132,9 +130,9 @@ data:extend{
         {type = "item", name = "lead-plate", amount = 1},
     },
     allow_productivity = true,
-    category = "smelting",
+    categories = {"smelting"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -150,9 +148,9 @@ data:extend{
         {type = "item", name = "lead-pellets", amount = 5},
     },
     allow_productivity = true,
-    category = "leadworking",
+    categories = {"leadworking"},
     auto_recycle = true,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -169,9 +167,9 @@ data:extend{
         {type = "item", name = "heavy-shotgun-shell", amount = 1},
     },
     allow_productivity = true,
-    category = "crafting",
+    categories = {"crafting"},
     auto_recycle = true,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -188,9 +186,9 @@ data:extend{
         {type = "item", name = "toxic-rounds-magazine", amount = 1},
     },
     allow_productivity = true,
-    category = "acidworking",
+    categories = {"acidworking"},
     auto_recycle = true,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -209,9 +207,9 @@ data:extend{
         {type = "item", name = "inert-muriatic-science-pack", amount = 5},
     },
     allow_productivity = true,
-    category = "acidworking",
+    categories = {"acidworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     emissions_multiplier = 2,
     surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},    
 },
@@ -232,9 +230,9 @@ data:extend{
     },
     allow_productivity = false,
     allow_quality=false,
-    category = "chemistry",
+    categories = {"chemistry"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     emissions_multiplier = 3,    
 },
 {
@@ -252,9 +250,9 @@ data:extend{
         {type = "fluid", name = "chlorine", amount = 5},
     },
     allow_productivity = true,
-    category = "chemistry",
+    categories = {"chemistry"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -270,14 +268,13 @@ data:extend{
         {type = "item", name = "nutrients",   amount = 10},
     },
     results = {
-        {type = "item", name = "acidophile-lichen", amount = 4},
+        {type = "item", name = "acidophile-lichen", amount = 4, reset_freshness_on_craft = true,},
     },
     allow_productivity = true,
-    reset_freshness_on_craft = true,
-    category = "organic",
-    additional_categories = {"biovat-processes"},
+    
+    categories = {"organic", "biovat-processes"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -294,10 +291,9 @@ data:extend{
         {type = "item", name = "nutrients", amount = 10, percent_spoiled=0.5},
     },
     allow_productivity = true,
-    category = "organic",
-    additional_categories = {"biovat-processes"},
+    categories = {"organic","biovat-processes"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -314,10 +310,9 @@ data:extend{
         {type = "item", name = "nutrients", amount = 25},
     },
     allow_productivity = true,
-    category = "organic-or-assembling",
-    additional_categories = {"biovat-processes"},
+    categories = {"organic", "crafting", "biovat-processes"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -333,10 +328,9 @@ data:extend{
         {type = "item", name = "eschatotaxite-paste", amount = 10},
     },
     allow_productivity = true,
-    category = "organic",
-    additional_categories = {"biovat-processes"},
+    categories = {"organic", "biovat-processes"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -353,10 +347,9 @@ data:extend{
         {type = "item", name = "chloric-fuel", amount = 5},
     },
     allow_productivity = true,
-    category = "organic",
-    additional_categories = {"biovat-processes"},
+    categories = {"organic", "biovat-processes"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -373,9 +366,9 @@ data:extend{
         {type = "item", name = "artificial-lichen-colony", amount = 10},
     },
     allow_productivity = false,
-    category = "acidworking",
+    categories = {"acidworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     surface_conditions = {{property = "gravity", min = 8, max = 9}},
 },
 {
@@ -394,10 +387,9 @@ data:extend{
         {type = "fluid", name = "chlorane", amount = 100},
     },
     allow_productivity = true,
-    category = "organic",
-    additional_categories = {"biovat-processes"},
+    categories = {"organic", "biovat-processes"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -415,10 +407,9 @@ data:extend{
         {type = "fluid", name = "chlorane", amount = 50},
     },
     allow_productivity = true,
-    category = "organic",
-    additional_categories = {"biovat-processes"},
+    categories = {"organic", "biovat-processes"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     surface_conditions = {{property = "atmospheric-acidity", max = 99}},
 },
 {
@@ -438,9 +429,9 @@ data:extend{
         {type = "fluid", name = "steam", amount = 5000, temperature = 500},
     },
     allow_productivity = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
     crafting_machine_tint =
     {
@@ -467,9 +458,9 @@ data:extend{
         {type = "item", name = "explosives", amount = 2},
     },
     allow_productivity = true,
-    category = "acidworking",
+    categories = {"acidworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -488,9 +479,9 @@ data:extend{
         {type = "item", name = "battery", amount = 2},
     },
     allow_productivity = true,
-    category = "acidworking",
+    categories = {"acidworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -509,9 +500,9 @@ data:extend{
         {type = "fluid", name = "hydrogen",   amount = 20},
     },
     allow_productivity = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     surface_conditions = {{property = "atmospheric-acidity", max = 99}},
     crafting_machine_tint =
     {
@@ -537,9 +528,15 @@ data:extend{
         {type = "fluid", name = "crude-oil",   amount = 50},
     },
     allow_productivity = true,
-    category = "oil-processing",
+    categories = {"oil-processing"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    crafting_machine_tint =
+    {
+        primary = {r = 0, g = 1, b = 0, a = 1.000},
+        secondary = {r = 0, g = 1, b = 0, a = 1.000},
+        tertiary = {r = 0, g = 1, b = 0, a = 1.000},
+        quaternary = {r = 0, g = 1, b = 0, a = 1.000}
+    }
 },
 {
     type = "recipe",
@@ -557,9 +554,9 @@ data:extend{
         {type = "item", name = "acidthrower-ammo",   amount = 50},
     },
     allow_productivity = true,
-    category = "acidworking",
+    categories = {"acidworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
@@ -579,16 +576,15 @@ data:extend{
     },
     allow_productivity = true,
     surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
-    category = "acidworking",
+    categories = {"acidworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
  {
     type = "recipe",
     name = "oxygenated-copper-bacteria-cultivation",
     icon = "__Muria-Graphics__/graphics/icons/oxygenated-copper-bacteria-cultivation.png",
-    category = "organic",
-    additional_categories = {"biovat-processes"},
+    categories = {"organic", "biovat-processes"},
     surface_conditions =
     {
       {
@@ -601,7 +597,6 @@ data:extend{
     order = "b[agriculture]-d[bacteria]-d[copper-bacteria-cultivation]-b",
     enabled = false,
     allow_productivity = true,
-    reset_freshness_on_craft = true,
     energy_required = 4,
     ingredients =
     {
@@ -611,7 +606,7 @@ data:extend{
     },
     results =
     {
-      {type = "item", name = "copper-bacteria", amount = 8}
+      {type = "item", name = "copper-bacteria", amount = 8, reset_freshness_on_craft = true,}
     },
     crafting_machine_tint =
     {
@@ -624,8 +619,7 @@ data:extend{
     type = "recipe",
     name = "oxygenated-iron-bacteria-cultivation",
     icon = "__Muria-Graphics__/graphics/icons/oxygenated-iron-bacteria-cultivation.png",
-    category = "organic",
-    additional_categories = {"biovat-processes"},
+    categories = {"organic", "biovat-processes"},
     surface_conditions =
     {
       {
@@ -638,7 +632,6 @@ data:extend{
     order = "b[agriculture]-d[bacteria]-b[iron-bacteria-cultivation]-b",
     enabled = false,
     allow_productivity = true,
-    reset_freshness_on_craft = true,
     energy_required = 4,
     ingredients =
     {
@@ -648,7 +641,7 @@ data:extend{
     },
     results =
     {
-      {type = "item", name = "iron-bacteria", amount = 8}
+      {type = "item", name = "iron-bacteria", amount = 8, reset_freshness_on_craft = true,}
     },
     crafting_machine_tint =
     {
@@ -671,9 +664,9 @@ data:extend{
         {type = "item", name = "holmium-chloride", amount = 1},
     },
     allow_productivity = true,
-    category = "acidworking",
+    categories = {"chemistry", "acidworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     surface_conditions =
     {
       {
@@ -701,9 +694,9 @@ data:extend{
         {type = "fluid", name = "water", amount = 10},
     },
     allow_productivity = false,
-    category = "acidworking",
+    categories = {"acidworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     surface_conditions = {{property = "atmospheric-acidity", max = 99}},
 },
 {
@@ -722,15 +715,14 @@ data:extend{
         {type = "item", name = "plastic-bar", amount = 2},
     },
     allow_productivity = false,
-    category = "chemistry",
-    additional_categories = {"acidworking"},
+    categories = {"chemistry", "acidworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
 {
     type = "recipe",
     name = "hydrogenated-oil-processing",
-    category = "oil-processing",
+    categories = {"oil-processing"},
     enabled = false,
     energy_required = 5,
     ingredients =
@@ -753,8 +745,7 @@ data:extend{
     type = "recipe",
     name = "eschatotaxite-carbon-fiber",
     icon = "__Muria-Graphics__/graphics/icons/eschatotaxite-carbon-fiber.png",
-    category = "organic",
-    additional_categories = {"biovat-processes"},
+    categories = {"organic", "biovat-processes"},
     subgroup = "muria-alt-recipes",
     order = "e",
     auto_recycle = false,
@@ -779,10 +770,9 @@ data:extend{
     type = "recipe",
     name = "eschatotaxite-low-density-structure",
     icon = "__Muria-Graphics__/graphics/icons/eschatotaxite-low-density-structure.png",
-    category = "organic",
+    categories = {"organic", "biovat-processes"},
     subgroup = "muria-alt-recipes",
     order = "d",
-    additional_categories = {"biovat-processes"},
     energy_required = 20,
     enabled = false,
     ingredients =
@@ -802,8 +792,7 @@ data:extend{
     icon = "__Muria-Graphics__/graphics/icons/kerolox-rocket-fuel.png",
     energy_required = 10,
     enabled = false,
-    category = "organic-or-chemistry",
-    additional_categories = {"acidworking", "biovat-processes"},
+    categories = {"organic", "chemistry", "acidworking", "biovat-processes"},
     subgroup = "muria-alt-recipes",
     order = "a",
     ingredients =
@@ -840,9 +829,9 @@ data:extend{
         {type = "item", name = "solid-fuel", amount = 2}
     },
     allow_productivity = true,
-    category = "chemistry",
+    categories = {"chemistry"},
     auto_recycle = true,
-    show_amount_in_title = false,
+    
     crafting_machine_tint =
     {
         primary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
@@ -867,9 +856,9 @@ data:extend{
         {type = "item", name = "lead-pellets", amount = 5},
     },
     allow_productivity = true,
-    category = "leadworking",
+    categories = {"leadworking"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
 },
  {
     type = "recipe",
@@ -885,9 +874,9 @@ data:extend{
     },
     results = {{type="item", name="leaded-fuel", amount=1}},
     allow_productivity = true,
-    category = "chemistry",
+    categories = {"chemistry"},
     auto_recycle = true,
-    show_amount_in_title = false,
+    
     emissions_multiplier = 5,
     crafting_machine_tint =
     {
@@ -911,9 +900,9 @@ data:extend{
     },
     results = {{type="item", name="anti-corrosion-cladding", amount=1}},
     allow_productivity = true,
-    category = "acidworking",
+    categories = {"acidworking"},
     auto_recycle = true,
-    show_amount_in_title = false,
+    
     emissions_multiplier = 5,
 },
 {
@@ -929,16 +918,16 @@ data:extend{
     },
     results = {
         {type = "fluid", name = "water", amount = 10},
-        {type = "fluid", name = "sulfuric-acid", amount = 20, probability = 0.10},
-        {type = "fluid", name = "hydrogen", amount = 5, probability = 0.001},
-        {type = "item", name = "carbon", amount = 3, probability = 0.05}, 
-        {type = "item", name = "sulfur", amount = 2, probability = 0.02},
+        {type = "fluid", name = "sulfuric-acid", amount = 20, independent_probability = 0.10},
+        {type = "fluid", name = "hydrogen", amount = 5, independent_probability = 0.001},
+        {type = "item", name = "carbon", amount = 3, independent_probability = 0.05}, 
+        {type = "item", name = "sulfur", amount = 2, independent_probability = 0.02},
     },
     allow_productivity = false,
     allow_quality = false,
-    category = "scrubbing",
+    categories = {"scrubbing"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     surface_conditions = {{property = "pressure", min = 4000, max = 4000}}
 },
 {
@@ -954,16 +943,16 @@ data:extend{
     },
     results = {
         {type = "fluid", name = "water", amount = 10},
-        {type = "fluid", name = "oxygen", amount = 20, probability = 0.02},
-        {type = "fluid", name = "hydrogen", amount = 5, probability = 0.01},
-        {type = "item", name = "carbon", amount = 2, probability = 0.05}, 
-        {type = "item", name = "sulfur", amount = 1, probability = 0.01}, 
+        {type = "fluid", name = "oxygen", amount = 20, independent_probability = 0.02},
+        {type = "fluid", name = "hydrogen", amount = 5, independent_probability = 0.01},
+        {type = "item", name = "carbon", amount = 2, independent_probability = 0.05}, 
+        {type = "item", name = "sulfur", amount = 1, independent_probability = 0.01}, 
     },
     allow_productivity = false,
     allow_quality = false,
-    category = "scrubbing",
+    categories = {"scrubbing"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     surface_conditions = {{property = "pressure", min = 1000, max = 1000}, {property = "magnetic-field", min = 90, max = 90}}
 },
 {
@@ -979,17 +968,17 @@ data:extend{
     },
     results = {
         {type = "fluid", name = "water", amount = 10},
-        {type = "fluid", name = "oxygen", amount = 25, probability = 0.05},
-        {type = "fluid", name = "hydrogen", amount = 5, probability = 0.01},
-        {type = "item", name = "spoilage", amount = 3, probability = 0.05}, 
-        {type = "item", name = "yumako-seed", amount = 1, probability = 0.01}, 
-        {type = "item", name = "jellynut-seed", amount = 1, probability = 0.01}, 
+        {type = "fluid", name = "oxygen", amount = 25, independent_probability = 0.05},
+        {type = "fluid", name = "hydrogen", amount = 5, independent_probability = 0.01},
+        {type = "item", name = "spoilage", amount = 3, independent_probability = 0.05}, 
+        {type = "item", name = "yumako-seed", amount = 1, independent_probability = 0.01}, 
+        {type = "item", name = "jellynut-seed", amount = 1, independent_probability = 0.01}, 
     },
     allow_productivity = false,
     allow_quality = false,
-    category = "scrubbing",
+    categories = {"scrubbing"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     surface_conditions = {{property = "pressure", min = 2000, max = 2000}, {property = "gravity", min = 20, max = 20}}
 },
 {
@@ -1005,17 +994,17 @@ data:extend{
     },
     results = {
         {type = "fluid", name = "water", amount = 10},
-        {type = "fluid", name = "petroleum-gas", amount = 20, probability = 0.10},
-        {type = "fluid", name = "chlorine", amount = 5, probability = 0.01},
-        {type = "item", name = "ice", amount = 3, probability = 0.05}, 
-        {type = "item", name = "stone", amount = 2, probability = 0.03}, 
-        {type = "item", name = "holmium-ore", amount = 1, probability = 0.005}, 
+        {type = "fluid", name = "petroleum-gas", amount = 20, independent_probability = 0.10},
+        {type = "fluid", name = "chlorine", amount = 5, independent_probability = 0.01},
+        {type = "item", name = "ice", amount = 3, independent_probability = 0.05}, 
+        {type = "item", name = "stone", amount = 2, independent_probability = 0.03}, 
+        {type = "item", name = "holmium-ore", amount = 1, independent_probability = 0.005}, 
     },
     allow_productivity = false,
     allow_quality = false,
-    category = "scrubbing",
+    categories = {"scrubbing"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     surface_conditions = {{property = "magnetic-field", min = 99, max = 99}, {property = "pressure", min = 800, max = 800}}
 },
 {
@@ -1031,16 +1020,16 @@ data:extend{
     },
     results = {
         {type = "fluid", name = "water", amount = 10},
-        {type = "fluid", name = "ammonia", amount = 10, probability = 0.20}, 
-        {type = "fluid", name = "fluorine", amount = 10, probability = 0.05}, 
-        {type = "item", name = "ice", amount = 2, probability = 0.10},
-        {type = "item", name = "lithium", amount = 1, probability = 0.005}, 
+        {type = "fluid", name = "ammonia", amount = 10, independent_probability = 0.20}, 
+        {type = "fluid", name = "fluorine", amount = 10, independent_probability = 0.05}, 
+        {type = "item", name = "ice", amount = 2, independent_probability = 0.10},
+        {type = "item", name = "lithium", amount = 1, independent_probability = 0.005}, 
     },
     allow_productivity = false,
     allow_quality = false,
-    category = "scrubbing",
+    categories = {"scrubbing"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     surface_conditions = {{property = "pressure", min = 300, max = 300}}
 },
 {
@@ -1056,16 +1045,16 @@ data:extend{
     },
     results = {
         {type = "fluid", name = "water", amount = 10},
-        {type = "fluid", name = "chlorine", amount = 10, probability = 0.20}, 
-        {type = "fluid", name = "hydrogen", amount = 10, probability = 0.05}, 
-        {type = "item", name = "acidophile-lichen", amount = 1, probability = 0.01},
-        {type = "item", name = "chlorine-salts", amount = 1, probability = 0.01}, 
+        {type = "fluid", name = "chlorine", amount = 10, independent_probability = 0.20}, 
+        {type = "fluid", name = "hydrogen", amount = 10, independent_probability = 0.05}, 
+        {type = "item", name = "acidophile-lichen", amount = 1, independent_probability = 0.01},
+        {type = "item", name = "chlorine-salts", amount = 1, independent_probability = 0.01}, 
     },
     allow_productivity = false,
     allow_quality = false,
-    category = "scrubbing",
+    categories = {"scrubbing"},
     auto_recycle = false,
-    show_amount_in_title = false,
+    
     surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
 },
 {
@@ -1079,7 +1068,7 @@ data:extend{
         enabled = false,
         hide_from_player_crafting = true,
         auto_recycle = false,
-        category = "rocket-building",
+        categories = {"rocket-building"},
         ingredients = {
             { type = "item", name = "processing-unit", amount = 1 },
             { type = "item", name = "leaded-fuel", amount = 1 },
