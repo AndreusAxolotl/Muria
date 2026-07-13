@@ -931,6 +931,7 @@ data:extend{
         impact_category = "metal",
         open_sound = sounds.metal_large_open,
         close_sound = sounds.metal_large_close,
+        use_mirroring = true,
         fluid_boxes =
     {
       {
@@ -1089,6 +1090,7 @@ data:extend{
     },
         open_sound = sounds.machine_open,
         close_sound = sounds.machine_close,
+        use_mirroring = true,
         fluid_boxes =
     {
       {
@@ -2010,6 +2012,7 @@ data:extend{
     heating_energy = "100kW",
     crafting_categories = {"biovat-processes"},
     fluid_boxes_off_when_no_fluid_recipe = true,
+    use_mirroring = true,
     fluid_boxes =
     {
       {
@@ -2115,8 +2118,8 @@ data:extend{
         circuit_connector = circuit_connector_definitions["scrubber"],
         collision_box = {{-1.1, -1.1}, {1.1, 1.1}},
         selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-        
         crafting_categories = {"scrubbing"},
+        use_mirroring = true,
         fluid_boxes =
         {
           {
