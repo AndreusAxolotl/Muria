@@ -151,6 +151,8 @@ data:extend{
       pressure = 2180,
       ["solar-power"] = 25,
       gravity = 9,
+      ["robot-energy-usage"] = 2,
+      ["temperature"] = 320
     },
     surface_render_parameters=
     {
