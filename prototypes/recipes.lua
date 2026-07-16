@@ -551,7 +551,7 @@ data:extend{
         {type = "fluid", name = "sulfuric-acid",   amount = 25},
     },
     results = {
-        {type = "item", name = "acidthrower-ammo",   amount = 50},
+        {type = "item", name = "acidthrower-ammo",   amount = 1},
     },
     allow_productivity = true,
     categories = {"acidworking"},
