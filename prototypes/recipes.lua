@@ -423,7 +423,7 @@ data:extend{
     ingredients = {
         {type = "fluid", name = "oxygen",   amount = 100},
         {type = "fluid", name = "hydrogen",   amount = 200},
-        {type = "item", name = "carbon",   amount = 5},
+        {type = "item", name = "carbon",   amount = 2},
     },
     results = {
         {type = "fluid", name = "steam", amount = 5000, temperature = 500},

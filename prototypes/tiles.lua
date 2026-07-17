@@ -220,8 +220,8 @@ local destroyed_item_trigger =
   }
 }
 
-space_age_tiles_util.lava_to_out_of_map_transition = lava_to_out_of_map_transition
-space_age_tiles_util.lava_stone_transitions_between_transitions = lava_stone_transitions_between_transitions
+ --space_age_tiles_util.lava_to_out_of_map_transition = lava_to_out_of_map_transition
+--space_age_tiles_util.lava_stone_transitions_between_transitions = lava_stone_transitions_between_transitions
 
 table.insert(water_tile_type_names, "muriatic-solution")
 
