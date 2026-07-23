@@ -8,63 +8,55 @@ asteroid_functions.weighted_average = function(A, B, weight)
   return result
 end
 
-asteroid_functions.muria_ratio      = {4, 20, 5, 0}
-asteroid_functions.gleba_ratio       = {2, 5, 1 , 0}
-asteroid_functions.aquilo_ratio      = {1, 2, 20, 0}
-asteroid_functions.muria_chunks      = 0.0010
-asteroid_functions.muria_big         = 0.0025
-asteroid_functions.gleba_chunks       = 0.0030
-asteroid_functions.gleba_medium       = 0.0025
-asteroid_functions.aquilo_chunks      = 0.0010
-asteroid_functions.aquilo_big         = 0.0025
+asteroid_functions.muria_ratio      = {3, 3, 3, 0}
+asteroid_functions.nauvis_ratio      = {3, 2, 1 , 0}
+asteroid_functions.fulgora_ratio     = {4, 3, 1 , 0}
+asteroid_functions.muria_chunks      = 0.0030
+asteroid_functions.muria_medium       = 0.0025
+asteroid_functions.fulgora_chunks     = 0.0025
+asteroid_functions.fulgora_medium     = 0.0025
+asteroid_functions.nauvis_chunks      = 0.0125
 asteroid_functions.chunk_angle = 1
 asteroid_functions.small_angle = 0.7
 asteroid_functions.medium_angle = 0.6
 asteroid_functions.big_angle = 0.5
 asteroid_functions.huge_angle = 0.4
 
-asteroid_functions.gleba_muria =
+asteroid_functions.nauvis_muria =
 {
-  has_promethium_asteroids = false,
   probability_on_range_chunk =
   {
-    {position = 0.1, probability = asteroid_functions.gleba_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
+    {position = 0.1, probability = asteroid_functions.nauvis_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
     {position = 0.9, probability = asteroid_functions.muria_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
   },
   probability_on_range_medium =
   {
-    {position = 0.1, probability = asteroid_functions.gleba_medium, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = 0, angle_when_stopped = asteroid_functions.medium_angle}
-  },
-  probability_on_range_big =
-  {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.big_angle},
-    {position = 0.9, probability = asteroid_functions.muria_big, angle_when_stopped = asteroid_functions.big_angle}
+    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
+    {position = 0.5, probability = asteroid_functions.muria_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
+    {position = 0.9, probability = asteroid_functions.muria_medium, angle_when_stopped = asteroid_functions.medium_angle}
   },
   type_ratios =
   {
-    {position = 0.1, ratios = asteroid_functions.gleba_ratio},
-    {position = 0.4, ratios = asteroid_functions.muria_ratio},
+    {position = 0.1, ratios = asteroid_functions.nauvis_ratio},
     {position = 0.9, ratios = asteroid_functions.muria_ratio}
   }
 }
-asteroid_functions.aquilo_muria =
+asteroid_functions.fulgora_muria =
 {
-  has_promethium_asteroids = false,
   probability_on_range_chunk =
   {
-    {position = 0.1, probability = asteroid_functions.aquilo_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
+    {position = 0.1, probability = asteroid_functions.fulgora_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
     {position = 0.9, probability = asteroid_functions.muria_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
   },
-  probability_on_range_big =
+  probability_on_range_medium =
   {
-    {position = 0.1, probability = asteroid_functions.aquilo_big, angle_when_stopped = asteroid_functions.big_angle},
-    {position = 0.9, probability = asteroid_functions.muria_big, angle_when_stopped = asteroid_functions.big_angle}
+    {position = 0.1, probability = asteroid_functions.fulgora_medium, angle_when_stopped = asteroid_functions.medium_angle},
+    {position = 0.5, probability = asteroid_functions.weighted_average(asteroid_functions.fulgora_medium, asteroid_functions.muria_medium, 0.5) * 3, angle_when_stopped = asteroid_functions.medium_angle},
+    {position = 0.9, probability = asteroid_functions.muria_medium, angle_when_stopped = asteroid_functions.medium_angle}
   },
   type_ratios =
   {
-    {position = 0.1, ratios = asteroid_functions.aquilo_ratio},
-    {position = 0.4, ratios = asteroid_functions.muria_ratio},
+    {position = 0.1, ratios = asteroid_functions.fulgora_ratio},
     {position = 0.9, ratios = asteroid_functions.muria_ratio}
   }
 }

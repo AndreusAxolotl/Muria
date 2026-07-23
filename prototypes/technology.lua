@@ -27,20 +27,16 @@ data:extend {
         recipe = "oxyhydrogen-combustion"
       },
     },
-    prerequisites = { "rocket-turret", "advanced-asteroid-processing", "asteroid-reprocessing"},
+    prerequisites = { "space-platform-thruster"},
     unit =
     {
-      count = 2000,
+      count = 1000,
       ingredients =
       {
         { "automation-science-pack",      1 },
         { "logistic-science-pack",        1 },
         { "chemical-science-pack",        1 },
-        { "production-science-pack",      1 },
-        { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
-        { "metallurgic-science-pack",     1 },
-        { "agricultural-science-pack",    1 },
       },
       time = 60
     }
@@ -71,6 +67,10 @@ data:extend {
       {
         type = "unlock-recipe",
         recipe = "biovat"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "nutrients-from-spoilage"
       },
     },
     prerequisites = { "planet-discovery-muria" },
@@ -137,7 +137,11 @@ data:extend {
       {
         type = "unlock-recipe",
         recipe = "polyvinyl-chloride"
-      }
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "burnt-spoilage"
+      },
     },
     prerequisites = { "eschatotaxite-farming" },
     research_trigger =
@@ -277,15 +281,19 @@ data:extend {
     {
       {
         type = "unlock-recipe",
-        recipe = "chlorane-from-biter-egg"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "chlorane-from-spoilage"
       },
       {
         type = "unlock-recipe",
+        recipe = "chlorine-from-acidophile-lichen"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "chlorane-oxidation"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "chlorine-traces-from-ice"
       },
       {
         type = "unlock-recipe",
@@ -307,6 +315,30 @@ data:extend {
         { "muriatic-science-pack",     1 },
       },
       time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "chlorane-from-biter-egg",
+    icon = "__Muria-Graphics__/graphics/technology/chlorane-from-biter-egg.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "chlorane-from-biter-egg"
+      },
+    },
+    prerequisites = { "offworld-chlorane-production", "biter-egg-handling"},
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {
+        { "muriatic-science-pack",     1 },
+        { "agricultural-science-pack",     1 },
+      },
+      time = 30
     }
   },
   {
@@ -337,7 +369,6 @@ data:extend {
         { "production-science-pack",      1 },
         { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
-        { "agricultural-science-pack",     1 },
         { "muriatic-science-pack",     1 },
       },
       time = 60
@@ -367,7 +398,6 @@ data:extend {
         { "military-science-pack",      1 },
         { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
-        { "agricultural-science-pack",     1 },
         { "muriatic-science-pack",     1 },
       },
       time = 60
@@ -397,7 +427,6 @@ data:extend {
         { "military-science-pack",      1 },
         { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
-        { "agricultural-science-pack",     1 },
         { "muriatic-science-pack",     1 },
       },
       time = 60
@@ -463,7 +492,6 @@ data:extend {
         { "military-science-pack",      1 },
         { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
-        { "agricultural-science-pack",     1 },
         { "muriatic-science-pack",     1 },
       },
       time = 60
@@ -508,7 +536,6 @@ data:extend {
         {"military-science-pack", 1},
         {"utility-science-pack", 1},
         { "space-science-pack",           1 },
-        { "agricultural-science-pack",     1 },
         { "muriatic-science-pack",     1 },
       },
       time = 60
@@ -554,7 +581,6 @@ data:extend {
         {"military-science-pack", 1},
         {"utility-science-pack", 1},
         { "space-science-pack",           1 },
-        { "agricultural-science-pack",     1 },
         { "muriatic-science-pack",     1 },
       },
       time = 60
@@ -590,7 +616,6 @@ data:extend {
         {"military-science-pack", 1},
         {"utility-science-pack", 1},
         {"space-science-pack", 1},
-        { "agricultural-science-pack",     1 },
         { "muriatic-science-pack",     1 },
       },
       time = 60
@@ -741,7 +766,7 @@ data:extend {
         recipe = "oxygenated-iron-bacteria-cultivation"
       }
     },
-    prerequisites = {"offworld-chlorane-production"},
+    prerequisites = {"offworld-chlorane-production", "agricultural-science-pack"},
     unit =
     {
       count = 750,
@@ -819,6 +844,35 @@ data:extend {
         { "muriatic-science-pack",     1 },
       },
       time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "explosive-shotgun-shell",
+    icon = "__Muria-Graphics__/graphics/technology/explosive-shotgun-shell.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "explosive-shotgun-shell"
+      }
+    },
+    prerequisites = { "shotgun-turret", "offworld-chlorane-production"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        { "automation-science-pack",      1 },
+        { "logistic-science-pack",        1 },
+        { "chemical-science-pack",        1 },
+        { "military-science-pack",      1 },
+        { "utility-science-pack",         1 },
+        { "space-science-pack",           1 },
+        { "muriatic-science-pack",     1 },
+      },
+      time = 30
     }
   },
   {
@@ -938,13 +992,17 @@ local function add_tech_effect(tech_name, effect)
   tech.effects = tech.effects or {}
   table.insert(tech.effects, effect)
 end
+
+if not mods["Paracelsin"] then
+add_tech_prerequisites("planet-discovery-aquilo", "explosive-shotgun-shells")
+add_science_pack("planet-discovery-aquilo", { "muriatic-science-pack", 1 })
+end
+
 if settings.startup["muria-muriatic-promethium"].value then
-add_tech_prerequisites("promethium-science-pack", "muriatic-science-pack")
 add_science_pack("promethium-science-pack", { "muriatic-science-pack", 1 })
 add_science_pack("research-productivity", { "muriatic-science-pack", 1 })
 end
 if settings.startup["muria-muriatic-implementation"].value then
-add_tech_prerequisites("foundation", "muriatic-science-pack")
 add_science_pack("foundation", { "muriatic-science-pack", 1 })
 end
 add_tech_effect("plastic-bar-productivity",

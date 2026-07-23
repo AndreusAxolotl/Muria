@@ -124,8 +124,8 @@ data:extend{
     starmap_icon = "__Muria-Graphics__/graphics/icons/starmap-planet-muria.png",
     starmap_icon_size = 2048,
     gravity_pull = 10,
-    distance = 32,
-    orientation = 0.14,
+    distance = 22,
+    orientation = 0.38,
     magnitude = 1.0,
     label_orientation = 0.18,
     order = "g",
@@ -212,7 +212,7 @@ data:extend{
       }
     },
     asteroid_spawn_influence = 1,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_muria, 0.9),
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_muria, 0.9),
     persistent_ambient_sounds =
     {
       base_ambience =
@@ -274,22 +274,22 @@ data:extend{
   },
   {
     type = "space-connection",
-    name = "gleba-muria",
+    name = "nauvis-muria",
     subgroup = "planet-connections",
-    from = "gleba",
+    from = "nauvis",
     to = "muria",
     order = "g1",
-    length = 25000,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_muria)
+    length = 15000,
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_muria)
   },
   {
     type = "space-connection",
-    name = "muria-aquilo",
+    name = "fulgora-muria",
     subgroup = "planet-connections",
-    from = "muria",
-    to = "aquilo",
+    from = "fulgora",
+    to = "muria",
     order = "g2",
-    length = 50000,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.aquilo_muria)
+    length = 15000,
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_muria)
   },
   }

@@ -169,7 +169,24 @@ data:extend{
     allow_productivity = true,
     categories = {"crafting"},
     auto_recycle = true,
-    
+},
+{
+    type = "recipe",
+    name = "explosive-shotgun-shell",
+    icon = "__Muria-Graphics__/graphics/icons/explosive-shotgun-shell.png",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "item", name = "shotgun-shell",   amount = 1},
+        {type = "item", name = "carbon",   amount = 5},
+        {type = "fluid", name = "chlorine",   amount = 10},
+    },
+    results = {
+        {type = "item", name = "explosive-shotgun-shell", amount = 1},
+    },
+    allow_productivity = true,
+    categories = {"crafting-with-fluid"},
+    auto_recycle = true,
 },
 {
     type = "recipe",
@@ -387,7 +404,7 @@ data:extend{
         {type = "fluid", name = "chlorane", amount = 100},
     },
     allow_productivity = true,
-    categories = {"organic", "biovat-processes"},
+    categories = {"organic", "biovat-processes", "chemistry"},
     auto_recycle = false,
     
 },
@@ -407,7 +424,7 @@ data:extend{
         {type = "fluid", name = "chlorane", amount = 50},
     },
     allow_productivity = true,
-    categories = {"organic", "biovat-processes"},
+    categories = {"organic", "biovat-processes", "chemistry"},
     auto_recycle = false,
     
     surface_conditions = {{property = "atmospheric-acidity", max = 99}},
@@ -694,7 +711,7 @@ data:extend{
         {type = "fluid", name = "water", amount = 10},
     },
     allow_productivity = false,
-    categories = {"acidworking"},
+    categories = {"acidworking", "chemistry"},
     auto_recycle = false,
     
     surface_conditions = {{property = "atmospheric-acidity", max = 99}},
@@ -995,7 +1012,7 @@ data:extend{
     results = {
         {type = "fluid", name = "water", amount = 10},
         {type = "fluid", name = "petroleum-gas", amount = 20, independent_probability = 0.10},
-        {type = "fluid", name = "chlorine", amount = 5, independent_probability = 0.01},
+        {type = "fluid", name = "chlorine", amount = 10, independent_probability = 0.05},
         {type = "item", name = "ice", amount = 3, independent_probability = 0.05}, 
         {type = "item", name = "stone", amount = 2, independent_probability = 0.03}, 
         {type = "item", name = "holmium-ore", amount = 1, independent_probability = 0.005}, 
@@ -1078,4 +1095,46 @@ data:extend{
         results = { { type = "item", name = "rocket-part", amount = 1 } },
         allow_productivity = true,
     },
+{
+    type = "recipe",
+    name = "chlorine-from-acidophile-lichen",
+    icon = "__Muria-Graphics__/graphics/icons/chlorine-from-acidophile-lichen.png",
+    enabled = false,
+    subgroup = "offworld-chlorane-production",
+    order = "d", 
+    energy_required = 2,
+    ingredients = {
+        {type = "item", name = "acidophile-lichen",   amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "chlorine", amount = 5},
+    },
+    allow_productivity = true,
+    categories = {"organic", "biovat-processes", "chemistry"},
+    auto_recycle = false,
+    
+    surface_conditions = {{property = "atmospheric-acidity", max = 99}},
+},
+{
+    type = "recipe",
+    name = "chlorine-traces-from-ice",
+    icon = "__Muria-Graphics__/graphics/icons/chlorine-traces-from-ice.png",
+    enabled = false,
+    subgroup = "offworld-chlorane-production",
+    order = "e", 
+    energy_required = 2,
+    ingredients = {
+        {type = "item", name = "ice",   amount = 10},
+        {type = "item", name = "carbon",   amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "chlorine", amount = 10},
+        {type = "item", name = "carbon", amount = 1, independent_probability = 0.5},
+    },
+    allow_productivity = true,
+    categories = {"acidworking", "chemistry"},
+    auto_recycle = false,
+    
+    surface_conditions = {{property = "gravity", max = 0}, {property = "pressure", max = 0}},
+},
 }

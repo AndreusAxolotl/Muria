@@ -169,9 +169,9 @@ data:extend{
       result = "artificial-lichen-colony",
       condition_size = 1,
       condition = {layers={ground_tile=true}},
-      tile_condition = {"muriatic-solution", "oil-ocean-shallow", "oil-ocean-deep"}
+      tile_condition = {"muriatic-solution", "oil-ocean-shallow", "oil-ocean-deep", "oil-ocean-shallow-2", "oil-ocean-deep-2"}
     },
-    weight = 4000,
+    weight = 10000,
   },
   {
     type = "item",
@@ -277,21 +277,28 @@ data:extend{
                 type = "create-explosion",
                 entity_name = "explosion-gunshot"
               }
-            }
-          }
-        },
-        {
-          type = "direct",
-          repeat_count = 20,
-          action_delivery =
-          {
+            },
+            target_effects =
+            {
+              type = "nested-result",
+              action =
+              {
+                type = "area",
+                target_entities = false,
+                repeat_count = 20,
+                radius = 2.5,
+                action_delivery =
+                {
             type = "projectile",
             projectile = "heavy-shotgun-pellet",
             starting_speed = 1,
             starting_speed_deviation = 0.1,
             direction_deviation = 0.3,
             range_deviation = 0.3,
-            max_range = 20
+            inherit_speed = true,
+                }
+              }
+            }
           }
         }
       }
@@ -303,7 +310,65 @@ data:extend{
     pick_sound = item_sounds.ammo_small_inventory_pickup,
     drop_sound = item_sounds.ammo_small_inventory_move,
     stack_size = 100,
-    weight = 1*kg,
+    weight = 20*kg,
+    default_import_location = "muria",
+  },
+  {
+    type = "ammo",
+    name = "explosive-shotgun-shell",
+    icon = "__Muria-Graphics__/graphics/icons/explosive-shotgun-shell.png",
+    ammo_category = "shotgun-shell",
+    ammo_type =
+    {
+      target_type = "direction",
+      clamp_position = true,
+      action =
+      {
+        {
+          type = "direct",
+          action_delivery =
+          {
+            type = "instant",
+            source_effects =
+            {
+              {
+                type = "create-explosion",
+                entity_name = "explosion-gunshot"
+              }
+            },
+            target_effects =
+            {
+              type = "nested-result",
+              action =
+              {
+                type = "area",
+                target_entities = false,
+                repeat_count = 3,
+                radius = 3,
+                action_delivery =
+                {
+            type = "projectile",
+            projectile = "explosive-shotgun-pellet",
+            starting_speed = 0.7,
+            starting_speed_deviation = 0.1,
+            direction_deviation = 0.3,
+            range_deviation = 0.3,
+            inherit_speed = true,
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    magazine_size = 3,
+    subgroup = "ammo",
+    order = "b[shotgun]-d[explosive]",
+    inventory_move_sound = item_sounds.ammo_small_inventory_move,
+    pick_sound = item_sounds.ammo_small_inventory_pickup,
+    drop_sound = item_sounds.ammo_small_inventory_move,
+    stack_size = 50,
+    weight = 40*kg,
     default_import_location = "muria",
   },
   {

@@ -468,8 +468,110 @@ data:extend(
         type = "instant",
         target_effects =
         {
+        {
+            type = "activate-impact",
+            deliver_category = "bullet"
+          },
+        {
           type = "damage",
-          damage = {amount = 12, type = "physical"}
+          damage = {amount = 14, type = "physical"}
+        },
+        {
+            type = "create-entity",
+            entity_name = "small-explosion-hit"
+          },
+          {
+            type = "create-sticker",
+            sticker = "shotgun-impact-sticker"
+          }
+        }
+      }
+    },
+    animation =
+    {
+      filename = "__base__/graphics/entity/piercing-bullet/piercing-bullet.png",
+      draw_as_glow = true,
+      width = 3,
+      height = 50,
+      priority = "high"
+    }
+  },
+  {
+    type = "projectile",
+    name = "explosive-shotgun-pellet",
+    flags = {"not-on-map"},
+    hidden = true,
+    collision_box = {{-0.05, -0.25}, {0.05, 0.25}},
+    acceleration = 0,
+    direction_only = true,
+    action =
+    {
+      type = "direct",
+      action_delivery =
+      {
+        type = "instant",
+        target_effects =
+        {
+        {
+            type = "activate-impact",
+            deliver_category = "bullet"
+          },
+        {
+          type = "damage",
+          damage = {amount = 5, type = "physical"}
+        },
+
+          {
+            type = "create-sticker",
+            sticker = "shotgun-impact-sticker"
+          },
+          {
+            type = "create-entity",
+            entity_name = "small-explosion-hit"
+          },
+          {
+            type = "nested-result",
+            action =
+            {
+              type = "area",
+              radius = 3,
+              action_delivery =
+              {
+                type = "instant",
+                target_effects =
+                {
+                  {
+                    type = "damage",
+                    damage = {amount = 20, type = "explosion"}
+                  },
+                  {
+                    type = "create-entity",
+                    entity_name = "explosion",
+                    only_when_visible = true
+                  },
+                            {
+            type = "create-entity",
+            entity_name = "medium-scorchmark-tintable",
+            check_buildability = true
+          },
+          {
+            type = "invoke-tile-trigger",
+            repeat_count = 1
+          },
+          {
+            type = "destroy-decoratives",
+            from_render_layer = "decorative",
+            to_render_layer = "object",
+            include_soft_decoratives = true, -- soft decoratives are decoratives with grows_through_rail_path = true
+            include_decals = false,
+            invoke_decorative_trigger = true,
+            decoratives_with_trigger_only = false, -- if true, destroys only decoratives that have trigger_effect set
+            radius = 3 -- large radius for demostrative purposes
+          },
+                }
+              }
+            }
+          }
         }
       }
     },
