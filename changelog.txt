@@ -1,16 +1,27 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.1
+Date: 2026-07-23
+  my bad guys:
+
+  Fixes:
+    - Added missing changelog lines.
+    - Fixed typo in technology.lua.
+---------------------------------------------------------------------------------------------------
 Version: 1.5.0
 Date: 2026-07-23
   yeah we skipped a whole version:
 
   Additions:
     - Added Explosive Shotgun Shells, an alternative to rockets to deal with big asteroids. Paracelsin will require them if installed.
+    - Added a new recipe to get Chlorine from ice in space.
 
   Changes:
     - Muria is now an INNER PLANET.
     - Muria has been moved from it's position above Gleba and Vulcanus to it being below Fulgora and Nauvis.
     - Gleba-Muria and Muria-Aquilo connections are gone, replaced by a Nauvis-Muria and Muria-Fulgora route.
+    - Adjusted tech tree accordingly.
     - Planet is still TECHNICALLY beyond Gleba cuz thats how orbits work -w-.
+    - Moved Chlorane from biter eggs to a new tech.
 
   Fixes:
     - Adding chlorine from acidophile lichen to a tech cuz i forgot to.

@@ -994,7 +994,7 @@ local function add_tech_effect(tech_name, effect)
 end
 
 if not mods["Paracelsin"] then
-add_tech_prerequisites("planet-discovery-aquilo", "explosive-shotgun-shells")
+add_tech_prerequisites("planet-discovery-aquilo", "explosive-shotgun-shell")
 add_science_pack("planet-discovery-aquilo", { "muriatic-science-pack", 1 })
 end
 
