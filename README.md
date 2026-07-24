@@ -1,4 +1,4 @@
-Beyond Gleba lies a green and yellow world. Its dense high atmospheres traps the heat and maintains the planet's boiling temperatures. Below the acidic clouds lies a land scarred by lakes of Muriatic Solution and plains of rock. Along the acidic coasts massive lichen colonies cover the land, as towering shrooms fight their expansion. A biological war... all for you to take the lead in.
+Between the orbits of Gleba and Fulgora lies a green and yellow world. Its dense high atmosphere traps the heat and maintains the planet's boiling temperatures. Below the acidic clouds lies a land scarred by lakes of Muriatic Solution and plains of rock. Along the acidic coasts massive lichen colonies cover the land, as towering shrooms fight their expansion. A biological war... all for you to take the lead in.
 
 # Muria
 
@@ -12,7 +12,7 @@ Conquering this toxic world will grant you access to powerful military technolog
 
 ## Planet
 
-Muria is located past Gleba, but before Aquilo. While the route to it is guarded by big asteroids, this planet can be reached before Aquilo, only requiring Gleban and Vulcanusian tech. On the planet you'll have to mine chlorine salts and process them by letting lichens free the metals from the chlorine. This process releases a ton of acids in the air, which will corrode your factory to shreds. To fight this threat (that you cause) you'll have to separate the various parts of your factory, alongside growing the towering eschatotaxite fungi, masters of acid neutralization that will protect your factory from the acidic air (that you released). More info on the corrosive air is in-game.
+Muria is an Inner Planet located between the orbits of Gleba and Fulgora. On the planet you'll have to mine chlorine salts and process them by letting lichens free the metals from the chlorine. This process releases a ton of acids in the air, which will corrode your factory to shreds. To fight this threat (that you cause) you'll have to separate the various parts of your factory, alongside growing the towering eschatotaxite fungi, masters of acid neutralization that will protect your factory from the acidic air (that you released). More info on the corrosive air is in-game.
 
 ## Resources
 
@@ -32,11 +32,9 @@ These machines are specialized in some chemical processes and metallurgy-smeltin
 # PLEASE REPORT ANY BUGS YOU FIND
 
 ## Compat:
-- None atm.
+- .[Paracelsin](https://mods.factorio.com/mod/Paracelsin): When Paracelsin and Muria are installed together, Murian technology is required to access Paracelsin.
 
 ### Future Plans:
-- Adding more rewards
-- Maybe reworking the planet's generation.
 - Compatibility with other mods.
 
 ### Translation
