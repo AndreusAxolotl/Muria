@@ -32,7 +32,7 @@ These machines are specialized in some chemical processes and metallurgy-smeltin
 # PLEASE REPORT ANY BUGS YOU FIND
 
 ## Compat:
-- .[Paracelsin](https://mods.factorio.com/mod/Paracelsin): When Paracelsin and Muria are installed together, Murian technology is required to access Paracelsin.
+- [Paracelsin](https://mods.factorio.com/mod/Paracelsin): When Paracelsin and Muria are installed together, Murian technology is required to access Paracelsin.
 
 ### Future Plans:
 - Compatibility with other mods.
