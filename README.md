@@ -1,3 +1,5 @@
+[![foundrygg.com](https://img.shields.io/badge/foundrygg-4a1402?style=for-the-badge&logo=vercel&logoColor=white)](https://foundrygg.com)[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/VuVhYUBbWE)
+
 Between the orbits of Gleba and Fulgora lies a green and yellow world. Its dense high atmosphere traps the heat and maintains the planet's boiling temperatures. Below the acidic clouds lies a land scarred by lakes of Muriatic Solution and plains of rock. Along the acidic coasts massive lichen colonies cover the land, as towering shrooms fight their expansion. A biological war... all for you to take the lead in.
 
 # Muria
