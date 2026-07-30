@@ -1,4 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.2
+Date: 2026-07-30
+  fluid rebalance:
+
+  Changes:
+    - Increased amount of chlorine obtained from separation.
+    - Slightly increased amount of hydrogen and oxygen needed in some recipes to make hydronium destruction productivity more useful.
+    - Made water electrolysis have a chance to return the cable used in it.
+    - Increased oil made from eschatotaxite paste.
+
+  Fixes:
+    - Stopped an infinite carbon loop in chlorine from ice
+---------------------------------------------------------------------------------------------------
 Version: 1.5.1
 Date: 2026-07-23
   my bad guys:

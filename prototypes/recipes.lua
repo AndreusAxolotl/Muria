@@ -11,7 +11,7 @@ data:extend{
         {type = "fluid", name = "muriatic-solution",   amount = 50},
     },
     results = {
-        {type = "fluid", name = "chlorine", amount = 50},
+        {type = "fluid", name = "chlorine", amount = 75},
         {type = "fluid", name = "hydronium", amount = 20},
         {type = "item", name = "cotunnite", amount = 1}
     },
@@ -86,7 +86,7 @@ data:extend{
     energy_required = 16,
     ingredients = {
         {type = "item", name = "lead",   amount = 10},
-        {type = "fluid", name = "hydrogen",   amount = 50},
+        {type = "fluid", name = "hydrogen",   amount = 100},
     },
     results = {
         {type = "fluid", name = "molten-lead", amount = 100},
@@ -142,7 +142,7 @@ data:extend{
     energy_required = 4,
     ingredients = {
         {type = "item", name = "lead-plate",   amount = 2},
-        {type = "fluid", name = "hydrogen",   amount = 10},
+        {type = "fluid", name = "hydrogen",   amount = 20},
     },
     results = {
         {type = "item", name = "lead-pellets", amount = 5},
@@ -358,7 +358,7 @@ data:extend{
     ingredients = {
         {type = "item", name = "acidophile-lichen",   amount = 5},
         {type = "fluid", name = "chlorine",   amount = 10},
-        {type = "fluid", name = "oxygen",   amount = 5},
+        {type = "fluid", name = "oxygen",   amount = 10},
     },
     results = {
         {type = "item", name = "chloric-fuel", amount = 5},
@@ -467,7 +467,7 @@ data:extend{
     order = "c",
     energy_required = 6,
     ingredients = {
-        {type = "fluid", name = "oxygen",   amount = 10},
+        {type = "fluid", name = "oxygen",   amount = 15},
         {type = "fluid", name = "chlorane",   amount = 15},
         {type = "item", name = "carbon",   amount = 5},
     },
@@ -515,6 +515,7 @@ data:extend{
     results = {
         {type = "fluid", name = "oxygen",   amount = 10},
         {type = "fluid", name = "hydrogen",   amount = 20},
+        {type = "item", name = "copper-cable",   amount = 2, independent_probability = 0.9, ignored_by_stats = 2, ignored_by_productivity = 2},
     },
     allow_productivity = false,
     categories = {"chemistry"},
@@ -542,7 +543,7 @@ data:extend{
         {type = "fluid", name = "chlorine",   amount = 20},
     },
     results = {
-        {type = "fluid", name = "crude-oil",   amount = 50},
+        {type = "fluid", name = "crude-oil",   amount = 100},
     },
     allow_productivity = true,
     categories = {"oil-processing"},
@@ -744,7 +745,7 @@ data:extend{
     energy_required = 5,
     ingredients =
     {
-      {type = "fluid", name = "hydrogen", amount = 150},
+      {type = "fluid", name = "hydrogen", amount = 200},
       {type = "fluid", name = "crude-oil", amount = 100}
     },
     results =
@@ -771,7 +772,7 @@ data:extend{
     ingredients =
     {
       {type = "item", name = "eschatotaxite-paste", amount = 10},
-      {type = "fluid", name = "hydrogen", amount = 5},
+      {type = "fluid", name = "hydrogen", amount = 10},
       {type = "item", name = "carbon", amount = 2}
     },
     results = {{type="item", name="carbon-fiber", amount=1}},
@@ -816,7 +817,7 @@ data:extend{
     {
       {type = "item", name = "solid-fuel", amount = 2},
       {type="fluid", name = "light-oil", amount= 10},
-      {type="fluid", name = "oxygen", amount = 10}
+      {type="fluid", name = "oxygen", amount = 20}
     },
     results = {{type="item", name="rocket-fuel", amount=1}},
     allow_productivity = true,
@@ -839,7 +840,7 @@ data:extend{
     icon_size = 64,
     energy_required = 2,
     ingredients = {
-        {type = "fluid", name = "hydrogen",   amount = 30},
+        {type = "fluid", name = "hydrogen",   amount = 50},
         {type = "item", name = "sulfur", amount = 2},
     },
     results = {
@@ -867,7 +868,7 @@ data:extend{
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "molten-lead",   amount = 10},
-        {type = "fluid", name = "hydrogen",   amount = 20},
+        {type = "fluid", name = "hydrogen",   amount = 25},
     },
     results = {
         {type = "item", name = "lead-pellets", amount = 5},
@@ -1129,7 +1130,7 @@ data:extend{
     },
     results = {
         {type = "fluid", name = "chlorine", amount = 10},
-        {type = "item", name = "carbon", amount = 1, independent_probability = 0.5},
+        {type = "item", name = "carbon", amount = 1, independent_probability = 0.5, ignored_by_stats = 1, ignored_by_productivity = 1},
     },
     allow_productivity = true,
     categories = {"acidworking", "chemistry"},
