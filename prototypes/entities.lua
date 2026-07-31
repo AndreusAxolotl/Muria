@@ -152,16 +152,6 @@ local base_ani = {
   }
 }
 
-local acids 
-if not mods["Paracelsin"] then 
-acids = {{type = "chlorane"},
-        {type = "sulfuric-acid", damage_modifier = 0.8}}
-else
-acids = {{type = "chlorane"},
-        {type = "sulfuric-acid", damage_modifier = 0.8},
-        {type = "nitric-acid", damage_modifier = 0.7}}
-end
-
 local function acidworkinganimationLayer()
     return {
         priority = "high",
@@ -1846,7 +1836,7 @@ data:extend{
 
       -- lead_target_for_projectile_speed = 0.2* 0.75 * 1.5, -- this is same as particle horizontal speed of flamethrower fire stream
 
-      fluids = acids,
+      fluids = {{type = "chlorane"}, {type = "sulfuric-acid", damage_modifier = 0.8}},
       fluid_consumption = 0.2,
 
       gun_center_shift =
