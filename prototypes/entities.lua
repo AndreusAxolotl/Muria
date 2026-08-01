@@ -1884,6 +1884,18 @@ data:extend{
     flags = {"placeable-player", "player-creation", "building-direction-8-way"},
     minable = {mining_time = 0.5, result = "shotgun-turret"},
     fast_replaceable_group = "ammo-turret",
+    resistances =
+    {
+      {
+        type = "acid",
+        percent = 25
+      },
+      {
+        type = "explosion",
+        decrease = 50,
+        percent = 75
+      }
+    },
     max_health = 400,
     corpse = "gun-turret-remnants",
     dying_explosion = "gun-turret-explosion",

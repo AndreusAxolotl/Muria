@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.4
+Date: 2026-08-01
+  shotgun strengthening:
+
+  Changes:
+    - Gave the shotgun turret explosive and acid resistance.
+---------------------------------------------------------------------------------------------------
 Version: 1.5.3
 Date: 2026-07-31
   acidthrower compats:
