@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.1
+Date: 2026-08-07
+  4???:
+
+  Changes:
+    - Replaced calcite in the chlorane oxidation recipe with a copper plate (believe me i looked it up online, best catalyst for the reaction is damn europium so trust me with copper).
+    - Added coal synthesis to the murian oil processing tech.
+    - Moved carbon from spoilage to the eschatotaxite farming tech from the murian oil processing tech.
+    - Added nutrients from spoilage to the eschatotaxite farming tech.
+
+  Fixes:
+    - Fixed steam condensation not being unlocked on Muria too.
+    - Added the shotgun turret damage to the other physical damage techs.
+---------------------------------------------------------------------------------------------------
 Version: 1.6.0
 Date: 2026-08-07
   three updates in one single day huh:

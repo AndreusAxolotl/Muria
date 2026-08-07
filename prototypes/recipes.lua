@@ -705,11 +705,12 @@ data:extend{
     ingredients = {
         {type = "fluid", name = "chlorane",   amount = 20},
         {type = "fluid", name = "oxygen",   amount = 5},
-        {type = "item", name = "calcite",   amount = 1},
+        {type = "item", name = "copper-plate",   amount = 1},
     },
     results = {
         {type = "fluid", name = "chlorine", amount = 10},
         {type = "fluid", name = "water", amount = 10},
+        {type = "item", name = "copper-plate",   amount = 1, independent_probability = 0.5, ignored_by_stats = 1, ignored_by_productivity = 1},
     },
     allow_productivity = false,
     categories = {"acidworking", "chemistry"},
