@@ -157,11 +157,11 @@ data:extend{
     name = "heavy-shotgun-shell",
     icon = "__Muria-Graphics__/graphics/icons/heavy-shotgun-shell.png",
     enabled = false,
-    energy_required = 8,
+    energy_required = 10,
     ingredients = {
-        {type = "item", name = "shotgun-shell",   amount = 2},
+        {type = "item", name = "piercing-shotgun-shell",   amount = 1},
         {type = "item", name = "lead-pellets",   amount = 5},
-        {type = "item", name = "copper-plate",   amount = 3},
+        {type = "item", name = "iron-plate",   amount = 3},
     },
     results = {
         {type = "item", name = "heavy-shotgun-shell", amount = 1},
@@ -214,7 +214,7 @@ data:extend{
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "item", name = "heavy-shotgun-shell",   amount = 2},
+        {type = "item", name = "heavy-shotgun-shell",   amount = 1},
         {type = "item", name = "eschatotaxite-paste",   amount = 5},
         {type = "item", name = "chloric-fuel",   amount = 5},
         {type = "fluid", name = "water",   amount = 10},

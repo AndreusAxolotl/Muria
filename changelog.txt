@@ -1,4 +1,52 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.0
+Date: 2026-08-07
+  three updates in one single day huh:
+
+  Changes:
+    - Killed the shotgun turret damage tech, its effect has been moved in the standard vanilla tech. idk why it originally was like that.
+    - Heavy shotgun shells now take 10 seconds to craft and use 1 PIERCING shell instead of standard. Recipe now takes iron plates instead of copper plates.
+    - Inert packs now only take 1 shell in response.
+    - Planet discovery Muria now needs Military 3 and military science.
+
+  Notes:
+    - Yes factories will break cuz of this but come on i should've probably done this from the start why would i make heavy shells better than piercing ones without them being an upgrade like dude.
+---------------------------------------------------------------------------------------------------
+Version: 1.5.9
+Date: 2026-08-07
+  well that was weird:
+
+  Fixes:
+    - Fixed the acidophile lichen tile not generating at all, while being misteriously replaced by the cracked lichen from gleba.
+---------------------------------------------------------------------------------------------------
+Version: 1.5.8
+Date: 2026-08-07
+  i keep noticing stuff i forgot:
+
+  Changes:
+    - Increased solar power on Muria to be more accurate to its current location.
+---------------------------------------------------------------------------------------------------
+Version: 1.5.7
+Date: 2026-08-06
+  planets not planet i see what you're trying wube (i dont actually):
+
+  Fixes:
+    - Fixed crash with Factorio 2.1.13.
+---------------------------------------------------------------------------------------------------
+Version: 1.5.6
+Date: 2026-08-06
+  it keeps happening:
+
+  Fixes:
+    - Fixed offworld chlorane production's requirements.
+---------------------------------------------------------------------------------------------------
+Version: 1.5.5
+Date: 2026-08-04
+  for being paste it really doesnt glue well:
+
+  Fixes:
+    - Fixed requirements and science packs used by eschatotaxite paste applications.
+---------------------------------------------------------------------------------------------------
 Version: 1.5.4
 Date: 2026-08-01
   shotgun strengthening:

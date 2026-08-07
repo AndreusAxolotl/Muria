@@ -132,7 +132,7 @@ data:extend{
     subgroup = "planets",
     map_gen_settings = planet_map_gen.muria(),
     pollutant_type = "acids",
-    solar_power_in_space = 70,
+    solar_power_in_space = 150,
     platform_procession_set =
     {
       arrival = {"planet-to-platform-b"},
@@ -149,7 +149,7 @@ data:extend{
       ["day-night-cycle"] = 5 * minute,
       ["magnetic-field"] = 30,
       pressure = 2180,
-      ["solar-power"] = 25,
+      ["solar-power"] = 30,
       gravity = 9,
       ["robot-energy-usage"] = 2,
       ["temperature"] = 320

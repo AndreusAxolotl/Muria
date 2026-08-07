@@ -27,7 +27,7 @@ data:extend {
         recipe = "oxyhydrogen-combustion"
       },
     },
-    prerequisites = { "space-platform-thruster"},
+    prerequisites = { "space-platform-thruster", "military-3"},
     unit =
     {
       count = 1000,
@@ -35,6 +35,7 @@ data:extend {
       {
         { "automation-science-pack",      1 },
         { "logistic-science-pack",        1 },
+        { "military-science-pack",           1 },
         { "chemical-science-pack",        1 },
         { "space-science-pack",           1 },
       },
@@ -304,7 +305,7 @@ data:extend {
         recipe = "corroded-flask-recovery"
       },
     },
-    prerequisites = { "muriatic-science-pack", "biter-egg-handling"},
+    prerequisites = { "muriatic-science-pack"},
     unit =
     {
       count = 500,
@@ -357,7 +358,7 @@ data:extend {
         recipe = "eschatotaxite-carbon-fiber"
       },
     },
-    prerequisites = { "muriatic-science-pack"},
+    prerequisites = { "muriatic-science-pack", "carbon-fiber"},
     unit =
     {
       count = 750,
@@ -369,6 +370,7 @@ data:extend {
         { "production-science-pack",      1 },
         { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
+        { "agricultural-science-pack",     1 },
         { "muriatic-science-pack",     1 },
       },
       time = 60
@@ -877,37 +879,6 @@ data:extend {
   },
   {
     type = "technology",
-    name = "shotgun-turret-damage",
-    icons = util.technology_icon_constant_damage("__Muria-Graphics__/graphics/technology/shotgun-turret.png"),
-    effects =
-    {
-      {
-        type = "turret-attack",
-        turret_id = "shotgun-turret",
-        modifier = 0.5
-      },
-    },
-    prerequisites = {"physical-projectile-damage-6", "shotgun-turret"},
-    unit =
-    {
-      count_formula = "1.5^L*2000",
-      ingredients =
-      {
-        { "automation-science-pack",               1 },
-        { "logistic-science-pack",                 1 },
-        { "chemical-science-pack",                 1 },
-        { "military-science-pack",               1 },
-        { "utility-science-pack",                  1 },
-        { "space-science-pack",                    1 },
-        { "muriatic-science-pack", 1 }
-      },
-      time = 60
-    },
-    max_level = "infinite",
-    upgrade = true
-  },
-  {
-    type = "technology",
     name = "air-scrubbing",
     icon = "__Muria-Graphics__/graphics/technology/air-scrubbing.png",
     icon_size = 256,
@@ -1005,7 +976,14 @@ end
 if settings.startup["muria-muriatic-implementation"].value then
 add_science_pack("foundation", { "muriatic-science-pack", 1 })
 end
+
 add_tech_effect("plastic-bar-productivity",
   { type = "change-recipe-productivity", recipe = "polyvinyl-chloride", change = 0.1 })
 add_tech_effect("rocket-fuel-productivity",
   { type = "change-recipe-productivity", recipe = "kerolox-rocket-fuel", change = 0.1 })
+  add_tech_effect("physical-projectile-damage-7",
+  {
+        type = "turret-attack",
+        turret_id = "shotgun-turret",
+        modifier = 0.5
+      })

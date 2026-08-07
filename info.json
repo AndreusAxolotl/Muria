@@ -1,6 +1,6 @@
 {
   "name": "Muria",
-  "version": "1.5.4",
+  "version": "1.6.0",
   "title": "Muria",
   "author": "AndreusAxolotl",
   "homepage": "https://github.com/AndreusAxolotl/Muria",
@@ -8,7 +8,7 @@
   "factorio_version": "2.1",
   "dependencies": [
     "base",
-    "space-age",
+    "space-age >= 2.1.13",
     "Muria-Graphics = 1.5.0",
     "PlanetsLib",
     "(?) bzlead"

@@ -248,12 +248,14 @@ artificial_lichen_colony.map_color={81, 77, 44}
 artificial_lichen_colony.walking_speed_modifier = 1
 artificial_lichen_colony.vehicle_friction_modifier = 1
 artificial_lichen_colony.minable = {mining_time = 0.5, result = "artificial-lichen-colony"}
+artificial_lichen_colony.factoriopedia_alternative = nil
 
 local acidophile_lichen = table.deepcopy(data.raw.tile["midland-cracked-lichen-dull"])
 acidophile_lichen.name = "acidophile-lichen"
 acidophile_lichen.order = "e[lichen]-a"
 acidophile_lichen.subgroup = "gleba-tiles"
 acidophile_lichen.absorptions_per_second = tile_pollution.muria
+acidophile_lichen.factoriopedia_alternative = nil
 
 data:extend({
   artificial_lichen_colony})
@@ -322,6 +324,10 @@ muriatic_soil_dark.absorptions_per_second = tile_pollution.muriatic_soil
 muriatic_soil_light.absorptions_per_second = tile_pollution.muriatic_soil
 muriatic_folds.absorptions_per_second = tile_pollution.muriatic_soil
 muriatic_folds_flat.absorptions_per_second = tile_pollution.muriatic_soil
+muriatic_soil_dark.factoriopedia_alternative = nil
+muriatic_soil_light.factoriopedia_alternative = nil
+muriatic_folds.factoriopedia_alternative = nil
+muriatic_folds_flat.factoriopedia_alternative = nil
 
 data:extend({
   muriatic_soil_dark})
