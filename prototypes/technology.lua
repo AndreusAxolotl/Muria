@@ -541,7 +541,7 @@ data:extend {
     prerequisites = {"weapon-shooting-speed-6", "muriatic-science-pack"},
     unit =
     {
-      count = 100 * 14,
+      count = 2500,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -586,7 +586,7 @@ data:extend {
     prerequisites = {"weapon-shooting-speed-7"},
     unit =
     {
-      count = 100 * 24,
+      count = 5000,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -994,10 +994,10 @@ add_tech_effect("plastic-bar-productivity",
 add_tech_effect("rocket-fuel-productivity",
   { type = "change-recipe-productivity", recipe = "kerolox-rocket-fuel", change = 0.1 })
 
-add_tech_effect("physical-projectile-damage-1",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.5})
-add_tech_effect("physical-projectile-damage-2",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.5})
-add_tech_effect("physical-projectile-damage-3",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.5})
-add_tech_effect("physical-projectile-damage-4",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.5})
-add_tech_effect("physical-projectile-damage-5",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.5})
-add_tech_effect("physical-projectile-damage-6",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.5})
-add_tech_effect("physical-projectile-damage-7",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.5})
+add_tech_effect("physical-projectile-damage-1",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.3})
+add_tech_effect("physical-projectile-damage-2",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.3})
+add_tech_effect("physical-projectile-damage-3",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.3})
+add_tech_effect("physical-projectile-damage-4",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.3})
+add_tech_effect("physical-projectile-damage-5",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.3})
+add_tech_effect("physical-projectile-damage-6",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.3})
+add_tech_effect("physical-projectile-damage-7",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.3})

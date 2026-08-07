@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.2
+Date: 2026-08-07
+  ok this is getting ridiculous:
+
+  Changes:
+    - Reduced damage bonus for the shotgun turret to 30% from 50% per tech level. Maybe 500% damage at level 10 is a BIT too much.
+    - Increased prices for shooting speed 7 and 8.
+---------------------------------------------------------------------------------------------------
 Version: 1.6.1
 Date: 2026-08-07
   4???:
