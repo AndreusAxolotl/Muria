@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.3
+Date: 2026-08-08
+  yet another shotgun rebalance:
+
+  Changes:
+    - Rebalanced shotgun turret as it was way too op. The turret will now be more balanced in comparison with the gun turret. (Thanks to Valent125 for the data and rebalanced values).
+    - Split the damage on toxic ammo magazines between physical and acid.
+    - Reordered the murian turrets in the inventory.
+    - Adjusted tech requirements for the turret.
+    - Added explosive rocketry as a requirement for explosive shotgun shells.
+
+  Fixes:
+    - Fixed heavy and explosive shells continuing to fly forever.
+---------------------------------------------------------------------------------------------------
 Version: 1.6.2
 Date: 2026-08-07
   ok this is getting ridiculous:

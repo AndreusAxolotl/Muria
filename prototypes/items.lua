@@ -263,7 +263,7 @@ data:extend{
     ammo_type =
     {
       target_type = "direction",
-      clamp_position = true,
+      force_clamp_to_max_range = true,
       action =
       {
         {
@@ -291,10 +291,8 @@ data:extend{
                 {
             type = "projectile",
             projectile = "heavy-shotgun-pellet",
-            starting_speed = 1,
+            starting_speed = 1.2,
             starting_speed_deviation = 0.1,
-            direction_deviation = 0.3,
-            range_deviation = 0.3,
             inherit_speed = true,
                 }
               }
@@ -303,7 +301,7 @@ data:extend{
         }
       }
     },
-    magazine_size = 15,
+    magazine_size = 10,
     subgroup = "ammo",
     order = "b[shotgun]-c[heavy]",
     inventory_move_sound = item_sounds.ammo_small_inventory_move,
@@ -321,7 +319,7 @@ data:extend{
     ammo_type =
     {
       target_type = "direction",
-      clamp_position = true,
+      force_clamp_to_max_range = true,
       action =
       {
         {
@@ -343,16 +341,14 @@ data:extend{
               {
                 type = "area",
                 target_entities = false,
-                repeat_count = 3,
+                repeat_count = 5,
                 radius = 3,
                 action_delivery =
                 {
             type = "projectile",
             projectile = "explosive-shotgun-pellet",
-            starting_speed = 0.7,
+            starting_speed = 1.5,
             starting_speed_deviation = 0.1,
-            direction_deviation = 0.3,
-            range_deviation = 0.3,
             inherit_speed = true,
                 }
               }
@@ -361,7 +357,7 @@ data:extend{
         }
       }
     },
-    magazine_size = 3,
+    magazine_size = 5,
     subgroup = "ammo",
     order = "b[shotgun]-d[explosive]",
     inventory_move_sound = item_sounds.ammo_small_inventory_move,
@@ -399,7 +395,11 @@ data:extend{
             },
             {
               type = "damage",
-              damage = {amount = 18, type = "acid"}
+              damage = {amount = 10, type = "acid"}
+            },
+            {
+              type = "damage",
+              damage = {amount = 8, type = "physical"}
             },
             {
               type = "activate-impact",
