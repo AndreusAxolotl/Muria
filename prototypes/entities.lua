@@ -914,7 +914,7 @@ data:extend{
       type = "burner",
       fuel_categories = {"chloric-fuel"},
       effectivity = 1,
-      burner_usage = "nutrients",
+      burner_usage = "fuel",
       fuel_inventory_size = 1,
       emissions_per_minute = { acids = 2, pollution = 2, spores = -2 },
     },
@@ -1074,7 +1074,7 @@ data:extend{
       type = "burner",
       fuel_categories = {"chloric-fuel"},
       effectivity = 1,
-      burner_usage = "nutrients",
+      burner_usage = "fuel",
       fuel_inventory_size = 1,
       emissions_per_minute = { acids = 2, pollution = 2, spores = -2 },
     },
@@ -1250,6 +1250,7 @@ data:extend{
     open_sound = sounds.mech_large_open,
     close_sound = sounds.mech_large_close,
     input_inventory_size = 3,
+    output_inventory_size = 8,
     surface_conditions = {{property = "gravity", min = 8, max = 9}},
     radius_visualisation_picture =
     {
@@ -1836,7 +1837,7 @@ data:extend{
 
       -- lead_target_for_projectile_speed = 0.2* 0.75 * 1.5, -- this is same as particle horizontal speed of flamethrower fire stream
 
-      fluids = {{type = "chlorane"}, {type = "sulfuric-acid", damage_modifier = 0.8}},
+      fluids = {{type = "hydrogen-chloride"}, {type = "sulfuric-acid", damage_modifier = 0.8}},
       fluid_consumption = 0.2,
 
       gun_center_shift =
@@ -1939,7 +1940,7 @@ data:extend{
     attack_parameters =
     {
       type = "projectile",
-      ammo_category = "shotgun-shell",
+      ammo_categories = {"shotgun-shell", "explosive-shotgun-shell"},
       health_penalty = 1,
       cooldown = 60,
       cooldown_deviation = 0,

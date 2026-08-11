@@ -1,0 +1,31 @@
+{
+    "item": 
+    [
+        ["muriatic-science-pack", "acidworking-science-pack"],
+        ["inert-muriatic-science-pack", "inert-acidworking-science-pack"]
+    ],
+    "fluid": 
+    [
+        ["chlorane", "hydrogen-chloride"],
+        ["inert-muriatic-science-pack", "inert-acidworking-science-pack"]
+    ],
+    "recipe": 
+    [
+        ["inert-muriatic-science-pack", "inert-acidworking-science-pack"],
+        ["muriatic-science-pack-activation", "acidworking-science-pack-activation"],
+        ["chlorane-from-biter-egg", "hydrogen-chloride-from-biter-egg"],
+        ["chlorane-from-spoilage", "hydrogen-chloride-from-spoilage"],
+        ["chlorane-explosives", "hydrogen-chloride-explosives"],
+        ["chlorane-lead-battery", "hydrogen-chloride-lead-battery"],
+        ["chlorane-oxidation", "hydrogen-chloride-oxidation"],
+        ["chlorane", "hydrogen-chloride"]
+    ],
+    "technology": 
+    [
+        ["muriatic-science-pack", "acidworking-science-pack"],
+        ["offworld-chlorane-production", "offworld-chlorine-compounds-production"],
+        ["chlorane-explosives", "hydrogen-chloride-explosives"],
+        ["chlorane-lead-battery", "hydrogen-chloride-lead-battery"],
+        ["chlorane-from-biter-egg", "hydrogen-from-biter-egg"]
+    ]
+    }

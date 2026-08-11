@@ -28,7 +28,7 @@ data:extend{
   },
   {
     type = "item-subgroup",
-    name = "offworld-chlorane-production",
+    name = "offworld-chlorine-compounds-production",
     group = "intermediate-products",
     order = "q-d"
   },
@@ -57,18 +57,24 @@ data:extend{
   {
       type = "ammo-category",
       name = "acidthrower",
-      icon = "__Muria-Graphics__/graphics/icons/muriatic-capsule.png",
+      icon = "__Muria-Graphics__/graphics/icons/acidthrower-ammo.png",
+      subgroup = "ammo-category"
+    },
+    {
+      type = "ammo-category",
+      name = "explosive-shotgun-shell",
+      icon = "__Muria-Graphics__/graphics/icons/explosive-shotgun-shell.png",
       subgroup = "ammo-category"
     },
 {
     type = "fluid",
-    name = "chlorane",
+    name = "hydrogen-chloride",
     subgroup = "fluid",
     default_temperature = -90,
     max_temperature = 0,
     base_color = {0.06, 0.11, 0.07},
     flow_color = {0.06, 0.11, 0.07},
-    icon = "__Muria-Graphics__/graphics/icons/chlorane.png",
+    icon = "__Muria-Graphics__/graphics/icons/hydrogen-chloride.png",
     auto_barrel = true
   },
   {
@@ -188,7 +194,8 @@ data:extend{
     plant_result = "metallic-lichen-colony",
     place_result = "metallic-lichen-colony",
     default_import_location = "muria",
-    weight = 10000000,
+    weight = 2000,
+    surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
 },
   {
     type = "item",
@@ -205,7 +212,8 @@ data:extend{
     plant_result = "cotunnite-lichen-colony",
     place_result = "cotunnite-lichen-colony",
     default_import_location = "muria",
-    weight = 10000000,
+    weight = 2000,
+    surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
 },
   {
     type = "item",
@@ -315,7 +323,7 @@ data:extend{
     type = "ammo",
     name = "explosive-shotgun-shell",
     icon = "__Muria-Graphics__/graphics/icons/explosive-shotgun-shell.png",
-    ammo_category = "shotgun-shell",
+    ammo_category = "explosive-shotgun-shell",
     ammo_type =
     {
       target_type = "direction",
@@ -420,9 +428,9 @@ data:extend{
     default_import_location = "muria",
   },
   {type = "item",
-    name = "muriatic-science-pack",
+    name = "acidworking-science-pack",
     localised_description = {"item-description.science-pack"},
-    icon = "__Muria-Graphics__/graphics/icons/muriatic-science-pack.png",
+    icon = "__Muria-Graphics__/graphics/icons/acidworking-science-pack.png",
     subgroup = "science-pack",
     color_hint = { text = "M" },
     order = "l-2",
@@ -437,8 +445,8 @@ data:extend{
     spoil_result = "corroded-flask",
 },
   {type = "item",
-    name = "inert-muriatic-science-pack",
-    icon = "__Muria-Graphics__/graphics/icons/inert-muriatic-science-pack.png",
+    name = "inert-acidworking-science-pack",
+    icon = "__Muria-Graphics__/graphics/icons/inert-acidworking-science-pack.png",
     subgroup = "muria-acidworking",
     color_hint = { text = "M" },
     order = "z-1",
@@ -472,7 +480,7 @@ data:extend{
     pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     drop_sound = space_age_item_sounds.agriculture_inventory_move,
     fuel_category = "chloric-fuel",
-    fuel_value = "10MJ",
+    fuel_value = "5MJ",
     stack_size = 50,
     default_import_location = "muria",
     spoil_ticks = 30 * minute,
@@ -497,7 +505,7 @@ data:extend{
     fuel_category = "chemical",
     spoil_ticks = 30 * minute,
     spoil_result = "spoilage",
-    fuel_value = "200kJ"
+    fuel_value = "1MJ"
   },
     {
     type = "capsule",
@@ -555,7 +563,7 @@ data:extend{
   {
     type = "ammo",
     name = "acidthrower-ammo",
-    icon = "__Muria-Graphics__/graphics/icons/muriatic-capsule.png",
+    icon = "__Muria-Graphics__/graphics/icons/acidthrower-ammo.png",
     ammo_category = "acidthrower",
     ammo_type =
     {
@@ -587,7 +595,7 @@ data:extend{
   {
     type = "gun",
     name = "acidthrower",
-    icon = "__Muria-Graphics__/graphics/icons/muriatic-gun.png",
+    icon = "__Muria-Graphics__/graphics/icons/acidthrower.png",
     subgroup = "gun",
     order = "i[acidthrower]",
     inventory_move_sound = item_sounds.flamethrower_inventory_move,
@@ -627,7 +635,8 @@ data:extend{
     plant_result = "holmium-lichen-colony",
     place_result = "holmium-lichen-colony",
     default_import_location = "fulgora",
-    weight = 10000000,
+    weight = 2000,
+    surface_conditions = {{property = "atmospheric-acidity", min = 30, max = 30}},
 },
 {
     type = "item",

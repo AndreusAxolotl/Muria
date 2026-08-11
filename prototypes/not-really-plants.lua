@@ -129,6 +129,7 @@ data:extend({
     {
         type = "plant",
         name = "metallic-lichen-colony",
+        surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
         icons =
     {
       {
@@ -423,15 +424,14 @@ data:extend({
             { influence = 0.2, tile_restriction = {"artificial-lichen-colony", "acidophile-lichen"}  },
         },
         tile_restriction = {"artificial-lichen-colony", "acidophile-lichen"} ,
-        surface_conditions = {
-            { property = "pressure", min = 2180, max = 2180 },
-        },
+        surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
       },
         map_color = {255, 216, 132}, -- can be what ever
     },
     {
         type = "plant",
         name = "cotunnite-lichen-colony",
+        surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
         icons =
     {
       {
@@ -721,14 +721,13 @@ data:extend({
         {
             probability_expression = 0,
             tile_restriction = {"artificial-lichen-colony", "acidophile-lichen"},  -- change this to set what tiles it can be placed on
-            surface_conditions = {
-            { property = "pressure", min = 2180, max = 2180 },
-        },},
+            surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},},
         map_color = {196, 137, 255}, -- can be what ever
     },
     {
         type = "plant",
         name = "eschatotaxite",
+        surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
         icons =
     {
       {
@@ -775,15 +774,13 @@ data:extend({
             { influence = 0.2, tile_restriction = {"muriatic-folds-flat", "muriatic-folds", "muriatic-soil-light", "muriatic-soil-dark"}  },
         },
         tile_restriction = {"muriatic-folds-flat", "muriatic-folds", "muriatic-soil-light", "muriatic-soil-dark"} ,
-        surface_conditions = {
-            { property = "pressure", min = 2180, max = 2180 },
-        },
-      },
+        surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},},
         map_color = {158, 117, 33}, -- can be what ever
     },
     {
         type = "plant",
         name = "holmium-lichen-colony",
+        surface_conditions = {{property = "atmospheric-acidity", min = 30, max = 30}},
         icons =
     {
       {
@@ -1076,9 +1073,7 @@ data:extend({
             { influence = 0, tile_restriction = {"artificial-lichen-colony"}  },
         },
         tile_restriction = {"artificial-lichen-colony"} ,
-        surface_conditions = {
-            { property = "magnetic-field", min = 99, max = 99 },
-        },
+        surface_conditions = {{property = "atmospheric-acidity", min = 30, max = 30}},
       },
         map_color = {255, 140, 144}, -- can be what ever
     },

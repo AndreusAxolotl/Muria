@@ -197,7 +197,7 @@ data:extend {
       },
       {
         type = "unlock-recipe",
-        recipe = "chlorane"
+        recipe = "hydrogen-chloride"
       },
     },
     prerequisites = { "lead-processing", "eschatotaxite-farming"},
@@ -254,19 +254,19 @@ data:extend {
   },
   {
     type = "technology",
-    name = "muriatic-science-pack",
-    icon = "__Muria-Graphics__/graphics/technology/muriatic-science-pack.png",
+    name = "acidworking-science-pack",
+    icon = "__Muria-Graphics__/graphics/technology/acidworking-science-pack.png",
     icon_size = 256,
     essential = true,    
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "inert-muriatic-science-pack"
+        recipe = "inert-acidworking-science-pack"
       },
       {
         type = "unlock-recipe",
-        recipe = "muriatic-science-pack-activation"
+        recipe = "acidworking-science-pack-activation"
       },
       {
         type = "unlock-recipe",
@@ -287,14 +287,14 @@ data:extend {
   },
   {
     type = "technology",
-    name = "offworld-chlorane-production",
-    icon = "__Muria-Graphics__/graphics/technology/offworld-chlorane-production.png",
+    name = "offworld-chlorine-compounds-production",
+    icon = "__Muria-Graphics__/graphics/technology/offworld-chlorine-compounds-production.png",
     icon_size = 256,
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "chlorane-from-spoilage"
+        recipe = "hydrogen-chloride-from-spoilage"
       },
       {
         type = "unlock-recipe",
@@ -302,11 +302,11 @@ data:extend {
       },
       {
         type = "unlock-recipe",
-        recipe = "chlorane-oxidation"
+        recipe = "chlorine-traces-from-ice"
       },
       {
         type = "unlock-recipe",
-        recipe = "chlorine-traces-from-ice"
+        recipe = "chlorine-traces-from-coal"
       },
       {
         type = "unlock-recipe",
@@ -317,7 +317,7 @@ data:extend {
         recipe = "corroded-flask-recovery"
       },
     },
-    prerequisites = { "muriatic-science-pack"},
+    prerequisites = { "acidworking-science-pack"},
     unit =
     {
       count = 500,
@@ -325,30 +325,30 @@ data:extend {
       {
         { "chemical-science-pack",        1 },
         { "space-science-pack",           1 },
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
       },
       time = 60
     }
   },
   {
     type = "technology",
-    name = "chlorane-from-biter-egg",
-    icon = "__Muria-Graphics__/graphics/technology/chlorane-from-biter-egg.png",
+    name = "hydrogen-chloride-from-biter-egg",
+    icon = "__Muria-Graphics__/graphics/technology/hydrogen-chloride-from-biter-egg.png",
     icon_size = 256,
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "chlorane-from-biter-egg"
+        recipe = "hydrogen-chloride-from-biter-egg"
       },
     },
-    prerequisites = { "offworld-chlorane-production", "biter-egg-handling"},
+    prerequisites = { "offworld-chlorine-compounds-production", "biter-egg-handling"},
     unit =
     {
       count = 100,
       ingredients =
       {
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
         { "agricultural-science-pack",     1 },
       },
       time = 30
@@ -370,7 +370,7 @@ data:extend {
         recipe = "eschatotaxite-carbon-fiber"
       },
     },
-    prerequisites = { "muriatic-science-pack", "carbon-fiber"},
+    prerequisites = { "acidworking-science-pack", "carbon-fiber"},
     unit =
     {
       count = 750,
@@ -383,7 +383,7 @@ data:extend {
         { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
         { "agricultural-science-pack",     1 },
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
       },
       time = 60
     }
@@ -400,7 +400,7 @@ data:extend {
         recipe = "toxic-rounds-magazine"
       },
     },
-    prerequisites = { "offworld-chlorane-production"},
+    prerequisites = { "offworld-chlorine-compounds-production"},
     unit =
     {
       count = 1000,
@@ -412,24 +412,24 @@ data:extend {
         { "military-science-pack",      1 },
         { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
       },
       time = 60
     }
   },
   {
     type = "technology",
-    name = "chlorane-explosives",
-    icon = "__Muria-Graphics__/graphics/technology/chlorane-explosives.png",
+    name = "hydrogen-chloride-explosives",
+    icon = "__Muria-Graphics__/graphics/technology/hydrogen-chloride-explosives.png",
     icon_size = 256,
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "chlorane-explosives"
+        recipe = "hydrogen-chloride-explosives"
       },
     },
-    prerequisites = { "offworld-chlorane-production"},
+    prerequisites = { "offworld-chlorine-compounds-production"},
     unit =
     {
       count = 500,
@@ -441,24 +441,24 @@ data:extend {
         { "military-science-pack",      1 },
         { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
       },
       time = 60
     }
   },
   {
     type = "technology",
-    name = "chlorane-lead-battery",
-    icon = "__Muria-Graphics__/graphics/technology/chlorane-lead-battery.png",
+    name = "hydrogen-chloride-lead-battery",
+    icon = "__Muria-Graphics__/graphics/technology/hydrogen-chloride-lead-battery.png",
     icon_size = 256,
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "chlorane-lead-battery"
+        recipe = "hydrogen-chloride-lead-battery"
       },
     },
-    prerequisites = { "offworld-chlorane-production"},
+    prerequisites = { "offworld-chlorine-compounds-production"},
     unit =
     {
       count = 500,
@@ -469,7 +469,7 @@ data:extend {
         { "chemical-science-pack",        1 },
         { "production-science-pack",      1 },
         { "space-science-pack",           1 },
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
       },
       time = 60
     }
@@ -494,7 +494,7 @@ data:extend {
         recipe = "acidthrower-ammo"
       },
     },
-    prerequisites = { "offworld-chlorane-production"},
+    prerequisites = { "offworld-chlorine-compounds-production", "advanced-paste-applications"},
     unit =
     {
       count = 1500,
@@ -506,7 +506,7 @@ data:extend {
         { "military-science-pack",      1 },
         { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
       },
       time = 60
     }
@@ -538,7 +538,7 @@ data:extend {
         modifier = 1.3
       }
     },
-    prerequisites = {"weapon-shooting-speed-6", "muriatic-science-pack"},
+    prerequisites = {"weapon-shooting-speed-6", "acidworking-science-pack"},
     unit =
     {
       count = 2500,
@@ -550,7 +550,7 @@ data:extend {
         {"military-science-pack", 1},
         {"utility-science-pack", 1},
         { "space-science-pack",           1 },
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
       },
       time = 60
     },
@@ -595,7 +595,7 @@ data:extend {
         {"military-science-pack", 1},
         {"utility-science-pack", 1},
         { "space-science-pack",           1 },
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
       },
       time = 60
     },
@@ -630,7 +630,7 @@ data:extend {
         {"military-science-pack", 1},
         {"utility-science-pack", 1},
         {"space-science-pack", 1},
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
       },
       time = 60
     },
@@ -650,7 +650,7 @@ data:extend {
         change = 0.1
       },
     },
-    prerequisites = { "muriatic-science-pack" },
+    prerequisites = { "acidworking-science-pack" },
     unit =
     {
       count_formula = "1.5^L*1000",      
@@ -661,7 +661,7 @@ data:extend {
         { "chemical-science-pack",                 1 },
         { "production-science-pack",               1 },
         { "space-science-pack",                    1 },
-        { "muriatic-science-pack", 1 }
+        { "acidworking-science-pack", 1 }
       },
       time = 60
     },
@@ -682,7 +682,7 @@ data:extend {
       },
       {
         type = "change-recipe-productivity",
-        recipe = "chlorane-explosives",
+        recipe = "hydrogen-chloride-explosives",
         change = 0.1
       },
     },
@@ -696,7 +696,7 @@ data:extend {
                 },
             }
         },
-    prerequisites = { "chlorane-explosives" },
+    prerequisites = { "hydrogen-chloride-explosives" },
     unit =
     {
       count_formula = "1.5^L*1000",
@@ -709,7 +709,7 @@ data:extend {
         { "production-science-pack",               1 },
         { "utility-science-pack",                  1 },
         { "space-science-pack",                    1 },
-        { "muriatic-science-pack", 1 }
+        { "acidworking-science-pack", 1 }
       },
       time = 60
     },
@@ -730,7 +730,7 @@ data:extend {
       },
       {
         type = "change-recipe-productivity",
-        recipe = "chlorane-lead-battery",
+        recipe = "hydrogen-chloride-lead-battery",
         change = 0.1
       },
     },
@@ -744,7 +744,7 @@ data:extend {
                 },
             }
         },
-    prerequisites = { "chlorane-lead-battery", "electromagnetic-science-pack" },
+    prerequisites = { "hydrogen-chloride-lead-battery", "electromagnetic-science-pack" },
     unit =
     {
       count_formula = "1.5^L*1000",
@@ -757,7 +757,7 @@ data:extend {
         { "utility-science-pack",                  1 },
         { "space-science-pack",                    1 },
         { "electromagnetic-science-pack",              1 },
-        { "muriatic-science-pack", 1 }
+        { "acidworking-science-pack", 1 }
       },
       time = 60
     },
@@ -780,7 +780,7 @@ data:extend {
         recipe = "oxygenated-iron-bacteria-cultivation"
       }
     },
-    prerequisites = {"offworld-chlorane-production", "agricultural-science-pack"},
+    prerequisites = {"offworld-chlorine-compounds-production", "agricultural-science-pack"},
     unit =
     {
       count = 750,
@@ -792,7 +792,7 @@ data:extend {
         { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
         { "agricultural-science-pack",     1 },
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
       },
       time = 60
     }
@@ -813,7 +813,7 @@ data:extend {
         recipe = "artificial-lichen-colony"
       },
     },
-    prerequisites = {"foundation", "offworld-chlorane-production"},
+    prerequisites = {"foundation", "offworld-chlorine-compounds-production"},
     unit =
     {
       count = 1000,
@@ -826,7 +826,7 @@ data:extend {
         { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
         { "electromagnetic-science-pack",     1 },
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
       },
       time = 60
     }
@@ -855,7 +855,7 @@ data:extend {
         { "military-science-pack",      1 },
         { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
       },
       time = 60
     }
@@ -872,7 +872,7 @@ data:extend {
         recipe = "explosive-shotgun-shell"
       }
     },
-    prerequisites = { "shotgun-turret", "offworld-chlorane-production", "explosive-rocketry"},
+    prerequisites = { "shotgun-turret", "offworld-chlorine-compounds-production", "explosive-rocketry"},
     unit =
     {
       count = 1000,
@@ -884,7 +884,7 @@ data:extend {
         { "military-science-pack",      1 },
         { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
       },
       time = 30
     }
@@ -925,7 +925,7 @@ data:extend {
         recipe = "aquiloan-air-scrubbing",
       },
     },
-    prerequisites = {"offworld-chlorane-production", "cryogenic-science-pack"},
+    prerequisites = {"offworld-chlorine-compounds-production", "cryogenic-science-pack"},
     unit =
     {
       count = 2000,
@@ -941,7 +941,44 @@ data:extend {
         { "metallurgic-science-pack",     1 },
         { "agricultural-science-pack",     1 },
         { "cryogenic-science-pack",     1 },
-        { "muriatic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "advanced-acid-processing",
+    icon = "__Muria-Graphics__/graphics/technology/advanced-acid-processing.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "hydrogen-chloride-oxidation"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sulfur-chlorine-salt-redox"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "chlorine-salts-synthesis"
+      },
+    },
+    prerequisites = { "offworld-chlorine-compounds-production", "production-science-pack", "utility-science-pack"},
+    unit =
+    {
+      count = 750,
+      ingredients =
+      {
+        { "automation-science-pack",      1 },
+        { "logistic-science-pack",        1 },
+        { "chemical-science-pack",        1 },
+        { "production-science-pack",        1 },
+        { "utility-science-pack",         1 },
+        { "space-science-pack",           1 },
+        { "acidworking-science-pack",     1 },
       },
       time = 60
     }
@@ -978,15 +1015,15 @@ end
 
 if not mods["Paracelsin"] then
 add_tech_prerequisites("planet-discovery-aquilo", "explosive-shotgun-shell")
-add_science_pack("planet-discovery-aquilo", { "muriatic-science-pack", 1 })
+add_science_pack("planet-discovery-aquilo", { "acidworking-science-pack", 1 })
 end
 
 if settings.startup["muria-muriatic-promethium"].value then
-add_science_pack("promethium-science-pack", { "muriatic-science-pack", 1 })
-add_science_pack("research-productivity", { "muriatic-science-pack", 1 })
+add_science_pack("promethium-science-pack", { "acidworking-science-pack", 1 })
+add_science_pack("research-productivity", { "acidworking-science-pack", 1 })
 end
 if settings.startup["muria-muriatic-implementation"].value then
-add_science_pack("foundation", { "muriatic-science-pack", 1 })
+add_science_pack("foundation", { "acidworking-science-pack", 1 })
 end
 
 add_tech_effect("plastic-bar-productivity",
@@ -1001,3 +1038,9 @@ add_tech_effect("physical-projectile-damage-4",{type = "turret-attack", turret_i
 add_tech_effect("physical-projectile-damage-5",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.1})
 add_tech_effect("physical-projectile-damage-6",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.1})
 add_tech_effect("physical-projectile-damage-7",{type = "turret-attack", turret_id = "shotgun-turret", modifier = 0.1})
+
+add_tech_effect("stronger-explosives-3",{type = "ammo-damage", ammo_category = "explosive-shotgun-shell", modifier = 0.4})
+add_tech_effect("stronger-explosives-4",{type = "ammo-damage", ammo_category = "explosive-shotgun-shell", modifier = 0.4})
+add_tech_effect("stronger-explosives-5",{type = "ammo-damage", ammo_category = "explosive-shotgun-shell", modifier = 0.4})
+add_tech_effect("stronger-explosives-6",{type = "ammo-damage", ammo_category = "explosive-shotgun-shell", modifier = 0.4})
+add_tech_effect("stronger-explosives-7",{type = "ammo-damage", ammo_category = "explosive-shotgun-shell", modifier = 0.4})

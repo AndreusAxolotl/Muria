@@ -1,4 +1,43 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.0
+Date: 2026-08-11
+  i loooooveee updates:
+
+  Additions:
+    - Added the Sulfur-Chlorine salt redox recipe (2 Sulfur + 2 Chlorine Salts + 50 Water + 25 Steam = 25 Sulfuric Acid + 50 Hydrogen Chloride + 67% 2 Chlorine Salts).
+    - Added the chlorine salts synthesis recipe (1 iron ore + 1 copper ore + 10 chlorine = 2 chlorine salts).
+    - Added the chlorine from coal traces recipe (20 coal + 10 water = 10 chlorine).
+    - These and the Hydrogen Chloride Oxidation recipes will be found in the new Advanced Acid Processing tech.
+    - If Cerys or Paracelsin are installed, their Nitric acid recipes will be craftable in the Acidworking plant, same for Apia-Carnova and its Phosphoric acid recipe.
+
+  Changes:
+    - Renamed Muriatic science pack to Acidworking science pack.
+    - Renamed chlorane to hydrogen chloride, i confused enough people.
+    - Reworked inert science pack recipe (5 Chloric fuel + 5 Eschatotaxite Paste + 1 Heavy Shotgun Shell + 10 Water + 10 Hydrogen Chloride => 5 Paste + 2 Heavy Shells + 25 HCl + 25 Sulfuric Acid)
+    - Reworked Hydrogen chloride recipe (2 Sulfur + 20 Chlorine + 20 Hydrogen = 20 Hydrogen Chloride => 1 Copper + 50 Chlorine + 50 Hydrogen = 50 HCL) to render it closer to the ratios of the vanilla Sulfuric Acid recipe and the Nitric acid recipes from Paracelsin and Cerys.
+    - Moved hydrogen chloride oxidation to the new advanced acid processing tech.
+    - Chlorine salts, Cotunnite and Holmium chloride can be now launched into space.
+    - Added advanced paste applications as a prerequisite for acid weaponization.
+    - Removed the biter egg from the handheld acidthrower recipe.
+
+  Notes:
+    - Once again, this patch will break current factories, which is why the version number increased.
+---------------------------------------------------------------------------------------------------
+Version: 1.6.5
+Date: 2026-08-11
+  more slots! more table!:
+
+  Changes:
+    - Doubled amount of output slots on the fungicultural tower.
+---------------------------------------------------------------------------------------------------
+Version: 1.6.4
+Date: 2026-08-10
+  minor stuff i think:
+
+  Changes:
+    - Chloric fuel is now 5MJ instead of 10.
+    - Moved explosive shotgun ammo to a new ammo type so it gains damage from explosive damage instead of physical damage.
+---------------------------------------------------------------------------------------------------
 Version: 1.6.3
 Date: 2026-08-08
   yet another shotgun rebalance:
