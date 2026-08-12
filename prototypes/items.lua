@@ -44,6 +44,12 @@ data:extend{
     group = "intermediate-products",
     order = "q-f"
   },
+      {
+    type = "item-subgroup",
+    name = "pickled-casting",
+    group = "intermediate-products",
+    order = "q-e"
+  },
   {
     type = "item-subgroup",
     name = "fungiculture",

@@ -1,10 +1,53 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.5
+Date: 2026-08-12
+  how did i forget that genuinely:
+
+  Fixes:
+    - Made the new pickling recipes craftable in the smelting plant.
+---------------------------------------------------------------------------------------------------
+Version: 1.7.4
+Date: 2026-08-12
+  more stuff woohoo:
+
+  Additions:
+    - Added Lead Bots, they have more health and cargo capacity but are slower. They also are immune to acids on Muria.
+    - Added pickled casting recipes, by adding hydrogen chloride to casting recipes you can use slightly less molten metal to obtain the same amount of products.
+
+  Changes:
+    - Changed requirements for shotgun turret and acidthrowers to not need gleba tech.
+    - Shotgun turret now needs advanced circuits instead of carbon fiber.
+    - Handheld acidthrower now requires pipes instead of carbon fiber.
+    - (Yes I know these ingredient replacements are amazing)
+    - Rebalanced lichen breeding and nutrients from lichen so that you can actually make a sustainable loop.
+---------------------------------------------------------------------------------------------------
+Version: 1.7.3
+Date: 2026-08-11
+  why was it 2 actually:
+
+  Changes:
+    - Smelting plant now has 4 module slots.
+---------------------------------------------------------------------------------------------------
+Version: 1.7.2
+Date: 2026-08-11
+  shortest lived recipes ever:
+
+  Removals:
+    - Removed chlorine from coal traces and calcite salt synthesis due to them being pretty op and making exports from muria nonexistant. 
+---------------------------------------------------------------------------------------------------
+Version: 1.7.1
+Date: 2026-08-11
+  yeagh:
+
+  Fixes:
+    - Fixed order of hydrogen chloride oxidation in the inventory.
+---------------------------------------------------------------------------------------------------
 Version: 1.7.0
 Date: 2026-08-11
   i loooooveee updates:
 
   Additions:
-    - Added the Sulfur-Chlorine salt redox recipe (2 Sulfur + 2 Chlorine Salts + 50 Water + 25 Steam = 25 Sulfuric Acid + 50 Hydrogen Chloride + 67% 2 Chlorine Salts).
+    - Added the Sulfur-Chlorine salt redox recipe (2 Sulfur + 2 Chlorine Salts + 50 Water + 25 Steam = 25 Sulfuric Acid + 50 Hydrogen Chloride + 1-2 Chlorine Salts).
     - Added the chlorine salts synthesis recipe (1 iron ore + 1 copper ore + 10 chlorine = 2 chlorine salts).
     - Added the chlorine from coal traces recipe (20 coal + 10 water = 10 chlorine).
     - These and the Hydrogen Chloride Oxidation recipes will be found in the new Advanced Acid Processing tech.

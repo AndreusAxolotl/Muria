@@ -306,10 +306,6 @@ data:extend {
       },
       {
         type = "unlock-recipe",
-        recipe = "chlorine-traces-from-coal"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "water-electrolysis"
       },
       {
@@ -494,7 +490,7 @@ data:extend {
         recipe = "acidthrower-ammo"
       },
     },
-    prerequisites = { "offworld-chlorine-compounds-production", "advanced-paste-applications"},
+    prerequisites = { "offworld-chlorine-compounds-production"},
     unit =
     {
       count = 1500,
@@ -843,7 +839,7 @@ data:extend {
         recipe = "shotgun-turret"
       }
     },
-    prerequisites = {"advanced-paste-applications"},
+    prerequisites = {"acidworking-science-pack"},
     unit =
     {
       count = 1000,
@@ -961,10 +957,6 @@ data:extend {
         type = "unlock-recipe",
         recipe = "sulfur-chlorine-salt-redox"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "chlorine-salts-synthesis"
-      },
     },
     prerequisites = { "offworld-chlorine-compounds-production", "production-science-pack", "utility-science-pack"},
     unit =
@@ -979,6 +971,88 @@ data:extend {
         { "utility-science-pack",         1 },
         { "space-science-pack",           1 },
         { "acidworking-science-pack",     1 },
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "lead-robots",
+    icon = "__Muria-Graphics__/graphics/technology/lead-robots.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "lead-construction-robot"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "lead-logistic-robot"
+      },
+    },
+    prerequisites = { "acidworking-science-pack", "construction-robotics", "logistic-robotics", "production-science-pack", "utility-science-pack"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        { "automation-science-pack",      1 },
+        { "logistic-science-pack",        1 },
+        { "chemical-science-pack",        1 },
+        { "production-science-pack",        1 },
+        { "utility-science-pack",         1 },
+        { "space-science-pack",           1 },
+        { "acidworking-science-pack",     1 },
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "pickled-casting",
+    icon = "__Muria-Graphics__/graphics/technology/pickled-casting.png",
+    icon_size = 256,
+    effects =
+    {
+       {
+        type = "unlock-recipe",
+        recipe = "casting-pickled-iron"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "casting-pickled-steel"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "casting-pickled-copper"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "casting-pickled-iron-gear-wheel"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "casting-pickled-iron-stick"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "casting-pickled-copper-cable"
+      },
+    },
+    prerequisites = { "advanced-acid-processing", "metallurgic-science-pack", "production-science-pack",},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        { "automation-science-pack",      1 },
+        { "logistic-science-pack",        1 },
+        { "chemical-science-pack",        1 },
+        { "production-science-pack",        1 },
+        { "space-science-pack",           1 },
+        { "acidworking-science-pack",     1 },
+        { "metallurgic-science-pack",     1 },
       },
       time = 60
     }

@@ -2,7 +2,8 @@
     "item": 
     [
         ["muriatic-science-pack", "acidworking-science-pack"],
-        ["inert-muriatic-science-pack", "inert-acidworking-science-pack"]
+        ["inert-muriatic-science-pack", "inert-acidworking-science-pack"],
+        ["chlorane-barrel", "hydrogen-chloride-barrel"]
     ],
     "fluid": 
     [
@@ -18,7 +19,9 @@
         ["chlorane-explosives", "hydrogen-chloride-explosives"],
         ["chlorane-lead-battery", "hydrogen-chloride-lead-battery"],
         ["chlorane-oxidation", "hydrogen-chloride-oxidation"],
-        ["chlorane", "hydrogen-chloride"]
+        ["chlorane", "hydrogen-chloride"],
+        ["chlorane-barrel", "hydrogen-chloride-barrel"],
+        ["empty-chlorane-barrel", "empty-hydrogen-chloride-barrel"]
     ],
     "technology": 
     [

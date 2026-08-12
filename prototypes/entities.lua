@@ -826,7 +826,7 @@ data:extend{
     ingredients = {
       {type = "item", name = "lead-plate", amount = 20},
       {type = "item", name = "iron-gear-wheel", amount = 15},
-      {type = "item", name = "carbon-fiber", amount = 10},
+      {type = "item", name = "advanced-circuit", amount = 10},
       {type = "item", name = "lead-pellets", amount = 10},
       {type = "item", name = "anti-corrosion-cladding", amount = 5},
     },
@@ -1132,7 +1132,7 @@ data:extend{
     },
         energy_usage = "1MW",
         heating_energy = "200kW", 
-        module_slots = 2,
+        module_slots = 4,
         source_inventory_size = 1,
         allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
           graphics_set = {

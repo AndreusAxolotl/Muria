@@ -274,7 +274,7 @@ data:extend{
     name = "acidophile-lichen-cultivation",
     icon = "__Muria-Graphics__/graphics/icons/acidophile-lichen-cultivation.png",
     enabled = false,
-    energy_required = 4,
+    energy_required = 2,
     subgroup = "muria-acidworking",
     order = "d-a",
     ingredients = {
@@ -286,7 +286,6 @@ data:extend{
         {type = "item", name = "acidophile-lichen", amount = 4, reset_freshness_on_craft = true,},
     },
     allow_productivity = true,
-    
     categories = {"organic", "biovat-processes"},
     auto_recycle = false,
     
@@ -300,7 +299,7 @@ data:extend{
     order = "c-a",
     energy_required = 2,
     ingredients = {
-        {type = "item", name = "acidophile-lichen",   amount = 5},
+        {type = "item", name = "acidophile-lichen",   amount = 2},
     },
     results = {
         {type = "item", name = "nutrients", amount = 10, percent_spoiled=0.5},
@@ -308,7 +307,6 @@ data:extend{
     allow_productivity = true,
     categories = {"organic","biovat-processes"},
     auto_recycle = false,
-    
 },
 {
     type = "recipe",
@@ -584,7 +582,7 @@ data:extend{
         {type = "item", name = "lead-plate",   amount = 5},
         {type = "item", name = "anti-corrosion-cladding",   amount = 5},
         {type = "item", name = "iron-gear-wheel",   amount = 15},
-        {type = "item", name = "carbon-fiber",   amount = 5},
+        {type = "item", name = "pipe",   amount = 5},
     },
     results = {
         {type = "item", name = "acidthrower",   amount = 1},
@@ -696,8 +694,8 @@ data:extend{
     name = "hydrogen-chloride-oxidation",
     icon = "__Muria-Graphics__/graphics/icons/hydrogen-chloride-oxidation.png",
     enabled = false,
-    subgroup = "offworld-chlorine-compounds-production",
-    order = "a", 
+    subgroup = "muria-acidworking",
+    order = "h", 
     energy_required = 6,
     ingredients = {
         {type = "fluid", name = "hydrogen-chloride",   amount = 20},
@@ -1078,7 +1076,7 @@ data:extend{
         name = "muria-rocket-part",
         icons = {
             { icon = "__base__/graphics/icons/rocket-part.png", icon_size = 64 },
-            { icon = "__Muria-Graphics__/graphics/icons/muria.png", icon_size = 64, scale = 0.25, shift = { 8, 8 } },
+            { icon = "__Muria-Graphics__/graphics/icons/muria.png", icon_size = 64, scale = 0.25, shift = { -8, -8 } },
         },
         energy_required = 2,
         enabled = false,
@@ -1140,7 +1138,7 @@ data:extend{
     icon = "__Muria-Graphics__/graphics/icons/sulfur-chlorine-salt-redox.png",
     enabled = false,
     subgroup = "muria-acidworking",
-    order = "h",
+    order = "i",
     energy_required = 4,
     ingredients = {
         {type = "item", name = "sulfur",   amount = 2},
@@ -1159,43 +1157,136 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "chlorine-salts-synthesis",
-    icon = "__Muria-Graphics__/graphics/icons/chlorine-salts.png",
+    name = "casting-pickled-iron",
+    categories = {"metallurgy", "leadworking"},
+    subgroup = "pickled-casting",
+    order = "b[casting]-a[casting-iron]",
+    icons = {
+            { icon = "__space-age__/graphics/icons/casting-iron.png", icon_size = 64 },
+            { icon = "__Muria-Graphics__/graphics/icons/hydrogen-chloride.png", icon_size = 64, scale = 0.25, shift = { -8, -8 } },
+        },
     enabled = false,
-    subgroup = "offworld-chlorine-compounds-production",
-    order = "g", 
-    energy_required = 4,
-    ingredients = {
-        {type = "item", name = "iron-ore",   amount = 1},
-        {type = "item", name = "copper-ore",   amount = 1},
-        {type = "fluid", name = "chlorine",   amount = 10},
+    ingredients =
+    {
+      {type = "fluid", name = "molten-iron", amount = 15, fluidbox_multiplier = 10},
+      {type = "fluid", name = "hydrogen-chloride",   amount = 5},
     },
-    results = {
-        {type = "item", name = "chlorine-salts", amount = 2},
-    },
+    energy_required = 3.2,
+    allow_decomposition = false,
+    results = {{type = "item", name = "iron-plate", amount = 2}},
     allow_productivity = true,
-    categories = {"acidworking"},
     auto_recycle = false,
-    surface_conditions = {{property = "gravity", min = 1}, {property = "pressure", min = 1}, {property = "atmospheric-acidity", max = 99}},
-},
-{
+  },
+  {
     type = "recipe",
-    name = "chlorine-traces-from-coal",
-    icon = "__Muria-Graphics__/graphics/icons/chlorine-traces-from-coal.png",
+    name = "casting-pickled-steel",
+    categories = {"metallurgy", "leadworking"},
+    subgroup = "pickled-casting",
+    order = "b[casting]-c[casting-steel]",
+    icons = {
+            { icon = "__space-age__/graphics/icons/casting-steel.png", icon_size = 64 },
+            { icon = "__Muria-Graphics__/graphics/icons/hydrogen-chloride.png", icon_size = 64, scale = 0.25, shift = { -8, -8 } },
+        },
     enabled = false,
-    subgroup = "offworld-chlorine-compounds-production",
-    order = "f", 
-    energy_required = 5,
-    ingredients = {
-        {type = "item", name = "coal",   amount = 20},
-        {type = "fluid", name = "water",   amount = 10},
+    ingredients =
+    {
+      {type = "fluid", name = "molten-iron", amount = 22.5, fluidbox_multiplier = 10},
+      {type = "fluid", name = "hydrogen-chloride",   amount = 5},
     },
-    results = {
-        {type = "fluid", name = "chlorine", amount = 10},
-    },
+    energy_required = 3.2,
+    allow_decomposition = false,
+    results = {{type = "item", name = "steel-plate", amount = 1}},
     allow_productivity = true,
-    categories = {"chemistry", "acidworking"},
     auto_recycle = false,
-    surface_conditions = {{property = "gravity", min = 1}, {property = "pressure", min = 1}, {property = "atmospheric-acidity", max = 99}},
-},
+  },
+  {
+    type = "recipe",
+    name = "casting-pickled-copper",
+    categories = {"metallurgy", "leadworking"},
+    subgroup = "pickled-casting",
+    order = "b[casting]-b[casting-copper]",
+    icons = {
+            { icon = "__space-age__/graphics/icons/casting-copper.png", icon_size = 64 },
+            { icon = "__Muria-Graphics__/graphics/icons/hydrogen-chloride.png", icon_size = 64, scale = 0.25, shift = { -8, -8 } },
+        },
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "molten-copper", amount = 15, fluidbox_multiplier = 10},
+      {type = "fluid", name = "hydrogen-chloride",   amount = 5},
+    },
+    energy_required = 3.2,
+    allow_decomposition = false,
+    results = {{type = "item", name = "copper-plate", amount = 2}},
+    allow_productivity = true,
+    auto_recycle = false,
+  },
+
+  {
+    type = "recipe",
+    name = "casting-pickled-iron-gear-wheel",
+    categories = {"metallurgy", "leadworking"},
+    subgroup = "pickled-casting",
+    order = "b[casting]-d[casting-iron-gear-wheel]",
+    icons = {
+            { icon = "__space-age__/graphics/icons/casting-iron-gear-wheel.png", icon_size = 64 },
+            { icon = "__Muria-Graphics__/graphics/icons/hydrogen-chloride.png", icon_size = 64, scale = 0.25, shift = { -8, -8 } },
+        },
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "molten-iron", amount = 7.5, fluidbox_multiplier = 10},
+      {type = "fluid", name = "hydrogen-chloride",   amount = 5},
+    },
+    energy_required = 1,
+    allow_decomposition = false,
+    results = {{type = "item", name = "iron-gear-wheel", amount = 1}},
+    allow_productivity = true,
+    auto_recycle = false,
+  },
+
+  {
+    type = "recipe",
+    name = "casting-pickled-iron-stick",
+    categories = {"metallurgy", "leadworking"},
+    subgroup = "pickled-casting",
+    order = "b[casting]-e[casting-iron-stick]",
+ icons = {
+            { icon = "__space-age__/graphics/icons/casting-iron-stick.png", icon_size = 64 },
+            { icon = "__Muria-Graphics__/graphics/icons/hydrogen-chloride.png", icon_size = 64, scale = 0.25, shift = { -8, -8 } },
+        },
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "molten-iron", amount = 10, fluidbox_multiplier = 10},
+      {type = "fluid", name = "hydrogen-chloride",   amount = 5},
+    },
+    energy_required = 1,
+    allow_decomposition = false,
+    results = {{type = "item", name = "iron-stick", amount = 4}},
+    allow_productivity = true,
+    auto_recycle = false,
+  },
+  {
+    type = "recipe",
+    name = "casting-pickled-copper-cable",
+    categories = {"metallurgy", "leadworking"},
+    subgroup = "pickled-casting",
+    order = "b[casting]-h[casting-copper-cable]",
+    icons = {
+            { icon = "__space-age__/graphics/icons/casting-copper-cable.png", icon_size = 64 },
+            { icon = "__Muria-Graphics__/graphics/icons/hydrogen-chloride.png", icon_size = 64, scale = 0.25, shift = { -8, -8 } },
+        },
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "molten-copper", amount = 3.75, fluidbox_multiplier = 5},
+      {type = "fluid", name = "hydrogen-chloride",   amount = 5},
+    },
+    energy_required = 1,
+    allow_decomposition = false,
+    results = {{type = "item", name = "copper-cable", amount = 2}},
+    allow_productivity = true,
+    auto_recycle = false,
+  },
 }

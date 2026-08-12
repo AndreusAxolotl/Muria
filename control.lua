@@ -18,6 +18,8 @@ local immunity = {
     ["cargo-landing-pad"] = true,
     ["biovat"] = true,
     ["scrubber"] = true,
+    ["lead-construction-robot"] = true,
+    ["lead-logistic-robot"] = true,
 }
 
 local production_types = {
