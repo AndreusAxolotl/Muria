@@ -280,10 +280,11 @@ data:extend{
     ingredients = {
         {type = "item", name = "acidophile-lichen",   amount = 2},
         {type = "fluid", name = "chlorine",   amount = 5},
-        {type = "item", name = "nutrients",   amount = 10},
+        {type = "item", name = "chlorine-salts",   amount = 2},
     },
     results = {
         {type = "item", name = "acidophile-lichen", amount = 4, reset_freshness_on_craft = true,},
+        {type = "item", name = "chlorine-salts", amount_min = 1, amount_max = 2, ignored_by_stats = 2, ignored_by_productivity = 2},
     },
     allow_productivity = true,
     categories = {"organic", "biovat-processes"},
@@ -299,10 +300,10 @@ data:extend{
     order = "c-a",
     energy_required = 2,
     ingredients = {
-        {type = "item", name = "acidophile-lichen",   amount = 2},
+        {type = "item", name = "acidophile-lichen",   amount = 1},
     },
     results = {
-        {type = "item", name = "nutrients", amount = 10, percent_spoiled=0.5},
+        {type = "item", name = "nutrients", amount = 5, percent_spoiled=0.5},
     },
     allow_productivity = true,
     categories = {"organic","biovat-processes"},
@@ -844,7 +845,7 @@ data:extend{
     },
     allow_productivity = true,
     categories = {"chemistry"},
-    auto_recycle = true,
+    auto_recycle = false,
     
     crafting_machine_tint =
     {
@@ -1149,7 +1150,7 @@ data:extend{
     results = {
         {type = "fluid", name = "sulfuric-acid",   amount = 25},
         {type = "fluid", name = "hydrogen-chloride",   amount = 50},
-        {type = "item", name = "chlorine-salts", amount_min = 1, amount_max = 2},
+        {type = "item", name = "chlorine-salts", amount_min = 1, amount_max = 2, ignored_by_stats = 2, ignored_by_productivity = 2},
     },
     allow_productivity = true,
     categories = {"acidworking"},

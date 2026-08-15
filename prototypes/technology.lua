@@ -516,22 +516,27 @@ data:extend {
       {
         type = "gun-speed",
         ammo_category = "bullet",
-        modifier = 0.4
+        modifier = 0.25
       },
       {
         type = "gun-speed",
         ammo_category = "shotgun-shell",
-        modifier = 0.4
+        modifier = 0.20
       },
       {
         type = "gun-speed",
         ammo_category = "cannon-shell",
-        modifier = 1.5
+        modifier = 1.35
       },
       {
         type = "gun-speed",
         ammo_category = "rocket",
-        modifier = 1.3
+        modifier = 0.65
+      },
+      {
+      type = "gun-speed", 
+      ammo_category = "explosive-shotgun-shell", 
+      modifier = 0.2
       }
     },
     prerequisites = {"weapon-shooting-speed-6", "acidworking-science-pack"},
@@ -561,22 +566,27 @@ data:extend {
       {
         type = "gun-speed",
         ammo_category = "bullet",
-        modifier = 0.4
+        modifier = 0.25
       },
       {
         type = "gun-speed",
         ammo_category = "shotgun-shell",
-        modifier = 0.4
+        modifier = 0.20
       },
       {
         type = "gun-speed",
         ammo_category = "cannon-shell",
-        modifier = 1.5
+        modifier = 1.35
       },
       {
         type = "gun-speed",
         ammo_category = "rocket",
-        modifier = 1.3
+        modifier = 0.65
+      },
+      {
+      type = "gun-speed", 
+      ammo_category = "explosive-shotgun-shell", 
+      modifier = 0.2
       }
     },
     prerequisites = {"weapon-shooting-speed-7"},
@@ -1118,3 +1128,10 @@ add_tech_effect("stronger-explosives-4",{type = "ammo-damage", ammo_category = "
 add_tech_effect("stronger-explosives-5",{type = "ammo-damage", ammo_category = "explosive-shotgun-shell", modifier = 0.4})
 add_tech_effect("stronger-explosives-6",{type = "ammo-damage", ammo_category = "explosive-shotgun-shell", modifier = 0.4})
 add_tech_effect("stronger-explosives-7",{type = "ammo-damage", ammo_category = "explosive-shotgun-shell", modifier = 0.4})
+
+add_tech_effect("weapon-shooting-speed-1",{type = "gun-speed", ammo_category = "explosive-shotgun-shell", modifier = 0.1})
+add_tech_effect("weapon-shooting-speed-2",{type = "gun-speed", ammo_category = "explosive-shotgun-shell", modifier = 0.2})
+add_tech_effect("weapon-shooting-speed-3",{type = "gun-speed", ammo_category = "explosive-shotgun-shell", modifier = 0.2})
+add_tech_effect("weapon-shooting-speed-4",{type = "gun-speed", ammo_category = "explosive-shotgun-shell", modifier = 0.3})
+add_tech_effect("weapon-shooting-speed-5",{type = "gun-speed", ammo_category = "explosive-shotgun-shell", modifier = 0.4})
+add_tech_effect("weapon-shooting-speed-6",{type = "gun-speed", ammo_category = "explosive-shotgun-shell", modifier = 0.4})

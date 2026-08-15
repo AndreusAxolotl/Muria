@@ -1,4 +1,34 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.8
+Date: 2026-08-16
+  less firing speed woooow:
+
+  Changes:
+    - Decrased weapon shooting speed 7 and 8's increases to 25% (bullets), 20% (shotgun shells), 135% (cannon shells) and 130% (rockets) so the final values are a clean and more balanced 200%, 200%, 500% and 500% final speed bonus respectively.
+
+  Fixes:
+    - Added missing shooting speed increases to the explosive shotgun shells category.
+
+  Notes:
+    - I doubt anyone will get affectd by the reduction in final shooting speed. While checking the final bonuses today i notice how not only they were rounded weirdly, but how very high they were. While being additional tiers, the extra shooting speed techs are mainly for rounding up what you already have. So decreasing their bonus so that it gets to a nice round houndred feels more satisfying. If you then believe this nerf was too heavy, let me know.
+---------------------------------------------------------------------------------------------------
+Version: 1.7.7
+Date: 2026-08-15
+  A whole day without updates? preposterous:
+
+  Fixes:
+    - Fixed solid fuel recycling
+---------------------------------------------------------------------------------------------------
+Version: 1.7.6
+Date: 2026-08-13
+  my mistake original gangster:
+
+  Changes:
+    - Rerebalanced acidophile lichen breeding. Nutrients recipe has been halved and the nutrient in the breeding recipe have been replaced by 2 chlorine salts, which will have a chance to be returned. After all feeding carbon-based nutrients to silicon-based lifeforms doesnt make much sense. Making nutrients from them is uh fine ig.
+
+  Fixes:
+    - Removed productivity on the chlorine salt catalyst for the redox recipe.
+---------------------------------------------------------------------------------------------------
 Version: 1.7.5
 Date: 2026-08-12
   how did i forget that genuinely:
