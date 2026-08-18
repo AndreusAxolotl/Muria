@@ -812,8 +812,7 @@ data:extend{
     order = "a",
     ingredients =
     {
-      {type = "item", name = "solid-fuel", amount = 2},
-      {type="fluid", name = "light-oil", amount= 10},
+      {type="fluid", name = "light-oil", amount= 50},
       {type="fluid", name = "oxygen", amount = 20}
     },
     results = {{type="item", name="rocket-fuel", amount=1}},
@@ -846,7 +845,6 @@ data:extend{
     allow_productivity = true,
     categories = {"chemistry"},
     auto_recycle = false,
-    
     crafting_machine_tint =
     {
         primary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},

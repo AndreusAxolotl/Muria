@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.9
+Date: 2026-08-18
+  i'm sorry solid fuel:
+
+  Changes:
+    - Removed the solid fuel from the kerolox fuel recipe and increased light oil usage. Apparently the recipe lead to easy quality loops. 
+
+  Notes:
+    - Before anyone complains about the "solid fuel from hydrogen" recipe being useless, you can still make standard rocket fuel on muria and the recipe was intended as a hydrogen sink mainly, to then throw in the acid you know?
+---------------------------------------------------------------------------------------------------
 Version: 1.7.8
 Date: 2026-08-16
   less firing speed woooow:
