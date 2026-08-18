@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.8.0
+Date: 2026-08-18
+  finally:
+
+  Changes:
+    - Added placeholder visible planet graphics for Muria. They're currently a kitbash. Hopefully in the future they'll have entirely unique textures that will fully capture the planet's look.
+---------------------------------------------------------------------------------------------------
 Version: 1.7.9
 Date: 2026-08-18
   i'm sorry solid fuel:
