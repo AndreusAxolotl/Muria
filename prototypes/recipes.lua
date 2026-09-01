@@ -18,8 +18,6 @@ data:extend{
     allow_productivity = true,
     categories = {"chemistry","acidworking"},
     auto_recycle = false,
-    
-    surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
     crafting_machine_tint =
     {
         primary = {r = 0, g = 1, b = 0, a = 1.000},
@@ -729,10 +727,9 @@ data:extend{
     results = {
         {type = "item", name = "plastic-bar", amount = 2},
     },
-    allow_productivity = false,
+    allow_productivity = true,
     categories = {"chemistry", "acidworking"},
     auto_recycle = false,
-    
 },
 {
     type = "recipe",
@@ -763,7 +760,6 @@ data:extend{
     categories = {"organic", "biovat-processes"},
     subgroup = "muria-alt-recipes",
     order = "e",
-    auto_recycle = false,
     energy_required = 6,
     enabled = false,
     ingredients =
