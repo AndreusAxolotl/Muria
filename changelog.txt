@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.8.2
+Date: 2026-09-01
+  Compatibility:
+    - Added an icon and name for the vanilla acid-cloud.
+    - Removed hidden meth recipe, informed DEA.
+    - Added a tooltip description for the muriatic acid barrel if Ribbonia is installed.
+---------------------------------------------------------------------------------------------------
 Version: 1.8.1
 Date: 2026-08-22
   spoiled nerf:

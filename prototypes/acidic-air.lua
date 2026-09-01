@@ -18,3 +18,12 @@ data:extend(
     damages_trees = false,
   }
 })
+
+--add an icon to the base game acid-cloud so it may show up in tooltips:
+data.raw["smoke-with-trigger"]["acid-cloud"].icons = {
+  {
+      icon = "__base__/graphics/icons/tooltips/tooltip-category-steam.png",
+      icon_size = 40,
+      tint = {r = 1, g = 0, b = 0}
+  }
+}
