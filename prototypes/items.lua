@@ -485,7 +485,7 @@ data:extend{
     inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
     pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     drop_sound = space_age_item_sounds.agriculture_inventory_move,
-    fuel_category = "chloric-fuel",
+    fuel_categories = {"chloric-fuel"},
     fuel_value = "5MJ",
     stack_size = 50,
     default_import_location = "muria",
@@ -508,7 +508,7 @@ data:extend{
     drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 20,
     weight = 10 * kg,
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     spoil_ticks = 30 * minute,
     spoil_result = "spoilage",
     fuel_value = "1MJ"
@@ -525,7 +525,7 @@ data:extend{
     drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 100,
     weight = 10 * kg,
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     spoil_ticks = 10 * minute,
     spoil_result = "spoilage",
     fuel_value = "100kJ",
@@ -648,7 +648,7 @@ data:extend{
     type = "item",
     name = "leaded-fuel",
     icon = "__Muria-Graphics__/graphics/icons/leaded-fuel.png",
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     fuel_value = "500MJ",
     fuel_acceleration_multiplier = 3,
     fuel_top_speed_multiplier = 1.5,
@@ -676,3 +676,10 @@ data:extend{
     weight = 10*kg
 },
 }
+
+if helpers.compare_versions(helpers.game_version, "2.1.20") < 0 then
+  data.raw.item["chloric-fuel"].fuel_category = "chloric-fuel"
+  data.raw.item["eschatotaxite-sprout"].fuel_category = "chemical"
+  data.raw.item["eschatotaxite-paste"].fuel_category = "chemical"
+  data.raw.item["leaded-fuel"].fuel_category = "chemical"
+end
