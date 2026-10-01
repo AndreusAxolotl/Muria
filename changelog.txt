@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.8.8
+Date: 2026-10-01
+  its da spooky month:
+
+  Changes:
+    - Improved performance of the acid damage script (Thanks MeteorSwarm!)
+---------------------------------------------------------------------------------------------------
 Version: 1.8.7
 Date: 2026-09-22
   fuel categorieS:
