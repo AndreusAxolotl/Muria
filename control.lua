@@ -152,6 +152,24 @@ local function on_tower_mined_plant(event)
     end
 end
 
+local on_entity_destroyed_filter = {}
+
+local excluded_entity_types = {
+    "asteroid",
+    "unit",
+    "segmented-unit",
+    "spider-unit",
+}
+
+for entity_name,_ in pairs(immunity) do
+    table.insert(on_entity_destroyed_filter,{filter="name",name = entity_name,invert = true,mode = "and"})
+end
+
+for _,entity_type in pairs(excluded_entity_types) do
+    table.insert(on_entity_destroyed_filter,{filter="type",type = entity_type,invert = true,mode = "and"})
+end
+
+
 local function on_entity_destroyed(event)
     local entity = event.entity
     if entity and entity.valid then
@@ -197,11 +215,11 @@ script.on_event(defines.events.script_raised_revive, on_entity_built)
 --script.on_event(defines.events.on_entity_cloned, on_built)
 
 -- on_entity_destroyed
-script.on_event(defines.events.on_player_mined_entity, on_entity_destroyed)
-script.on_event(defines.events.on_robot_mined_entity, on_entity_destroyed)
-script.on_event(defines.events.on_entity_died, on_entity_destroyed)
-script.on_event(defines.events.script_raised_destroy, on_entity_destroyed)
-script.on_event(defines.events.script_raised_destroy, on_entity_destroyed)
+script.on_event(defines.events.on_player_mined_entity, on_entity_destroyed,on_entity_destroyed_filter)
+script.on_event(defines.events.on_robot_mined_entity, on_entity_destroyed,on_entity_destroyed_filter)
+script.on_event(defines.events.on_entity_died, on_entity_destroyed,on_entity_destroyed_filter)
+script.on_event(defines.events.script_raised_destroy, on_entity_destroyed,on_entity_destroyed_filter)
+script.on_event(defines.events.script_raised_destroy, on_entity_destroyed,on_entity_destroyed_filter)
 
 --Starting salts patch (Thx talandar and syen)
 
