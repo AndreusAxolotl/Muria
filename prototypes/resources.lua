@@ -23,6 +23,10 @@ data:extend({
     type = "resource",
     name = "chlorine-salt-deposit",
     icon = "__Muria-Graphics__/graphics/icons/chlorine-salts.png",
+    icons = {
+  { icon = "__Muria-Graphics__/graphics/icons/chlorine-salts.png", icon_size = 64 },
+  { icon = "__Muria-Graphics__/graphics/icons/muria.png", icon_size = 64, scale = 0.3, shift = { 8, 8 } },
+},
     flags = {"placeable-neutral"},
     subgroup = "muria-acidworking",
     order = "c-b",

@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.9.1
+Date: 2026-10-04
+  talandar...:
+
+  Changes:
+    - Added a small Muria in the corner of the icon for the chloride salts resource (not the item) to differentiate it in the factoriopedia. Due to its position as an item, "seed", and mineable resource, early in the development the internal name for the chloride salt resource was changed, resulting in it having two undistinguishable factoripedia entries. Now talandar from hit mod pelagos complained about this, so im adding a tiny muria in the corner of the resource icon.
+    - Renamed chlorine salts to chloride salts in the locale because thats like. the correct way to call them. why did i not do that immediately. Won't change it internally tho cuz im lazy.
+---------------------------------------------------------------------------------------------------
 Version: 1.9.0
 Date: 2026-10-04
   An entire version change over 2 recipes:
