@@ -104,7 +104,7 @@ data:extend{
     energy_required = 6.4,
     ingredients = {
         {type = "fluid", name = "molten-lead",   amount = 10},
-        {type = "fluid", name = "chlorine",   amount = 20},
+        {type = "fluid", name = "hydrogen-chloride",   amount = 20},
     },
     results = {
         {type = "item", name = "lead-plate", amount = 1},
@@ -859,7 +859,7 @@ data:extend{
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "molten-lead",   amount = 10},
-        {type = "fluid", name = "hydrogen",   amount = 25},
+        {type = "fluid", name = "hydrogen-chloride",   amount = 25},
     },
     results = {
         {type = "item", name = "lead-pellets", amount = 5},

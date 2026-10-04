@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.9.0
+Date: 2026-10-04
+  An entire version change over 2 recipes:
+
+  Changes:
+    - Made both lead casting recipes use hydrogen chloride instead of hydrogen and chlorine for consistency with pickled casting recipes.
+
+  Notes:
+    - Major version means yall gotta reroute ur pipes!
+---------------------------------------------------------------------------------------------------
 Version: 1.8.8
 Date: 2026-10-01
   its da spooky month:
