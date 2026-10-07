@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.9.2
+Date: 2026-10-07
+  My inserter? Returned:
+
+  Changes:
+    - Removed solid fuel from hydrogen. Recipe was straight up useless as oil is easily available.
+    - Added reccomended dependency to Return Inserter.
+---------------------------------------------------------------------------------------------------
 Version: 1.9.1
 Date: 2026-10-04
   talandar...:
