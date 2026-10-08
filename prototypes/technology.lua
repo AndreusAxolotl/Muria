@@ -149,6 +149,10 @@ data:extend {
       },
       {
         type = "unlock-recipe",
+        recipe = "solid-fuel-from-hydrogen"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "coal-synthesis"
       },
     },
