@@ -326,18 +326,46 @@ data:extend{
     auto_recycle = false,
     
 },
+ {
+    type = "recipe",
+    name = "solid-fuel-from-hydrogen",
+    enabled = false,
+    subgroup = "muria-alt-recipes",
+    order = "a-b",
+    icon = "__Muria-Graphics__/graphics/icons/solid-fuel-from-hydrogen.png",
+    icon_size = 64,
+    energy_required = 2,
+    ingredients = {
+        {type = "fluid", name = "hydrogen",   amount = 50},
+        {type = "item", name = "coal", amount = 2},
+    },
+    results = {
+        {type = "item", name = "solid-fuel", amount = 2}
+    },
+    allow_productivity = true,
+    categories = {"chemistry"},
+    auto_recycle = false,
+    crafting_machine_tint =
+    {
+        primary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
+        secondary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
+        tertiary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
+        quaternary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
+    }
+},
 {
     type = "recipe",
     name = "eschatotaxite-paste",
     icon = "__Muria-Graphics__/graphics/icons/eschatotaxite-paste.png",
     enabled = false,
-    energy_required = 5,
+    energy_required = 2.5,
     ingredients = {
         {type = "item", name = "eschatotaxite-sprout",   amount = 1},
-        {type = "fluid", name = "water",   amount = 10},
+        {type = "item", name = "sulfur",   amount = 2},
+        {type = "fluid", name = "water",   amount = 5},
     },
     results = {
-        {type = "item", name = "eschatotaxite-paste", amount = 10},
+        {type = "item", name = "eschatotaxite-paste", amount = 5},
     },
     allow_productivity = true,
     categories = {"organic", "biovat-processes"},

@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.9.3
+Date: 2026-10-08
+  One day break:
+
+  Changes:
+    - Restored solid fuel from hydrogen. Now takes coal instead of sulfur. Actual reason why it was removed was cuz of paracelsin's reworks and me not wanting to have two solid fuel recipes that were sulfur + gas.
+    - Rebalanced eschatotaxite paste's recipe. (5 sec. 1 sprout + 10 water to 10 paste) -> (2.5 sec 1 sprout + 2 sulfur + 5 water to 5 paste)
+
+  Notes:
+    - Minor version but there have to be sum factory changes.
+---------------------------------------------------------------------------------------------------
 Version: 1.9.2
 Date: 2026-10-07
   My inserter? Returned:
