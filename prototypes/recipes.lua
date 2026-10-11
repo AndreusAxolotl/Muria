@@ -461,8 +461,8 @@ data:extend{
     subgroup = "muria-acidworking",
     order = "b-b",
     ingredients = {
-        {type = "fluid", name = "oxygen",   amount = 100},
-        {type = "fluid", name = "hydrogen",   amount = 200},
+        {type = "fluid", name = "oxygen",   amount = 150},
+        {type = "fluid", name = "hydrogen",   amount = 150},
         {type = "item", name = "carbon",   amount = 2},
     },
     results = {
