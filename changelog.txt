@@ -1,4 +1,19 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.10.1
+Date: 2026-11-04
+  you have no idea how much this hurts to do:
+
+  Changes:
+    - Eschatotaxite sprouts... *sniffle*... no longer spoil! I really hope they'll give agri tower prototypes the trash slots they deserve but for now my dear sprouts will have to be normal items instead of cool spoilables..... qwq
+---------------------------------------------------------------------------------------------------
+Version: 1.10.0
+Date: 2026-11-04
+  quality up!:
+
+  Changes:
+    - Added the lead refining recipe. This recipe will allow you to upgrade the quality of lead ore!
+    - When Paracelsin is installed, by default, the lead refining recipe and tech will be replaced by the lead and zinc refining technology, which will expand the quality refining process by adding aqua regia, a mixture of nitric and hydrochloric acid! More uses for it are also considered.
+---------------------------------------------------------------------------------------------------
 Version: 1.9.5
 Date: 2026-10-20
   size up:

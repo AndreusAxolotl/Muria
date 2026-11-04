@@ -1135,3 +1135,37 @@ add_tech_effect("weapon-shooting-speed-3",{type = "gun-speed", ammo_category = "
 add_tech_effect("weapon-shooting-speed-4",{type = "gun-speed", ammo_category = "explosive-shotgun-shell", modifier = 0.3})
 add_tech_effect("weapon-shooting-speed-5",{type = "gun-speed", ammo_category = "explosive-shotgun-shell", modifier = 0.4})
 add_tech_effect("weapon-shooting-speed-6",{type = "gun-speed", ammo_category = "explosive-shotgun-shell", modifier = 0.4})
+
+if settings.startup["paracelsin-muria-aqua-regia"] == nil or not settings.startup["paracelsin-muria-aqua-regia"].value then
+data:extend {{
+    type = "technology",
+    name = "lead-refining",
+    icon = "__Muria-Graphics__/graphics/technology/quality-lead.png",
+    icon_size = 256,
+
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "lead-refining"
+      }, 
+    },
+    prerequisites = {"advanced-acid-processing", "cryogenic-science-pack"},
+    unit =
+    {
+      count = 1500,
+      ingredients =
+      {
+        { "automation-science-pack",               1 },
+        { "logistic-science-pack",                 1 },
+        { "chemical-science-pack",                 1 },
+        { "production-science-pack",               1 },
+        { "utility-science-pack",                  1 },
+        { "space-science-pack",                    1 },
+        { "acidworking-science-pack", 1 },
+        { "cryogenic-science-pack", 1 }
+      },
+      time = 60
+    }
+  }}
+end
