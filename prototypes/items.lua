@@ -509,6 +509,7 @@ data:extend{
     stack_size = 20,
     weight = 10 * kg,
     fuel_categories = {"chemical"},
+    spoil_ticks = 30 * minute,
     fuel_value = "1MJ"
   },
     {

@@ -1284,7 +1284,9 @@ data:extend{
     results = {{type = "item", name = "copper-cable", amount = 2}},
     allow_productivity = true,
     auto_recycle = false,
-  },
+  },}
+  if mods["quality"] then
+data:extend{ 
   {
     type = "recipe",
     name = "lead-refining",
@@ -1311,3 +1313,4 @@ data:extend{
     auto_recycle = false,
 },
 }
+end

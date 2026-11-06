@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.10.2
+Date: 2026-11-05
+  close enough:
+
+  Changes:
+    - Reinstated eschatotaxite sprout spoiling. It now spoils into nothing because you can't have anything good in life when what you want to have are trash slots.
+    - Refining recipes aren't activated if quality mod isnt active. Also no option to turn them off otherwise will be added, if you don't wanna use them just don't.
+---------------------------------------------------------------------------------------------------
 Version: 1.10.1
 Date: 2026-11-04
   you have no idea how much this hurts to do:

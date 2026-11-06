@@ -1135,7 +1135,7 @@ add_tech_effect("weapon-shooting-speed-3",{type = "gun-speed", ammo_category = "
 add_tech_effect("weapon-shooting-speed-4",{type = "gun-speed", ammo_category = "explosive-shotgun-shell", modifier = 0.3})
 add_tech_effect("weapon-shooting-speed-5",{type = "gun-speed", ammo_category = "explosive-shotgun-shell", modifier = 0.4})
 add_tech_effect("weapon-shooting-speed-6",{type = "gun-speed", ammo_category = "explosive-shotgun-shell", modifier = 0.4})
-
+if mods["quality"] then
 if settings.startup["paracelsin-muria-aqua-regia"] == nil or not settings.startup["paracelsin-muria-aqua-regia"].value then
 data:extend {{
     type = "technology",
@@ -1168,4 +1168,5 @@ data:extend {{
       time = 60
     }
   }}
+end
 end
