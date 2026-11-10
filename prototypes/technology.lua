@@ -4,7 +4,7 @@ data:extend {
   {
     type = "technology",
     name = "planet-discovery-muria",
-    icons = util.technology_icon_constant_planet("__Muria-Graphics__/graphics/technology/planet-discovery-muria.png"),
+    icons = PlanetsLib.technology_icon_planet("__Muria-Graphics__/graphics/technology/planet-discovery-muria.png", 256, 0.85),
     icon_size = 256,
     essential = true,
     effects =
