@@ -1,4 +1,24 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.11.0
+Date: 2026-11-13
+  boundless worlds of lead and zinc:
+
+  Changes:
+    - Moved some prototypes to a new mod, Crystalline Library.
+    - The mod is now part of the Spelter Twins pack!
+    - Carbonic asteroids no longer appear on route to Muria, replaced by crystalline asteroids.
+    - Crystalline asteroids contain vaterite and fluorite and split into 4 pieces instead of 3, to incentivize shotgun turret usage.
+    - Adjusted various things relating to the locale and internal names.
+    - Added a new soil to expand eschatotaxite farming areas.
+    - Both the new soil and the old soil can now be placed over the natural soil of the opposite type, allowing you to fully remodulate the Murian surface if you so please.
+    - Added achievements.
+    - Hydronium is now able to be used as acidthrower ammo.
+    - Added various new things coming from Crystalline Lib, which also exist with Paracelsin. These are all related to fluorine and hydrogen fluoride and range from petroleum alkylation to uranium hexafluoride.
+    - Added a casting recipe for anti-corrosion cladding.
+    - Added a quality upgrading recipe for acidworking science.
+    - Made it more clear that SHOTGUN TURRETS DAMAGE FRIENDLY ENTITIES.
+    - Corroded flask recovery now needs calcite.
+---------------------------------------------------------------------------------------------------
 Version: 1.10.2
 Date: 2026-11-05
   close enough:

@@ -37,6 +37,14 @@ if data.raw.fluid["hydrochloric-acid"] then
 table.insert(acidthrower.attack_parameters.fluids, {type = "hydrochloric-acid", damage_modifier = 1}) 
 end
 
+if data.raw.fluid["hydrogen-fluoride"] then
+table.insert(acidthrower.attack_parameters.fluids, {type = "hydrogen-fluoride", damage_modifier = 1.3}) 
+end
+
+if data.raw.fluid["aqua-regia"] then
+table.insert(acidthrower.attack_parameters.fluids, {type = "aqua-regia", damage_modifier = 2}) 
+end
+
 if mods["Paracelsin"] then
     add_crafting_categories("nitrogen-nitric-acid", {"acidworking"})
 end

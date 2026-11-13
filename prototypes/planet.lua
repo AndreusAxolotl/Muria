@@ -9,39 +9,39 @@ data:extend(
 {
     {
     type = "autoplace-control",
-    name = "chlorine_salts",
-    localised_name = {"", "[entity=chlorine-salt-deposit] ", {"entity-name.chlorine-salt-deposit"}},
+    name = "chloride_salts",
+    localised_name = {"", "[entity=chloride-salt-deposit] ", {"entity-name.chloride-salt-deposit"}},
     richness = true,
     order = "z-a",
     category = "resource"
   },
       {
     type = "noise-expression",
-    name = "muria_chlorine_salts_size",
-    expression = "slider_rescale(control:chlorine_salts:size, 2)"
+    name = "muria_chloride_salts_size",
+    expression = "slider_rescale(control:chloride_salts:size, 2)"
   },
   {
     type = "noise-expression",
-    name = "muria_chlorine_salts_region",
+    name = "muria_chloride_salts_region",
     -- -1 to 1: needs a positive region for resources & decoratives plus a subzero baseline and skirt for surrounding decoratives.
-    expression = "max(muria_starting_chlorine_salts,\z
+    expression = "max(muria_starting_chloride_salts,\z
                       min(1 - vulcanus_starting_circle,\z
                           vulcanus_place_non_metal_spots(749, 12, 1,\z
-                                                         muria_chlorine_salts_size * min(1.2, vulcanus_ore_dist) * 25,\z
-                                                         control:chlorine_salts:frequency,\z
+                                                         muria_chloride_salts_size * min(1.2, vulcanus_ore_dist) * 25,\z
+                                                         control:chloride_salts:frequency,\z
                                                          vulcanus_mountains_resource_favorability)))"
   },
   {
     type = "noise-expression",
-    name = "muria_chlorine_salts_probability",
-    expression = "(control:chlorine_salts:size > 0) * (1000 * ((1 + muria_chlorine_salts_region) * random_penalty_between(0.9, 1, 1) - 1))"
+    name = "muria_chloride_salts_probability",
+    expression = "(control:chloride_salts:size > 0) * (1000 * ((1 + muria_chloride_salts_region) * random_penalty_between(0.9, 1, 1) - 1))"
   },
   {
     type = "noise-expression",
-    name = "muria_chlorine_salts_richness",
-    expression = "muria_chlorine_salts_region * random_penalty_between(0.9, 1, 1)\z
+    name = "muria_chloride_salts_richness",
+    expression = "muria_chloride_salts_region * random_penalty_between(0.9, 1, 1)\z
                   * 24000 * vulcanus_starting_area_multiplier\z
-                  * control:chlorine_salts:richness / muria_chlorine_salts_size"
+                  * control:chloride_salts:richness / muria_chloride_salts_size"
   },
 })
 
@@ -56,8 +56,8 @@ planet_map_gen.muria = function()
       temperature = "gleba_temperature",
       cliffiness = "gleba_cliffiness",
       cliff_elevation = "cliff_elevation_from_elevation",
-      ["entity:chlorine_salts:probability"] = "muria_chlorine_salts_probability",
-      ["entity:chlorine_salts:richness"] = "muria_chlorine_salts_richness",
+      ["entity:chloride_salts:probability"] = "muria_chloride_salts_probability",
+      ["entity:chloride_salts:richness"] = "muria_chloride_salts_richness",
     },
     cliff_settings =
     {
@@ -67,7 +67,7 @@ planet_map_gen.muria = function()
     },
     autoplace_controls =
     {
-      ["chlorine_salts"] = {},
+      ["chloride_salts"] = {},
     },
     autoplace_settings =
     {
@@ -101,7 +101,7 @@ planet_map_gen.muria = function()
       {
         settings =
         {
-          ["chlorine-salt-deposit"] = {},
+          ["chloride-salt-deposit"] = {},
           ["big-chloric-rock"] = {},
           ["metallic-lichen-colony"] = {},
           ["eschatotaxite"] = {}

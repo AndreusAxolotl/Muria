@@ -1263,7 +1263,7 @@ data:extend{
       height = 10
     },
     radius = 2,
-    accepted_seeds = {"eschatotaxite-sprout", "chlorine-salts", "cotunnite", "holmium-chloride"},
+    accepted_seeds = {"eschatotaxite-sprout", "chloride-salts", "cotunnite", "holmium-chloride"},
     crane = require("__Muria__.prototypes.fungicultural-tower-crane"),
     planting_procedure_points =
     {
@@ -1840,7 +1840,7 @@ data:extend{
 
       -- lead_target_for_projectile_speed = 0.2* 0.75 * 1.5, -- this is same as particle horizontal speed of flamethrower fire stream
 
-      fluids = {{type = "hydrogen-chloride"}, {type = "sulfuric-acid", damage_modifier = 0.8}},
+      fluids = {{type = "hydrogen-chloride"}, {type = "sulfuric-acid", damage_modifier = 0.8}, {type = "hydronium", damage_modifier = 1.1}},
       fluid_consumption = 0.2,
 
       gun_center_shift =
@@ -1886,6 +1886,7 @@ data:extend{
     name = "shotgun-turret",
     icon = "__Muria-Graphics__/graphics/icons/shotgun-turret.png",
     flags = {"placeable-player", "player-creation", "building-direction-8-way"},
+    custom_tooltip_fields = {{name = {"custom-tooltip.shotgun-turret-name"}, value = {"custom-tooltip.shotgun-turret-value"}}},
     minable = {mining_time = 0.5, result = "shotgun-turret"},
     fast_replaceable_group = "ammo-turret",
     resistances =
@@ -1893,6 +1894,10 @@ data:extend{
       {
         type = "acid",
         percent = 25
+      },
+      {
+        type = "physical",
+        percent = 50
       },
       {
         type = "explosion",

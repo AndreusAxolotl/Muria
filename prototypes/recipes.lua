@@ -177,7 +177,7 @@ data:extend{
     ingredients = {
         {type = "item", name = "shotgun-shell",   amount = 1},
         {type = "item", name = "carbon",   amount = 5},
-        {type = "fluid", name = "chlorine",   amount = 10},
+        {type = "fluid", name = "chlorine",   amount = 5},
     },
     results = {
         {type = "item", name = "explosive-shotgun-shell", amount = 1},
@@ -255,12 +255,13 @@ data:extend{
     subgroup = "muria-acidworking",
     order = "z-3",
     enabled = false,
-    energy_required = 1,
+    energy_required = 2,
     ingredients = {
-        {type = "item", name = "corroded-flask",   amount = 5},
+        {type = "item", name = "corroded-flask",   amount = 10},
+        {type = "item", name = "calcite",   amount = 1},
     },
     results = {
-        {type = "fluid", name = "chlorine", amount = 5},
+        {type = "fluid", name = "chlorine", amount = 10},
     },
     allow_productivity = true,
     categories = {"chemistry"},
@@ -278,11 +279,11 @@ data:extend{
     ingredients = {
         {type = "item", name = "acidophile-lichen",   amount = 2},
         {type = "fluid", name = "chlorine",   amount = 5},
-        {type = "item", name = "chlorine-salts",   amount = 2},
+        {type = "item", name = "chloride-salts",   amount = 2},
     },
     results = {
         {type = "item", name = "acidophile-lichen", amount = 4, reset_freshness_on_craft = true,},
-        {type = "item", name = "chlorine-salts", amount_min = 1, amount_max = 2, ignored_by_stats = 2, ignored_by_productivity = 2},
+        {type = "item", name = "chloride-salts", amount_min = 1, amount_max = 2, ignored_by_stats = 2, ignored_by_productivity = 2},
     },
     allow_productivity = true,
     categories = {"organic", "biovat-processes"},
@@ -325,33 +326,6 @@ data:extend{
     categories = {"organic", "crafting", "biovat-processes"},
     auto_recycle = false,
     
-},
- {
-    type = "recipe",
-    name = "solid-fuel-from-hydrogen",
-    enabled = false,
-    subgroup = "muria-alt-recipes",
-    order = "a-b",
-    icon = "__Muria-Graphics__/graphics/icons/solid-fuel-from-hydrogen.png",
-    icon_size = 64,
-    energy_required = 2,
-    ingredients = {
-        {type = "fluid", name = "hydrogen",   amount = 50},
-        {type = "item", name = "coal", amount = 2},
-    },
-    results = {
-        {type = "item", name = "solid-fuel", amount = 2}
-    },
-    allow_productivity = true,
-    categories = {"chemistry"},
-    auto_recycle = false,
-    crafting_machine_tint =
-    {
-        primary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
-        secondary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
-        tertiary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
-        quaternary = {r = 0.40, g = 0.55, b = 0.71, a = 1.000},
-    }
 },
 {
     type = "recipe",
@@ -399,7 +373,8 @@ data:extend{
     energy_required = 2,
     ingredients = {
         {type = "item", name = "acidophile-lichen",   amount = 5},
-        {type = "fluid", name = "hydrogen-chloride",   amount = 30},
+        {type = "fluid", name = "hydrogen-chloride",   amount = 15},
+        {type = "fluid", name = "hydrogen-fluoride",   amount = 15},
         {type = "item", name = "foundation",   amount = 10},
     },
     results = {
@@ -408,8 +383,27 @@ data:extend{
     allow_productivity = false,
     categories = {"acidworking"},
     auto_recycle = false,
-    
     surface_conditions = {{property = "gravity", min = 8, max = 9}},
+},
+{
+    type = "recipe",
+    name = "artificial-muriatic-soil",
+    icon = "__Muria-Graphics__/graphics/icons/artificial-muriatic-soil.png",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+        {type = "item", name = "eschatotaxite-sprout",   amount = 5},
+        {type = "fluid", name = "hydrogen-chloride",   amount = 15},
+        {type = "fluid", name = "hydrogen-fluoride",   amount = 15},
+        {type = "item", name = "foundation",   amount = 10},
+    },
+    results = {
+        {type = "item", name = "artificial-muriatic-soil", amount = 10},
+    },
+    allow_productivity = false,
+    categories = {"acidworking"},
+    auto_recycle = false,
+    surface_conditions = {{property = "gravity", min = 9, max = 9}},
 },
 {
     type = "recipe",
@@ -449,7 +443,6 @@ data:extend{
     allow_productivity = true,
     categories = {"organic", "biovat-processes", "chemistry"},
     auto_recycle = false,
-    
     surface_conditions = {{property = "atmospheric-acidity", max = 99}},
 },
 {
@@ -471,7 +464,6 @@ data:extend{
     allow_productivity = false,
     categories = {"chemistry"},
     auto_recycle = false,
-    
     surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},
     crafting_machine_tint =
     {
@@ -587,7 +579,6 @@ data:extend{
     energy_required = 12,
     ingredients = {
         {type = "item", name = "lead-plate",   amount = 5},
-        {type = "item", name = "nutrients",   amount = 2},
         {type = "fluid", name = "hydrogen-chloride",   amount = 25},
         {type = "fluid", name = "sulfuric-acid",   amount = 25},
     },
@@ -896,7 +887,7 @@ data:extend{
       quaternary = {r = 1.000, g = 0.395, b = 0.127, a = 1.000},
     }
 },
- {
+{
     type = "recipe",
     name = "anti-corrosion-cladding",
     enabled = false,
@@ -912,7 +903,25 @@ data:extend{
     allow_productivity = true,
     categories = {"acidworking"},
     auto_recycle = true,
-    
+    emissions_multiplier = 5,
+},
+{
+    type = "recipe",
+    name = "casting-anti-corrosion-cladding",
+    icon = "__Muria-Graphics__/graphics/icons/casting-anti-corrosion-cladding.png",
+    enabled = false,
+    icon_size = 64,
+    energy_required = 6.4,
+    ingredients =
+    {
+      {type = "fluid", name = "molten-lead", amount = 80},
+      {type = "item", name = "eschatotaxite-paste", amount = 2},
+      {type = "fluid", name = "fluorine", amount = 20}
+    },
+    results = {{type="item", name="anti-corrosion-cladding", amount=2}},
+    allow_productivity = true,
+    categories = {"leadworking"},
+    auto_recycle = true,
     emissions_multiplier = 5,
 },
 {
@@ -1058,7 +1067,7 @@ data:extend{
         {type = "fluid", name = "chlorine", amount = 10, independent_probability = 0.20}, 
         {type = "fluid", name = "hydrogen", amount = 10, independent_probability = 0.05}, 
         {type = "item", name = "acidophile-lichen", amount = 1, independent_probability = 0.01},
-        {type = "item", name = "chlorine-salts", amount = 1, independent_probability = 0.01}, 
+        {type = "item", name = "chloride-salts", amount = 1, independent_probability = 0.01}, 
     },
     allow_productivity = false,
     allow_quality = false,
@@ -1120,7 +1129,7 @@ data:extend{
         {type = "item", name = "carbon",   amount = 1},
     },
     results = {
-        {type = "fluid", name = "chlorine", amount = 10},
+        {type = "fluid", name = "chlorine", amount = 20},
         {type = "item", name = "carbon", amount = 1, independent_probability = 0.5, ignored_by_stats = 1, ignored_by_productivity = 1},
     },
     allow_productivity = true,
@@ -1130,22 +1139,22 @@ data:extend{
 },
 {
     type = "recipe",
-    name = "sulfur-chlorine-salt-redox",
-    icon = "__Muria-Graphics__/graphics/icons/sulfur-chlorine-salt-redox.png",
+    name = "sulfur-chloride-salt-redox",
+    icon = "__Muria-Graphics__/graphics/icons/sulfur-chloride-salt-redox.png",
     enabled = false,
     subgroup = "muria-acidworking",
     order = "i",
     energy_required = 4,
     ingredients = {
         {type = "item", name = "sulfur",   amount = 2},
-        {type = "item", name = "chlorine-salts",   amount = 2},
+        {type = "item", name = "chloride-salts",   amount = 2},
         {type = "fluid", name = "water",   amount = 50},
         {type = "fluid", name = "steam",   amount = 25},
     },
     results = {
         {type = "fluid", name = "sulfuric-acid",   amount = 25},
         {type = "fluid", name = "hydrogen-chloride",   amount = 50},
-        {type = "item", name = "chlorine-salts", amount_min = 1, amount_max = 2, ignored_by_stats = 2, ignored_by_productivity = 2},
+        {type = "item", name = "chloride-salts", amount_min = 1, amount_max = 2, ignored_by_stats = 2, ignored_by_productivity = 2},
     },
     allow_productivity = true,
     categories = {"acidworking"},
@@ -1311,6 +1320,28 @@ data:extend{
     allow_productivity = false,
     categories = {"acidworking"},
     auto_recycle = false,
+},
+{
+    type = "recipe",
+    name = "advanced-acidworking-science-pack-activation",
+    icon = "__Muria-Graphics__/graphics/icons/advanced-acidworking-science-pack-activation.png",
+    enabled = false,
+    subgroup = "science-pack",
+    order = "l-2",
+    energy_required = 4,
+    ingredients = {
+        {type = "item", name = "inert-acidworking-science-pack",   amount = 1},
+        {type = "item", name = "acidophile-lichen", quality_change = 1,   amount = 1},
+        {type = "fluid", name = "hydrogen-fluoride",   amount = 5},
+    },
+    results = {
+        {type = "item", name = "acidworking-science-pack", amount = 1, quality_change = 1, affected_by_quality  = false, ignored_by_stats = 1, ignored_by_productivity = 1},
+    },
+    allow_productivity = false,
+    allow_quality=false,
+    categories = {"acidworking"},
+    auto_recycle = false,
+    emissions_multiplier = 5,    
 },
 }
 end

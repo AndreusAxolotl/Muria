@@ -21,10 +21,10 @@ local decorative_trigger_effects = require("__base__/prototypes/decorative/decor
 data:extend({
 {
     type = "resource",
-    name = "chlorine-salt-deposit",
-    icon = "__Muria-Graphics__/graphics/icons/chlorine-salts.png",
+    name = "chloride-salt-deposit",
+    icon = "__Muria-Graphics__/graphics/icons/chloride-salts.png",
     icons = {
-  { icon = "__Muria-Graphics__/graphics/icons/chlorine-salts.png", icon_size = 64 },
+  { icon = "__Muria-Graphics__/graphics/icons/chloride-salts.png", icon_size = 64 },
   { icon = "__Muria-Graphics__/graphics/icons/muria.png", icon_size = 64, scale = 0.3, shift = { 8, 8 } },
 },
     flags = {"placeable-neutral"},
@@ -38,13 +38,13 @@ data:extend({
     {
       mining_particle = "stone-particle",
       mining_time = 0.66,
-      result = "chlorine-salts",
+      result = "chloride-salts",
     },
     collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings
     {
-      name = "chlorine_salts",
+      name = "chloride_salts",
       order = "z",
       base_density = 1,
       base_spots_per_km2 = 10,
@@ -98,7 +98,7 @@ data:extend({
       results =
       {
         {type = "item", name = "stone", amount_min = 6, amount_max = 15},
-        {type = "item", name = "chlorine-salts", amount_min = 2, amount_max = 4},
+        {type = "item", name = "chloride-salts", amount_min = 2, amount_max = 4},
       }
     },
     resistances =

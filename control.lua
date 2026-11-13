@@ -253,7 +253,7 @@ script.on_event(defines.events.on_surface_created, function(event)
 					if density > 0.2 then
 						local amount = math.floor(max_amount * density)
 						surface.create_entity({
-							name = "chlorine-salt-deposit",
+							name = "chloride-salt-deposit",
 							amount = amount,
 							position = { center.x + x, center.y + y },
 						})

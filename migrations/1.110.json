@@ -1,0 +1,10 @@
+{
+    "entity": 
+    [
+        ["chlorine-salt-deposit", "chloride-salt-deposit"]
+    ],
+    "item": 
+    [
+        ["chlorine-salts", "chloride-salts"]
+    ]
+    }

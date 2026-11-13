@@ -8,9 +8,9 @@ asteroid_functions.weighted_average = function(A, B, weight)
   return result
 end
 
-asteroid_functions.muria_ratio      = {3, 3, 3, 0}
-asteroid_functions.nauvis_ratio      = {3, 2, 1 , 0}
-asteroid_functions.fulgora_ratio     = {4, 3, 1 , 0}
+asteroid_functions.muria_ratio      = {3, 0, 3, 0, 3}
+asteroid_functions.nauvis_ratio      = {3, 2, 1 , 0, 0}
+asteroid_functions.fulgora_ratio     = {4, 3, 1 , 0, 0}
 asteroid_functions.muria_chunks      = 0.0030
 asteroid_functions.muria_medium       = 0.0025
 asteroid_functions.fulgora_chunks     = 0.0025
@@ -193,9 +193,10 @@ end
 asteroid_functions.spawn_definitions = function(data, planet)
   local asteroid_spawn_definitions = {}
   local asteroid_sizes = {"chunk", "small", "medium", "big", "huge"}
-  local asteroid_types = {"metallic", "carbonic", "oxide"}
+  local asteroid_types = {"metallic", "oxide", "crystalline"}
   if data.has_promethium_asteroids == true then
-    asteroid_types = {"metallic", "carbonic", "oxide", "promethium"}
+    asteroid_types = {"metallic",  "oxide", "promethium", "crystalline"}
+    --"carbonic",
   end
   for k, asteroid_size in pairs(asteroid_sizes) do
     for k, asteroid_type in pairs(asteroid_types) do
@@ -213,6 +214,8 @@ asteroid_functions.spawn_definitions = function(data, planet)
         asteroid_id = 2
       elseif asteroid_type == "oxide" then
         asteroid_id = 3
+        elseif asteroid_type == "crystalline" then
+        asteroid_id = 5
       else
         asteroid_id = 4
       end

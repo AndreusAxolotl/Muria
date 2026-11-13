@@ -82,7 +82,7 @@ data:extend {
     research_trigger =
     {
       type = "mine-entity",
-      entities = {"chlorine-salt-deposit"}
+      entities = {"chloride-salt-deposit"}
     }
   },
   {
@@ -313,7 +313,7 @@ data:extend {
         recipe = "corroded-flask-recovery"
       },
     },
-    prerequisites = { "acidworking-science-pack"},
+    prerequisites = { "acidworking-science-pack", "vaterite-processing"},
     unit =
     {
       count = 500,
@@ -803,6 +803,40 @@ data:extend {
       time = 60
     }
   },
+    {
+    type = "technology",
+    name = "murian-soil",
+    icon = "__Muria-Graphics__/graphics/technology/murian-soil.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "artificial-muriatic-soil"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "artificial-lichen-colony"
+      },
+    },
+    prerequisites = {"foundation", "offworld-chlorine-compounds-production"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        { "automation-science-pack",      1 },
+        { "logistic-science-pack",        1 },
+        { "chemical-science-pack",        1 },
+        { "production-science-pack",        1 },
+        { "utility-science-pack",         1 },
+        { "space-science-pack",           1 },
+        { "cryogenic-science-pack",     1 },
+        { "acidworking-science-pack",     1 },
+      },
+      time = 60
+    }
+  },
   {
     type = "technology",
     name = "holmium-chloride",
@@ -814,12 +848,8 @@ data:extend {
         type = "unlock-recipe",
         recipe = "holmium-chloride"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "artificial-lichen-colony"
-      },
     },
-    prerequisites = {"foundation", "offworld-chlorine-compounds-production"},
+    prerequisites = {"murian-soil"},
     unit =
     {
       count = 1000,
@@ -965,7 +995,7 @@ data:extend {
       },
       {
         type = "unlock-recipe",
-        recipe = "sulfur-chlorine-salt-redox"
+        recipe = "sulfur-chloride-salt-redox"
       },
     },
     prerequisites = { "offworld-chlorine-compounds-production", "production-science-pack", "utility-science-pack"},
@@ -1067,6 +1097,36 @@ data:extend {
       time = 60
     }
   },
+  {
+    type = "technology",
+    name = "casting-anti-corrosion-cladding",
+    icon = "__Muria-Graphics__/graphics/technology/casting-anti-corrosion-cladding.png",
+    icon_size = 256,
+    effects =
+    {
+       {
+        type = "unlock-recipe",
+        recipe = "casting-anti-corrosion-cladding"
+      },
+    },
+    prerequisites = { "advanced-acid-processing", "fluorite-processing", "metallurgic-science-pack"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        { "automation-science-pack",      1 },
+        { "logistic-science-pack",        1 },
+        { "chemical-science-pack",        1 },
+        { "production-science-pack",        1 },
+        { "space-science-pack",           1 },
+        { "acidworking-science-pack",     1 },
+        { "metallurgic-science-pack",     1 },
+        { "agricultural-science-pack",     1 },
+      },
+      time = 60
+    }
+  },
 }
 
 local function add_tech_prerequisites(tech_name, prerequisites)
@@ -1136,6 +1196,37 @@ add_tech_effect("weapon-shooting-speed-4",{type = "gun-speed", ammo_category = "
 add_tech_effect("weapon-shooting-speed-5",{type = "gun-speed", ammo_category = "explosive-shotgun-shell", modifier = 0.4})
 add_tech_effect("weapon-shooting-speed-6",{type = "gun-speed", ammo_category = "explosive-shotgun-shell", modifier = 0.4})
 if mods["quality"] then
+  data:extend {{
+    type = "technology",
+    name = "advanced-acidworking-science-pack-activation",
+    icon = "__Muria-Graphics__/graphics/technology/advanced-acidworking-science-pack-activation.png",
+    icon_size = 256,
+
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "advanced-acidworking-science-pack-activation"
+      }, 
+    },
+    prerequisites = {"fluorite-processing"},
+    unit =
+    {
+      count = 2000,
+      ingredients =
+      {
+        { "automation-science-pack",               1 },
+        { "logistic-science-pack",                 1 },
+        { "chemical-science-pack",                 1 },
+        { "production-science-pack",               1 },
+        { "utility-science-pack",                  1 },
+        { "space-science-pack",                    1 },
+        { "acidworking-science-pack", 1 },
+        { "agricultural-science-pack", 1 }
+      },
+      time = 60
+    }
+  }}
 if settings.startup["paracelsin-muria-aqua-regia"] == nil or not settings.startup["paracelsin-muria-aqua-regia"].value then
 data:extend {{
     type = "technology",

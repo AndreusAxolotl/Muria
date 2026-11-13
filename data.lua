@@ -14,6 +14,7 @@ require "prototypes.resources"
 require "prototypes.tiles"
 require "prototypes.tips-and-tricks"
 require "prototypes.planet"
+require "prototypes.achievements"
 
 local replace_base_game_simulations = false
 local muria_menu_simulations = require("__Muria__/prototypes/menu-simulations.lua")
@@ -55,6 +56,8 @@ local function add_crafting_categories(recipe_name, categories)
     end
   end
 end
+add_crafting_categories("hydrogen-fluoride", {"acidworking"})
+add_crafting_categories("fluorite-processing", {"acidworking"})
 add_crafting_categories("sulfuric-acid", {"acidworking"})
 add_crafting_categories("sulfur", {"acidworking"})
 add_crafting_categories("battery", {"acidworking"})

@@ -16,6 +16,7 @@ local aquilo_tile_offset_thawed = 60
 local smooth_ice_vehicle_speed_modifier = 1
 local ice_vehicle_speed_modifier = 1.4
 local snow_vehicle_speed_modifier = 1.8
+local tile_lightening = 28
 
 local function lerp_color_no_alpha(a, b, amount)
   return
@@ -225,10 +226,14 @@ local destroyed_item_trigger =
 
 table.insert(water_tile_type_names, "muriatic-solution")
 
-local artificial_lichen_colony = table.deepcopy(data.raw.tile["artificial-yumako-soil"])
+local artificial_lichen_colony = table.deepcopy(data.raw.tile["midland-cracked-lichen"])
 artificial_lichen_colony.name = "artificial-lichen-colony"
 artificial_lichen_colony.order = "c[landfill]-ez[artificial-lichen-colony]"
 artificial_lichen_colony.subgroup = "gleba-tiles"
+artificial_lichen_colony.is_foundation = true
+artificial_lichen_colony.searchable = true
+artificial_lichen_colony.trigger_effect = tile_trigger_effects.landfill_trigger_effect()
+artificial_lichen_colony.build_sound = base_tile_sounds.building.landfill
 artificial_lichen_colony.absorptions_per_second = tile_pollution.muria
 artificial_lichen_colony.variants = tile_variations_template_with_transitions_and_effect_map(
           "__space-age__/graphics/terrain/gleba/cracked-lichen.png",
@@ -248,7 +253,34 @@ artificial_lichen_colony.map_color={81, 77, 44}
 artificial_lichen_colony.walking_speed_modifier = 1
 artificial_lichen_colony.vehicle_friction_modifier = 1
 artificial_lichen_colony.minable = {mining_time = 0.5, result = "artificial-lichen-colony"}
+artificial_lichen_colony.mined_sound = base_sounds.deconstruct_bricks(0.8)
 artificial_lichen_colony.factoriopedia_alternative = nil
+
+local artificial_muriatic_soil = table.deepcopy(data.raw.tile["landfill"])
+artificial_muriatic_soil.name = "artificial-muriatic-soil"
+artificial_muriatic_soil.order = "c[landfill]-ez[artificial-muriatic-soil]"
+artificial_muriatic_soil.subgroup = "gleba-tiles"
+artificial_muriatic_soil.absorptions_per_second = tile_pollution.muria
+artificial_muriatic_soil.variants =
+    {
+      transition = tile_graphics.generic_masked_tile_transitions1,
+
+      material_background =
+      {
+        picture = "__Muria-Graphics__/graphics/terrain/artificial-muriatic-soil.png",
+        count = 8,
+        scale = 0.5
+      }
+    }
+--rtificial_muriatic_soil.transitions = lava_stone_transitions
+--artificial_muriatic_soil.transitions_between_transitions = lava_stone_transitions_between_transitions
+artificial_muriatic_soil.walking_sound = tile_sounds.walking.soft_bark
+artificial_muriatic_soil.landing_steps_sound = tile_sounds.landing.bark
+artificial_muriatic_soil.map_color={r =tile_lightening+ 16, g = tile_lightening+ 15, b = tile_lightening+ 16}
+artificial_muriatic_soil.walking_speed_modifier = 1
+artificial_muriatic_soil.vehicle_friction_modifier = 1
+artificial_muriatic_soil.minable = {mining_time = 0.5, result = "artificial-muriatic-soil"}
+artificial_muriatic_soil.factoriopedia_alternative = nil
 
 local acidophile_lichen = table.deepcopy(data.raw.tile["midland-cracked-lichen-dull"])
 acidophile_lichen.name = "acidophile-lichen"
@@ -259,6 +291,9 @@ acidophile_lichen.factoriopedia_alternative = nil
 
 data:extend({
   artificial_lichen_colony})
+
+  data:extend({
+  artificial_muriatic_soil})
 
 data:extend({
   acidophile_lichen})

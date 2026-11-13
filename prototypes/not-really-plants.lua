@@ -771,7 +771,7 @@ data:extend({
         probability_expression = 0.01,
         richness_expression = 1,
         peaks = {
-            { influence = 0.2, tile_restriction = {"muriatic-folds-flat", "muriatic-folds", "muriatic-soil-light", "muriatic-soil-dark"}  },
+            { influence = 0.2, tile_restriction = {"muriatic-folds-flat", "muriatic-folds", "muriatic-soil-light", "muriatic-soil-dark", "artificial-muriatic-soil"}  },
         },
         tile_restriction = {"muriatic-folds-flat", "muriatic-folds", "muriatic-soil-light", "muriatic-soil-dark"} ,
         surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},},

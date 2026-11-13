@@ -12,43 +12,43 @@ data:extend{
     type = "item-subgroup",
     name = "muria-leadworking",
     group = "intermediate-products",
-    order = "q-a"
+    order = "q-b-a"
   },
   {
     type = "item-subgroup",
     name = "muria-acidworking",
     group = "intermediate-products",
-    order = "q-b"
+    order = "q-b-b"
   },
   {
     type = "item-subgroup",
     name = "muria-alt-recipes",
     group = "intermediate-products",
-    order = "q-c"
+    order = "q-b-c"
   },
   {
     type = "item-subgroup",
     name = "offworld-chlorine-compounds-production",
     group = "intermediate-products",
-    order = "q-d"
+    order = "q-b-d"
   },
   {
     type = "item-subgroup",
     name = "muria-agriculture",
     group = "intermediate-products",
-    order = "q-e"
+    order = "q-b-e"
   },
     {
     type = "item-subgroup",
     name = "scrubbing",
     group = "intermediate-products",
-    order = "q-f"
+    order = "q-b-f"
   },
       {
     type = "item-subgroup",
     name = "pickled-casting",
     group = "intermediate-products",
-    order = "q-e"
+    order = "q-b-e"
   },
   {
     type = "item-subgroup",
@@ -92,17 +92,6 @@ data:extend{
     base_color = {0.20, 0.69, 0.42},
     flow_color = {0.20, 0.69, 0.42},
     icon = "__Muria-Graphics__/graphics/icons/chlorine.png",
-    auto_barrel = true
-  },
-    {
-    type = "fluid",
-    name = "hydrogen",
-    subgroup = "fluid",
-    default_temperature = 0,
-    max_temperature = 200,
-    base_color = {1, 1, 1},
-    flow_color = {1, 1, 1},
-    icon = "__Muria-Graphics__/graphics/icons/hydrogen.png",
     auto_barrel = true
   },
 {
@@ -170,7 +159,7 @@ data:extend{
     name = "artificial-lichen-colony",
     icon = "__Muria-Graphics__/graphics/icons/artificial-lichen-colony.png",
     subgroup = "terrain",
-    order = "c[landfill]-d",
+    order = "c[landfill]-e-a",
     inventory_move_sound = item_sounds.landfill_inventory_move,
     pick_sound = item_sounds.landfill_inventory_pickup,
     drop_sound = item_sounds.landfill_inventory_move,
@@ -180,18 +169,39 @@ data:extend{
     {
       result = "artificial-lichen-colony",
       condition_size = 1,
-      condition = {layers={ground_tile=true}},
-      tile_condition = {"muriatic-solution", "oil-ocean-shallow", "oil-ocean-deep", "oil-ocean-shallow-2", "oil-ocean-deep-2"}
+      condition = {layers={}},
+      tile_condition = {"muriatic-solution", "oil-ocean-shallow", "oil-ocean-deep", "oil-ocean-shallow-2", "oil-ocean-deep-2", "muriatic-soil-dark", "muriatic-soil-light", "muriatic-folds", "muriatic-folds-flat"}
+    },
+    weight = 10000,
+  },
+  --ground_tile=true
+  {
+    type = "item",
+    name = "artificial-muriatic-soil",
+    icon = "__Muria-Graphics__/graphics/icons/artificial-muriatic-soil.png",
+    subgroup = "terrain",
+    order = "c[landfill]-e-b",
+    inventory_move_sound = item_sounds.landfill_inventory_move,
+    pick_sound = item_sounds.landfill_inventory_pickup,
+    drop_sound = item_sounds.landfill_inventory_move,
+    stack_size = 100,
+    default_import_location = "muria",
+    place_as_tile =
+    {
+      result = "artificial-muriatic-soil",
+      condition_size = 1,
+      condition = {layers={}},
+      tile_condition = {"muriatic-solution", "acidophile-lichen"}
     },
     weight = 10000,
   },
   {
     type = "item",
-    name = "chlorine-salts",
-    localised_name={"item-name.chlorine-salts"},
+    name = "chloride-salts",
+    localised_name={"item-name.chloride-salts"},
     subgroup = "muria-acidworking",
     order = "c",
-    icon = "__Muria-Graphics__/graphics/icons/chlorine-salts.png",
+    icon = "__Muria-Graphics__/graphics/icons/chloride-salts.png",
     inventory_move_sound = item_sounds.resource_inventory_move,
     pick_sound = item_sounds.resource_inventory_pickup,
     drop_sound = item_sounds.resource_inventory_move,
