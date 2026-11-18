@@ -33,7 +33,6 @@ data.raw.planet["vulcanus"].surface_properties["atmospheric-acidity"] = 80
 data.raw.planet["fulgora"].surface_properties["atmospheric-acidity"] = 30
 data.raw.planet["gleba"].surface_properties["atmospheric-acidity"] = 15
 data.raw.planet["aquilo"].surface_properties["atmospheric-acidity"] = 5
-data.raw.planet["muria"].surface_properties["atmospheric-acidity"] = 100
 
 table.insert(data.raw.lab["lab"].inputs, "acidworking-science-pack")
 table.insert(data.raw.lab["biolab"].inputs, "acidworking-science-pack")

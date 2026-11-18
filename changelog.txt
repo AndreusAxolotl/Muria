@@ -1,4 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.11.3
+Date: 2026-11-18
+  one light day:
+
+  Fixes:
+    - Fixed typo in acidthrower compat.
+---------------------------------------------------------------------------------------------------
+Version: 1.11.2
+Date: 2026-11-17
+  soily:
+
+  Changes:
+    - Added more acids to the acidthrower compat list.
+
+  Fixes:
+    - Artificial muriatic soil now works correctly.
+---------------------------------------------------------------------------------------------------
 Version: 1.11.1
 Date: 2026-11-13
   gulp:

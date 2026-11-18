@@ -152,7 +152,8 @@ data:extend{
       ["solar-power"] = 30,
       gravity = 9,
       ["robot-energy-usage"] = 2,
-      ["temperature"] = 320
+      ["temperature"] = 320,
+      ["atmospheric-acidity"] = 100
     },
     surface_render_parameters=
     {

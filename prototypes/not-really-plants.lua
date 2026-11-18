@@ -773,7 +773,7 @@ data:extend({
         peaks = {
             { influence = 0.2, tile_restriction = {"muriatic-folds-flat", "muriatic-folds", "muriatic-soil-light", "muriatic-soil-dark", "artificial-muriatic-soil"}  },
         },
-        tile_restriction = {"muriatic-folds-flat", "muriatic-folds", "muriatic-soil-light", "muriatic-soil-dark"} ,
+        tile_restriction = {"muriatic-folds-flat", "muriatic-folds", "muriatic-soil-light", "muriatic-soil-dark", "artificial-muriatic-soil"} ,
         surface_conditions = {{property = "atmospheric-acidity", min = 100, max = 100}},},
         map_color = {158, 117, 33}, -- can be what ever
     },
