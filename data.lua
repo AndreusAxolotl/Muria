@@ -34,6 +34,22 @@ data.raw.planet["fulgora"].surface_properties["atmospheric-acidity"] = 30
 data.raw.planet["gleba"].surface_properties["atmospheric-acidity"] = 15
 data.raw.planet["aquilo"].surface_properties["atmospheric-acidity"] = 5
 
+if settings.startup["PlanetsLib-enable-oxygen"].value == true then
+  data.raw.planet["muria"].surface_properties.oxygen = 10
+end
+
+if settings.startup["PlanetsLib-enable-nitrogen"].value == true then
+  data.raw.planet["muria"].surface_properties.nitrogen = 20
+end
+
+if settings.startup["PlanetsLib-enable-carbon-dioxide"].value == true then
+  data.raw.planet["muria"].surface_properties["carbon-dioxide"] = 3
+end
+
+if settings.startup["PlanetsLib-enable-argon"].value == true then
+  data.raw.planet["muria"].surface_properties.argon = 0.5
+end
+
 table.insert(data.raw.lab["lab"].inputs, "acidworking-science-pack")
 table.insert(data.raw.lab["biolab"].inputs, "acidworking-science-pack")
 
