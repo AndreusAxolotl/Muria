@@ -302,7 +302,7 @@ data:extend{
         {type = "item", name = "acidophile-lichen",   amount = 1},
     },
     results = {
-        {type = "item", name = "nutrients", amount = 5, percent_spoiled=0.5},
+        {type = "item", name = "nutrients", amount = 5, percent_spoiled=0.5, always_fresh = true,},
     },
     allow_productivity = true,
     categories = {"organic","biovat-processes"},

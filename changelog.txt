@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.11.5
+Date: 2026-11-20
+  spoilful:
+
+  Changes:
+    - Nutrients from acidophile lichen will now ALWAYS be at 50% spoilage, no matter the spoil level of the lichen.
+---------------------------------------------------------------------------------------------------
 Version: 1.11.4
 Date: 2026-11-18
   conditional:
