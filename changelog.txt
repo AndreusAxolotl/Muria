@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.11.6
+Date: 2026-11-27
+  reycled but like in the right way:
+
+  Changes:
+    - Increased sprouts requirements for casting cladding by 2 (2->4)
+
+  Fixes:
+    - Fixed anti-corrosion cladding recycling.
+---------------------------------------------------------------------------------------------------
 Version: 1.11.5
 Date: 2026-11-20
   spoilful:

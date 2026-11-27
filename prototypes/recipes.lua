@@ -915,13 +915,13 @@ data:extend{
     ingredients =
     {
       {type = "fluid", name = "molten-lead", amount = 80},
-      {type = "item", name = "eschatotaxite-paste", amount = 2},
+      {type = "item", name = "eschatotaxite-paste", amount = 4},
       {type = "fluid", name = "fluorine", amount = 20}
     },
     results = {{type="item", name="anti-corrosion-cladding", amount=2}},
     allow_productivity = true,
     categories = {"leadworking"},
-    auto_recycle = true,
+    auto_recycle = false,
     emissions_multiplier = 5,
 },
 {
